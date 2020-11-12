@@ -1,0 +1,7 @@
+.container-landing-page{
+    width: 100vw;
+    height: 100vh;
+    background: var(--grey);
+    padding: 50px 30px;
+    box-sizing: border-box;
+}
