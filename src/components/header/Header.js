@@ -37,10 +37,22 @@ class Header extends Component {
             </div>
 
             <div className="container-menu-header">
-                <div className="container-menu-item" > home  </div>
-                <div className="container-menu-item" > bloody data  </div>
-                <div className="container-menu-item" > testimonios  </div>
-                <div className="container-menu-item" > firma la peticion  </div>
+                <div className="container-menu-item" > 
+                    <div className="menu-item">home</div> 
+                </div>
+                <div className="container-menu-item sub-songs-menu-item" >
+                     <div className="menu-item"> bloody data</div>
+                     <div className="menu-item"> femicidios</div>
+                     <div className="menu-item"> Relacion con agresor</div>
+                     <div className="menu-item"> Violencia de genero</div>
+                     <div className="menu-item"> Transfemicidios</div>
+                </div>
+                <div className="container-menu-item" >
+                     <div className="menu-item"> testimonios   </div>
+                </div>
+                <div className="container-menu-item" >
+                     <div className="menu-item"> firma la peticion   </div>
+                </div>
                 <div className="container-container-button-sign">
                     <div className="container-button-sign">
                         <span className="text-header-button-sign"> firmar ahora </span>
