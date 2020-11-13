@@ -37,7 +37,7 @@
 
 .circle-header{
     border-radius: 100%;
-    background: white;
+    background: var(--white);
 }
 
 .first-circle{
@@ -76,7 +76,7 @@
 .sub-songs-menu-item{
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     justify-content: space-between;
     height: 140px;
     width: 123px;
@@ -85,7 +85,7 @@
 .menu-item{
     cursor: pointer;
     /* border-bottom: 2px solid red; */
-    padding: 8px
+    padding: 8px;
 }
 
 .menu-item:hover{
@@ -93,9 +93,9 @@
     border-bottom: 2px solid var(--red);
 }
 
-.container-container-button-sign{
+/* .container-container-button-sign{
 
-}
+} */
 .container-button-sign{
     display: flex;
     border: 2px solid var(--red);
@@ -114,6 +114,6 @@
     margin: 0px 10px;
 }
 
-.header-button-arrow{
+/* .header-button-arrow{
     
-}
+} */
