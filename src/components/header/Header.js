@@ -6,8 +6,9 @@ import './Header.css'
 // Assets
 import logo_anmistia from "../../assets/logo_anmistia.png"
 import logo_bloody from "../../assets/logo_bloody.png"
+import arrow_header from "../../assets/arrow_header.png"
 
-class Landing extends Component {
+class Header extends Component {
 
   constructor(props) {
     super(props);
@@ -22,26 +23,29 @@ class Landing extends Component {
         <div className="container-header-landing-page">
 
             <div className="container-images-header" >
-                <img src={logo_bloody} alt="logo_bloody" className="logo-bloody-header"/>
-                <img src={logo_anmistia} alt="logo_anmistia" className="logo-anmistia-header"/>
+                <img src={logo_bloody} alt="Logo de boddy" className="logo_bloody"/>
+                <img src={logo_anmistia} alt="Logo Anmistia-internacional" className="logo_anmistia"/>
+                {
+                    this.props.showFullHeader &&
                 <div className="container-circle-header">
                     <div className="circle-header first-circle"></div>
                     <div className="circle-header second-circle"></div>
                     <div className="circle-header third-circle"></div>
                     <div className="circle-header four-circle"></div>
                 </div>
+                }
             </div>
 
             <div className="container-menu-header">
-                <div> home  </div>
-                <div> bloody data  </div>
-                <div> testimonios  </div>
-                <div> firma la peticion  </div>
+                <div className="container-menu-item" > home  </div>
+                <div className="container-menu-item" > bloody data  </div>
+                <div className="container-menu-item" > testimonios  </div>
+                <div className="container-menu-item" > firma la peticion  </div>
                 <div className="container-container-button-sign">
                     <div className="container-button-sign">
                         <span className="text-header-button-sign"> firmar ahora </span>
                         <div className="header-button-sign" ></div>
-                        <span className="header-button-arrow"> > </span>
+                        <img className="header-button-arrow" src={arrow_header} alt="Flecha a la derecha"/> 
                     </div>
                 </div>
             </div>
@@ -51,4 +55,4 @@ class Landing extends Component {
   }
 }
 
-export default Landing;
+export default Header;

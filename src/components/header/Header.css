@@ -1,13 +1,24 @@
 .container-header-landing-page{
     display: flex;
     justify-content: space-between;
-    height: 30vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    position: fixed;
+    padding: 28px 34px;
+    background: var(--grey);
+    box-sizing: border-box;
 }
 
 .container-images-header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.logo_anmistia{
+    width: 70%;
+    margin-top: 15px;
 }
 
 .logo-anmistia-header{
@@ -53,6 +64,14 @@
     width: 50%;
     display: flex;
     justify-content: space-between;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 13px;
+}
+
+.container-menu-item{
+    padding: 10px 15px;
 }
 
 .container-container-button-sign{
@@ -60,18 +79,20 @@
 }
 .container-button-sign{
     display: flex;
-    border: 1px solid red;
-    padding: 7px;
+    border: 2px solid var(--red);
+    padding: 8px 15px;
     border-radius: 20px;
 }
 
 .text-header-button-sign{
-
+    color: var(--red);
+    font-weight: bold;
+    white-space: nowrap;
 }
 
 .header-button-sign{
-    border-right: 1px solid red;
-    margin: 0px 3px;
+    border-right: 1px solid var(--red);
+    margin: 0px 10px;
 }
 
 .header-button-arrow{

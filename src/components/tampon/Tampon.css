@@ -1,0 +1,104 @@
+.container-blod-landing-page{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty-space-blood-p{
+    width: 18vw;
+    height: 1vh
+}
+
+.central-blod-landing-page{
+    width: 9vw;
+    min-width: 140px;
+    height: 52vh;
+    background-image: url(../../assets/tampon_empt.png);
+    background-repeat: no-repeat;
+    background-position: 60px 30px;
+    position: relative;
+}
+
+.image-tampon-blod{
+    position: absolute;
+    background-position: 80px 31px;
+    background-image: url(../../assets/tampon_completed.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 47px 145px;
+    top: 0px;
+    left: 0px;
+    transition: 1s;
+}
+
+.percentage-progress{
+    width: 22vw;
+    height: 43vh;
+    display: flex;
+    opacity: 0;
+    transition: 0.5s;
+}
+.percentage-progress-animation{
+    opacity: 1;
+}
+
+.top-div-percentage-progress{
+    width: 7vw;
+    min-width: 35px;
+    border-bottom: 2px solid var(--white);
+    font-weight: 900;
+    margin-right: 35px;
+    transition: 1s;
+}
+
+.text-percentage-land{
+    font-size: 8em;
+    font-family: Montserrat;
+    color: var(--white);
+    font-weight: 900
+}
+.text-description-land{
+    width: 76%;
+    color: var(--white);
+    font-family: Montserrat;
+}
+
+/* Animations */
+
+.image-tampon-blod0{
+    height: 0vh
+}
+.image-tampon-blod1{
+    height: 6vh
+}
+.image-tampon-blod2{
+    height: 12vh
+}
+.image-tampon-blod3{
+    height: 15vh
+}
+.image-tampon-blod4{
+    height: 17vh
+}
+
+.top-div-percentage-progress0{
+    height: 0vh
+}
+
+.top-div-percentage-progress1{
+    height: 1vh
+}
+
+.top-div-percentage-progress2{
+    height: 7vh
+}
+
+.top-div-percentage-progress3{
+    height: 10vh
+}
+
+.top-div-percentage-progress4{
+    height: 12vh
+}

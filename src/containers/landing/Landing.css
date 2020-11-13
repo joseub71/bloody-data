@@ -1,7 +1,27 @@
 .container-landing-page{
     width: 100vw;
-    height: 100vh;
     background: var(--grey);
-    padding: 50px 30px;
     box-sizing: border-box;
+}
+
+.container-home-landing-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-home-landing-page > img{
+    width: 70vw;
+}
+
+.container-home-landing-page > span{
+    font-family: Montserrat;
+    color: var(--white);
+    letter-spacing: 15px;
+    margin-top: 30px;
+    font-weight: 900;
+    width: 70vw;
+    text-align: center;
 }
