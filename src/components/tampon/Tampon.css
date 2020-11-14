@@ -1,10 +1,18 @@
 .container-blod-landing-page{
     height: 100vh;
-    width: 100vw;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 13vw;
+}
+
+.container-blod-animation-zone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: 22vw;
+    margin-top: 18vh;
 }
 
 .empty-space-blood-p{
@@ -12,7 +20,7 @@
     height: 1vh
 }
 
-.central-blod-landing-page{
+.central-blod-landing-page-tampon{
     width: 9vw;
     min-width: 140px;
     height: 52vh;
@@ -22,7 +30,7 @@
     position: relative;
 }
 
-.image-tampon-blod{
+.image-tampon-blod-tampon{
     position: absolute;
     background-position: 80px 31px;
     background-image: url(../../assets/tampon_completed.png);
@@ -31,7 +39,7 @@
     background-size: 47px 145px;
     top: 0px;
     left: 0px;
-    clip-path: polygon(0 0, 0 95%, 13% 98%, 28% 96%, 44% 97%, 54% 95%, 65% 96%, 79% 93%, 89% 96%, 100% 100%, 100% 0, 52% 0);
+    clip-path: polygon(100% 100%, 100% 0%, 0% 0%, 0% 98%, 8% 100%, 15% 98%, 24% 99%, 33% 99%, 40% 98%, 50% 99%, 60% 100%, 68% 98%, 80% 100%, 89% 98%);
     transition: 1s;
 }
 

@@ -1,0 +1,128 @@
+.container-header-landing-page{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    position: fixed;
+    padding: 28px 34px;
+    box-sizing: border-box;
+    z-index: 2
+}
+
+.container-images-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 13vw;
+}
+.container-images-header > img:first-child{
+    width: 95%;
+}
+
+.logo_anmistia{
+    width: 70%;
+    margin-top: 15px;
+}
+
+.logo-anmistia-header{
+    width: 70%;
+}
+
+/* Menu */
+
+nav {
+    z-index: 10;
+    height: 50px;
+    padding: 5px 0px;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 13px;
+}
+
+nav > ul {
+	list-style:none;
+}
+
+nav > ul li {
+	display:inline-block;
+    position: relative;
+    padding: 0px 10px;
+}
+
+nav > ul li:not(.container-container-button-sign):hover > a,
+nav > ul li:not(.container-container-button-sign):hover > span{
+    border-bottom: 1px var(--white) solid;
+    cursor: pointer
+}
+
+nav > ul li a, nav > ul li span {
+	color:#fff;
+	display:block;
+	text-decoration:none;
+	padding: 5px 10px;
+}
+
+nav > ul li:hover .children {
+	display:block;
+}
+
+nav > ul li .children {
+	display: none;
+	position: absolute;
+    width: 100%;
+    z-index: 11;
+}
+
+nav > ul li .children li {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    padding: 7px 12px 7px 0px;
+}
+
+nav > ul li .children li a {
+	display: block;
+}
+
+/* mobile */
+.menu_bar {
+	display:none;
+}
+/* Menu */
+
+.container-button-sign:hover {
+    cursor: pointer
+    /* border-color: var(--white) */
+}
+
+.container-container-button-sign:hover .text-header-button-sign {
+    color: var(--white);
+}
+
+/* .container-container-button-sign:hover .header-button-sign {
+    border-right: 1px solid var(--white);
+} */
+.container-button-sign{
+    display: flex;
+    border: 2px solid var(--red);
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.text-header-button-sign{
+    color: var(--red);
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.header-button-sign{
+    border-right: 1px solid var(--red);
+    margin: 0px 10px;
+}
+
+/* .header-button-arrow{
+    
+} */
