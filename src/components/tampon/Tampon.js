@@ -49,9 +49,12 @@ class Tampon extends Component {
           rootMargin: '0px 0px 0px 0px',
           threshold: .5,
         }
-        function callback(entries, observer) {
-          if (entries[0].isIntersecting) {
+        const callback = (entries, observer) => {
+          if (entries[0].isIntersecting && this.props.location.hash === '') {
             tampon.scrollIntoView({block: "start", behavior: "smooth"});
+            this.setState({tampon: 1})
+          }else{
+            this.props.history.push({ pathname: '/'})
           }
         }
         const observer = new IntersectionObserver(callback, options)

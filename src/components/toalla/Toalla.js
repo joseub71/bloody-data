@@ -45,9 +45,10 @@ class Toalla extends Component {
           rootMargin: '0px 0px 0px 0px',
           threshold: .5,
         }
-        function callback(entries, observer) {
-          if (entries[0].isIntersecting) {
+        const callback = (entries, observer)  =>{
+          if (entries[0].isIntersecting && this.props.location.hash === '') {
             toalla.scrollIntoView({block: "start", behavior: "smooth"});
+            this.setState({toalla: 1})
           }
         }
         
@@ -77,7 +78,7 @@ class Toalla extends Component {
             <div className="container-blod-landing-page" id="toalla">
                 
                 <div className="container-blod-animation-zone" ref={this.toallaRef}>
-                    <div className="central-blod-landing-page-toalla" style={{ backgroundSize: '58%'}} >
+                    <div className="central-blod-landing-page-toalla" style={{ backgroundSize: '54%'}} >
                         <div className={`${ 'image-tampon-blod'+this.state.toalla } image-tampon-blod-toalla`} ></div>
                     </div>
                     

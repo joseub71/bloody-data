@@ -16,21 +16,6 @@ class App extends Component {
     };
   }
 
-  componentDidMount(){
-    const home = document.querySelector('#home')
-    const options = {
-      rootMargin: '0px 0px 0px 0px',
-      threshold: .5,
-    }
-    function callback(entries, observer) {
-      if (entries[0].isIntersecting) {
-        home.scrollIntoView({block: "start", behavior: "smooth"});
-      }
-    }
-    const observer = new IntersectionObserver(callback, options)
-    observer.observe(home)
-  }
-
   render() {
     return (
       <div className="container-web-app">
