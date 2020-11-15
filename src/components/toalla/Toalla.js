@@ -39,21 +39,21 @@ class Toalla extends Component {
     componentDidMount(){
         this.toallaRef.current.addEventListener("wheel", (event) => { this.eventScrollToalla(event)})
 
-        const toalla = document.querySelector('#toalla')
-        const options = {
-          // root: document.querySelector('body'),
-          rootMargin: '0px 0px 0px 0px',
-          threshold: .5,
-        }
-        const callback = (entries, observer)  =>{
-          if (entries[0].isIntersecting && this.props.location.hash === '') {
-            toalla.scrollIntoView({block: "start", behavior: "smooth"});
-            this.setState({toalla: 1})
-          }
-        }
+        // const toalla = document.querySelector('#toalla')
+        // const options = {
+        //   // root: document.querySelector('body'),
+        //   rootMargin: '0px 0px 0px 0px',
+        //   threshold: .5,
+        // }
+        // const callback = (entries, observer)  =>{
+        //   if (entries[0].isIntersecting && this.props.location.hash === '') {
+        //     toalla.scrollIntoView({block: "start", behavior: "smooth"});
+        //     this.setState({toalla: 1})
+        //   }
+        // }
         
-        const observer = new IntersectionObserver(callback, options)
-        observer.observe(toalla)
+        // const observer = new IntersectionObserver(callback, options)
+        // observer.observe(toalla)
 
     }
 

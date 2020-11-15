@@ -39,21 +39,21 @@ class Tissu extends Component {
     componentDidMount(){
         this.tissuRef.current.addEventListener("wheel", (event) => { this.eventScrollTissu(event)})
 
-        const tissu = document.querySelector('#tissu')
-        const options = {
-          // root: document.querySelector('body'),
-          rootMargin: '0px 0px 0px 0px',
-          threshold: .5,
-        }
-        const callback = (entries, observer)  =>{
-          if (entries[0].isIntersecting && this.props.location.hash === '') {
-            tissu.scrollIntoView({block: "start", behavior: "smooth"});
-            this.setState({tissu: 1})
-          }
-        }
+        // const tissu = document.querySelector('#tissu')
+        // const options = {
+        //   // root: document.querySelector('body'),
+        //   rootMargin: '0px 0px 0px 0px',
+        //   threshold: .5,
+        // }
+        // const callback = (entries, observer)  =>{
+        //   if (entries[0].isIntersecting && this.props.location.hash === '') {
+        //     tissu.scrollIntoView({block: "start", behavior: "smooth"});
+        //     this.setState({tissu: 1})
+        //   }
+        // }
         
-        const observer = new IntersectionObserver(callback, options)
-        observer.observe(tissu)
+        // const observer = new IntersectionObserver(callback, options)
+        // observer.observe(tissu)
 
     }
 

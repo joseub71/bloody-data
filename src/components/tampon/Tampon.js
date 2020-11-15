@@ -3,6 +3,11 @@ import React, { Component } from 'react';
 // .CSS
 import './Tampon.css'
 
+// Test
+// Assets
+    // import tampon_empt from "../../assets/tampon/001.png"
+    // import tampon_completed from "../../assets/tampon_completed.png"
+// Test
 class Tampon extends Component {
 
     constructor(props) {
@@ -44,26 +49,26 @@ class Tampon extends Component {
     componentDidMount(){
         this.tamponRef.current.addEventListener("wheel", (event) => { this.eventScrollTampon(event)})
 
-        const tampon = document.querySelector('#tampon')
-        const options = {
-          rootMargin: '0px 0px 0px 0px',
-          threshold: .5,
-        }
-        const callback = (entries, observer) => {
-          if (entries[0].isIntersecting && this.props.location.hash === '') {
-            tampon.scrollIntoView({block: "start", behavior: "smooth"});
-            this.setState({tampon: 1})
-          }else{
-            this.props.history.push({ pathname: '/'})
-          }
-        }
-        const observer = new IntersectionObserver(callback, options)
-        observer.observe(tampon)
+        // const tampon = document.querySelector('#tampon')
+        // const options = {
+        //   rootMargin: '0px 0px 0px 0px',
+        //   threshold: .5,
+        // }
+        // const callback = (entries, observer) => {
+        //   if (entries[0].isIntersecting && this.props.location.hash === '') {
+        //     tampon.scrollIntoView({block: "start", behavior: "smooth"});
+        //     this.setState({tampon: 1})
+        //   }else{
+        //     this.props.history.push({ pathname: '/'})
+        //   }
+        // }
+        // const observer = new IntersectionObserver(callback, options)
+        // observer.observe(tampon)
 
     }
 
     eventScrollTampon = (e) => {
-
+        e.preventDefault();
         const currenTampon = this.state.tampon;
         if(currenTampon > 0 && currenTampon < 4) e.preventDefault();
         if (e.deltaY.toFixed() >=  16) {
@@ -82,8 +87,10 @@ class Tampon extends Component {
             <div className="container-blod-landing-page" id="tampon">
                 
                 <div className="container-blod-animation-zone" ref={this.tamponRef}>
-                    <div className="central-blod-landing-page-tampon" style={{ backgroundSize: '67px 350px'}} >
+                    <div className="central-blod-landing-page-tampon" >
                         <div className={`${ 'image-tampon-blod'+this.state.tampon } image-tampon-blod-tampon `} ></div>
+
+                        <div className={`${ 'image-tampon-blod-relieve'+this.state.tampon } image-tampon-blod-tampon-relieve `} ></div>
                     </div>
                     
                     <div className={`${ this.state.tampon >= 1 && 'percentage-progress-animation' } percentage-progress`} >
@@ -95,7 +102,7 @@ class Tampon extends Component {
                         </div>
                     </div>
                 </div>
-
+                
             </div>
         )
     }

@@ -34,21 +34,21 @@ class Copa extends Component {
     componentDidMount(){
         this.copaRef.current.addEventListener("wheel", (event) => { this.eventScrollCopa(event)})
 
-        const copa = document.querySelector('#copa')
-        const options = {
-          // root: document.querySelector('body'),
-          rootMargin: '0px 0px 0px 0px',
-          threshold: .5,
-        }
-        const callback = (entries, observer)  =>{
-          if (entries[0].isIntersecting && this.props.location.hash === '') {
-            copa.scrollIntoView({block: "start", behavior: "smooth"});
-            this.setState({copa: 1})
-          }
-        }
+        // const copa = document.querySelector('#copa')
+        // const options = {
+        //   // root: document.querySelector('body'),
+        //   rootMargin: '0px 0px 0px 0px',
+        //   threshold: .5,
+        // }
+        // const callback = (entries, observer)  =>{
+        //   if (entries[0].isIntersecting && this.props.location.hash === '') {
+        //     copa.scrollIntoView({block: "start", behavior: "smooth"});
+        //     this.setState({copa: 1})
+        //   }
+        // }
         
-        const observer = new IntersectionObserver(callback, options)
-        observer.observe(copa)
+        // const observer = new IntersectionObserver(callback, options)
+        // observer.observe(copa)
 
     }
 

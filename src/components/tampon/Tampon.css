@@ -4,6 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
 }
 
 .container-blod-animation-zone{
@@ -24,23 +26,38 @@
     width: 9vw;
     min-width: 140px;
     height: 52vh;
-    background-image: url(../../assets/tampon_empt.png);
+    background-image: url(../../assets/tampon/_0.png);
+    /* background-image: url(../../assets/tampon/001.png); */
     background-repeat: no-repeat;
-    background-position: 60px 30px;
+    background-position: top;
     position: relative;
+    background-size: contain
 }
 
 .image-tampon-blod-tampon{
+    opacity: 0.9;
     position: absolute;
-    background-position: 80px 31px;
-    background-image: url(../../assets/tampon_completed.png);
+    background-position: top;
     background-repeat: no-repeat;
-    width: 100%;
-    background-size: 47px 145px;
+    background-size: 84%;
     top: 0px;
     left: 0px;
-    clip-path: polygon(100% 100%, 100% 0%, 0% 0%, 0% 98%, 8% 100%, 15% 98%, 24% 99%, 33% 99%, 40% 98%, 50% 99%, 60% 100%, 68% 98%, 80% 100%, 89% 98%);
-    transition: 1s;
+    width: 100%;
+    transition: all 1s;
+    height: 0vh;
+    background-image: url(../../assets/tampon/_4.png);
+}
+
+.image-tampon-blod-tampon-relieve{
+    position: absolute;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 84%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    transition: height 0.8s;
+    height: 0vh;
 }
 
 .percentage-progress{
@@ -76,39 +93,64 @@
 }
 
 /* Animations */
-
+/* Tampon sin relieve */
 .image-tampon-blod0{
-    height: 0vh
+    height: 0vh;
 }
 .image-tampon-blod1{
-    height: 6vh
+    height: 5vh;
 }
 .image-tampon-blod2{
-    height: 12vh
+    height: 8vh
 }
 .image-tampon-blod3{
-    height: 15vh
+    height: 10vh;
 }
 .image-tampon-blod4{
-    height: 17vh
+    height: 14vh;
 }
 
+/* Tampon con relieve */
+.image-tampon-blod-relieve0{
+    height: 6vh;
+    background-image: url(../../assets/tampon/0.png);
+}
+.image-tampon-blod-relieve1{
+    background-image: url(../../assets/tampon/1.png);
+    height: 8vh;
+}
+.image-tampon-blod-relieve2{
+    background-image: url(../../assets/tampon/2.png);
+    height: 12vh
+}
+.image-tampon-blod-relieve3{
+    background-image: url(../../assets/tampon/3.png);
+    height: 13vh;
+}
+.image-tampon-blod-relieve4{
+    background-image: url(../../assets/tampon/4.png);
+    height: 16vh;
+}
+
+/* Linea blanca */
 .top-div-percentage-progress0{
     height: 0vh
 }
 
 .top-div-percentage-progress1{
-    height: 1vh
+    height: 3vh;
 }
 
 .top-div-percentage-progress2{
-    height: 7vh
+    height: 7vh;
 }
 
 .top-div-percentage-progress3{
-    height: 10vh
+    height: 8vh;
 }
 
 .top-div-percentage-progress4{
-    height: 12vh
+    height: 10vh;
 }
+
+/* New form */
