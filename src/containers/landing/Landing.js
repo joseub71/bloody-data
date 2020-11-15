@@ -4,6 +4,9 @@ import React, { Component } from 'react';
 import Menu from '../../components/menu/Menu';
 import Tampon from '../../components/tampon/Tampon';
 import Toalla from '../../components/toalla/Toalla';
+import Copa from '../../components/copa/Copa';
+import Tissu from '../../components/tissu/Tissu';
+import Footer from '../../components/footer/Footer';
 
 // Assets
 import logo_bloody_copy from "../../assets/logo_bloody_copy.png"
@@ -59,13 +62,19 @@ class Landing extends Component {
             </div>
             
             <div id="home" className="container-home-landing-page">
-              <img src={logo_bloody_copy} alt=""/>
+              <img src={logo_bloody_copy} alt="logo bloody data"/>
               <span> Que las mujeres sangren es asqueroso </span>
             </div>
 
             <Tampon  {...this.props} />
             
             <Toalla  {...this.props} />
+
+            <Copa  {...this.props} />
+
+            <Tissu  {...this.props} />
+
+            <Footer  {...this.props} />
             
         </div>
     )

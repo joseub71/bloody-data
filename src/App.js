@@ -32,7 +32,8 @@ class App extends Component {
                 path='*'
                 render={(props) => <Landing {...props} />}
               />
-
+{/* transform: skewY(-8deg);
+    transform: skewY(1deg); */}
               {/* <Route
                 exact
                 path='/autologin'

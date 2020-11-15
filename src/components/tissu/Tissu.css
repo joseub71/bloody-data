@@ -1,0 +1,52 @@
+.central-blod-landing-page-tissu{
+    background-image: url(../../assets/tissu.png);
+    width: 20vw;
+    min-width: 180px;
+    height: 38vh;
+    background-repeat: no-repeat;
+    background-position: 69px 0px;
+    position: relative;
+}
+
+.image-tissu-blod{
+    background-image: url(../../assets/tissu_completed.png);
+    background-position: 74px 0px;
+    background-size: 52%;
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    transition: 1s;
+}
+
+/* Animaciones */
+
+.image-tissu-blod0{
+    height: 0vh
+}
+.image-tissu-blod1{
+    height: 12vh
+}
+.image-tissu-blod2{
+    height: 16vh
+}
+.image-tissu-blod3{
+    height: 22vh
+}
+
+.top-div-percentage-progress-tissu0{
+    height: 0vh
+}
+
+.top-div-percentage-progress-tissu1{
+    height: 8vh
+}
+
+.top-div-percentage-progress-tissu2{
+    height: 12vh
+}
+
+.top-div-percentage-progress-tissu3{
+    height: 18vh
+}

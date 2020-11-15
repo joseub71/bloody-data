@@ -68,7 +68,7 @@ class Header extends Component {
                             <li><a href="#tampon"> femicidios </a></li>
                             <li><a href="#toalla"> Relacion con agresor </a></li>
                             <li><a href="#copa"> Violencia de genero </a></li>
-                            <li><a href="#servilleta"> Transfemicidios </a></li>
+                            <li><a href="#tissu"> Transfemicidios </a></li>
                         </ul>
                     </li>
                     <li><span> testimonios </span></li>

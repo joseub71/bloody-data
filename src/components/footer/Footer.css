@@ -1,0 +1,68 @@
+.footer{
+    height: 30vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-around;
+    font-family: Montserrat;
+    font-size: 14px;
+}
+
+.up-container-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container-bloody-log-footer > img{
+    width: 20vh;
+}
+
+.title-footer{
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+.container-general-text-footer{
+    display: flex;
+    flex-direction: column;
+    height: 195px;
+    justify-content: space-around;
+}
+
+.color-text-gray-footer, .low-text-footer{
+    color: #c5c5c5;
+}
+
+.low-text-footer{
+    font-size: 13px;
+    padding: 20px;
+}
+
+.margin-top-text-footer{
+    margin-top: 25px
+}
+
+.social-media-btn-footer{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-between;
+}
+.container-btn-footer{
+    padding: 10px 15px;
+    border: 2px white solid;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 900;
+}
+.footer-social-media{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-social-media a:nth-child(1) img{
+    width: 2vw
+}
