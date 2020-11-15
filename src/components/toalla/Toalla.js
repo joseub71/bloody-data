@@ -79,12 +79,12 @@ class Toalla extends Component {
                 
                 <div className="container-blod-animation-zone" ref={this.toallaRef}>
                     <div className="central-blod-landing-page-toalla" style={{ backgroundSize: '54%'}} >
-                        <div className={`${ 'image-tampon-blod'+this.state.toalla } image-tampon-blod-toalla`} ></div>
+                        <div className={`${ 'image-toalla-blod'+this.state.toalla } image-toalla-blod`} ></div>
                     </div>
                     
                     <div className={`${ this.state.toalla >= 1 && 'percentage-progress-animation' } percentage-progress`} >
                     
-                    <div className={`${ 'top-div-percentage-progress'+this.state.toalla } top-div-percentage-progress`} ></div>
+                    <div className={`${ 'top-div-percentage-progress-toalla'+this.state.toalla } top-div-percentage-progress`} ></div>
                         <div>
                             <div className="text-percentage-land">{this.state.toallaData[this.state.toalla].percentage}</div>
                             <div className="text-description-land">{this.state.toallaData[this.state.toalla].description} <b> {this.state.toallaData[this.state.toalla].dark} </b> </div>
