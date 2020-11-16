@@ -35,7 +35,6 @@
 }
 
 .image-tampon-blod-tampon{
-    opacity: 0.9;
     position: absolute;
     background-position: top;
     background-repeat: no-repeat;
@@ -51,14 +50,14 @@
 .image-tampon-blod-tampon-relieve{
     position: absolute;
     background-image: url(../../assets/tampon/1.png);
-    background-position: center -46px;
+    background-position: center -48px;
     background-repeat: no-repeat;
     background-size: 84%;
     top: 0vh;
     left: 0px;
     width: 100%;
     transition: top 1s;
-    height: 1vh;
+    height: 5px;
 }
 
 .percentage-progress{
@@ -74,7 +73,8 @@
 
 .top-div-percentage-progress{
     width: 7vw;
-    min-width: 35px;
+    min-width: 30px;
+    max-width: 40px;
     border-bottom: 2px solid var(--white);
     font-weight: 900;
     margin-right: 35px;
@@ -122,10 +122,10 @@
     top: 10vh;
 }
 .image-tampon-blod-relieve3{
-    top: 13.5vh;
+    top: 13vh;
 }
 .image-tampon-blod-relieve4{
-    top: 18.5vh;
+    top: 17.8vh;
 }
 
 /* Linea blanca */

@@ -93,7 +93,7 @@ class Tampon extends Component {
                         <div className={`${ 'image-tampon-blod-relieve'+this.state.tampon } image-tampon-blod-tampon-relieve `} ></div>
                     </div>
                     
-                    <div className={`${ this.state.tampon >= 1 && 'percentage-progress-animation' } percentage-progress`} >
+                    <div className={`${ 'percentage-progress-animation' } percentage-progress`} >
                     
                     <div className={`${ 'top-div-percentage-progress'+this.state.tampon } top-div-percentage-progress`} ></div>
                         <div>
