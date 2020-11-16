@@ -77,7 +77,7 @@ class Copa extends Component {
                         <div className={`${ 'image-copa-blod'+this.state.copa } image-copa-blod`} ></div>
                     </div>
                     
-                    <div className={`${ this.state.copa >= 1 && 'percentage-progress-animation' } percentage-progress`} >
+                    <div className={`${ 'percentage-progress-animation' } percentage-progress`} >
                     
                     <div className={`${ 'top-div-percentage-progress-copa'+this.state.copa } top-div-percentage-progress`} ></div>
                         <div>

@@ -66,7 +66,6 @@ class Toalla extends Component {
                 this.setState({toalla: currenToalla+1})
             }
         }else if (e.deltaY <= -16) {
-
             if (currenToalla > 0 && currenToalla <= 3) {
                 this.setState({toalla: currenToalla-1})
             }
@@ -78,11 +77,11 @@ class Toalla extends Component {
             <div className="container-blod-landing-page" id="toalla">
                 
                 <div className="container-blod-animation-zone" ref={this.toallaRef}>
-                    <div className="central-blod-landing-page-toalla" style={{ backgroundSize: '54%'}} >
-                        <div className={`${ 'image-toalla-blod'+this.state.toalla } image-toalla-blod`} ></div>
+                    <div className="central-blod-landing-page-toalla" >
+                        <div className={`${ 'image-toalla-blod'+this.state.toalla } image-toalla-blod-toalla`} ></div>
                     </div>
                     
-                    <div className={`${ this.state.toalla >= 1 && 'percentage-progress-animation' } percentage-progress`} >
+                    <div className={`${ 'percentage-progress-animation' } percentage-progress`} >
                     
                     <div className={`${ 'top-div-percentage-progress-toalla'+this.state.toalla } top-div-percentage-progress`} ></div>
                         <div>

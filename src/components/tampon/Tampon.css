@@ -14,7 +14,6 @@
     align-items: center;
     position: absolute;
     margin-left: 22vw;
-    margin-top: 18vh;
 }
 
 .empty-space-blood-p{
@@ -23,11 +22,9 @@
 }
 
 .central-blod-landing-page-tampon{
-    width: 9vw;
-    min-width: 140px;
-    height: 52vh;
+    width: 130px;
+    height: 450px;
     background-image: url(../../assets/tampon/_0.png);
-    /* background-image: url(../../assets/tampon/001.png); */
     background-repeat: no-repeat;
     background-position: top;
     position: relative;
@@ -35,34 +32,22 @@
 }
 
 .image-tampon-blod-tampon{
-    position: absolute;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 84%;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    transition: all 1s;
-    height: 0vh;
     background-image: url(../../assets/tampon/_4.png);
-}
-
-.image-tampon-blod-tampon-relieve{
-    position: absolute;
-    background-image: url(../../assets/tampon/1.png);
-    background-position: center -48px;
+    mask-image: url(../../assets/tampon/_0.png);
+    width: 113px;
+    height: 393px;
+    background-size: 134px 440px;
+    background-position: 2px 1px;
     background-repeat: no-repeat;
-    background-size: 84%;
-    top: 0vh;
-    left: 0px;
-    width: 100%;
-    transition: top 1s;
-    height: 5px;
+    mask-size: 120px 436px;
+    mask-repeat: no-repeat;
+    mask-position: 7px 4px;
+    transition: all 1s;
 }
 
 .percentage-progress{
     width: 22vw;
-    height: 43vh;
+    height: 46vh;
     display: flex;
     opacity: 0;
     transition: 0.5s;
@@ -94,38 +79,21 @@
 }
 
 /* Animations */
-/* Tampon sin relieve */
+
 .image-tampon-blod0{
-    height: 5vh;
+    background-position: 2px -132px;
 }
 .image-tampon-blod1{
-    height: 8vh;
+    background-position: 2px -87px;
 }
 .image-tampon-blod2{
-    height: 10vh
+    background-position: 2px -70px;
 }
 .image-tampon-blod3{
-    height: 14vh;
+    background-position: 2px -47px;
 }
 .image-tampon-blod4{
-    height: 19vh;
-}
-
-/* Tampon con relieve */
-.image-tampon-blod-relieve0{
-    top: 5vh;
-}
-.image-tampon-blod-relieve1{
-    top: 8vh;
-}
-.image-tampon-blod-relieve2{
-    top: 10vh;
-}
-.image-tampon-blod-relieve3{
-    top: 14vh;
-}
-.image-tampon-blod-relieve4{
-    top: 17.8vh;
+    background-position: 2px 3px;
 }
 
 /* Linea blanca */
@@ -138,15 +106,13 @@
 }
 
 .top-div-percentage-progress2{
-    height: 6vh;
+    height: 8vh;
 }
 
 .top-div-percentage-progress3{
-    height: 9vh;
+    height: 10vh;
 }
 
 .top-div-percentage-progress4{
-    height: 14vh;
+    height: 16vh;
 }
-
-/* New form */

@@ -3,11 +3,6 @@ import React, { Component } from 'react';
 // .CSS
 import './Tampon.css'
 
-// Test
-// Assets
-    // import tampon_empt from "../../assets/tampon/001.png"
-    // import tampon_completed from "../../assets/tampon_completed.png"
-// Test
 class Tampon extends Component {
 
     constructor(props) {
@@ -88,13 +83,12 @@ class Tampon extends Component {
                 
                 <div className="container-blod-animation-zone" ref={this.tamponRef}>
                     <div className="central-blod-landing-page-tampon" >
-                        <div className={`${ 'image-tampon-blod'+this.state.tampon } image-tampon-blod-tampon `} ></div>
-
-                        <div className={`${ 'image-tampon-blod-relieve'+this.state.tampon } image-tampon-blod-tampon-relieve `} ></div>
+                        <div className={`${ 'image-tampon-blod'+this.state.tampon } image-tampon-blod-tampon`} >
+                        </div>
                     </div>
                     
                     <div className={`${ 'percentage-progress-animation' } percentage-progress`} >
-                    
+
                     <div className={`${ 'top-div-percentage-progress'+this.state.tampon } top-div-percentage-progress`} ></div>
                         <div>
                             <div className="text-percentage-land">{this.state.tampData[this.state.tampon].percentage}</div>
@@ -102,7 +96,6 @@ class Tampon extends Component {
                         </div>
                     </div>
                 </div>
-                
             </div>
         )
     }
