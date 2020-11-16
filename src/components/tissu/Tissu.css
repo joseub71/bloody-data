@@ -1,52 +1,115 @@
-.central-blod-landing-page-tissu{
-    background-image: url(../../assets/tissu.png);
-    width: 20vw;
-    min-width: 180px;
-    height: 38vh;
-    background-repeat: no-repeat;
-    background-position: 69px 0px;
+.container-blod-landing-page{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
 
-.image-tissu-blod{
-    background-image: url(../../assets/tissu_completed.png);
-    background-position: 74px 0px;
-    background-size: 52%;
+.container-blod-animation-zone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
+    margin-left: 22vw;
+}
+
+.empty-space-blood-p{
+    width: 18vw;
+    height: 1vh
+}
+
+.central-blod-landing-page-tissu{
+    width: 170px;
+    height: 250px;
+    background-image: url(../../assets/tissu/_0.png);
     background-repeat: no-repeat;
-    width: 100%;
-    top: 0px;
-    left: 0px;
+    background-position: top;
+    position: relative;
+    background-size: contain
+}
+
+.image-tissu-blod-tissu{
+    background-image: url(../../assets/tissu/_4.png);
+    mask-image: url(../../assets/tissu/_0.png);
+    width: 170px;
+    height: 378px;
+    background-size: 183px 240px;
+    background-position: -5px -17px;
+    /* -5px -73px */
+    background-repeat: no-repeat;
+    mask-size: 170px 223px;
+    mask-repeat: no-repeat;
+    mask-position: 1px 1px;
+    transition: all 1s;
+}
+
+.margin-tissu{
+    padding-top: 80px;
+}
+.percentage-progress{
+    width: 22vw;
+    height: 46vh;
+    display: flex;
+    opacity: 0;
+    transition: 0.5s;
+}
+.percentage-progress-animation{
+    opacity: 1;
+}
+
+.top-div-percentage-progress-tissu{
+    width: 7vw;
+    min-width: 30px;
+    max-width: 40px;
+    border-bottom: 2px solid var(--white);
+    font-weight: 900;
+    margin-right: 35px;
     transition: 1s;
 }
 
-/* Animaciones */
+.text-percentage-land{
+    font-size: 8em;
+    font-family: Montserrat;
+    color: var(--white);
+    font-weight: 900
+}
+
+.text-description-land{
+    width: 76%;
+    color: var(--white);
+    font-family: Montserrat;
+}
+
+/* Animations */
 
 .image-tissu-blod0{
-    height: 0vh
+    background-position: -5px -212px;
 }
 .image-tissu-blod1{
-    height: 12vh
+    background-position: -5px -120px;
 }
 .image-tissu-blod2{
-    height: 16vh
+    background-position: -5px -90px;
 }
 .image-tissu-blod3{
-    height: 22vh
+    background-position: -5px -30px;
 }
 
+/* Linea blanca */
 .top-div-percentage-progress-tissu0{
     height: 0vh
 }
 
 .top-div-percentage-progress-tissu1{
-    height: 8vh
+    height: 11vh;
 }
 
 .top-div-percentage-progress-tissu2{
-    height: 12vh
+    height: 14vh;
 }
 
 .top-div-percentage-progress-tissu3{
-    height: 18vh
+    height: 20vh;
 }

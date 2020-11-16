@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     position: fixed;
-    padding: 28px 34px;
+    padding: 0px 34px;
     box-sizing: border-box;
     z-index: 2
 }
@@ -16,9 +16,13 @@
     justify-content: space-between;
     align-items: center;
     width: 13vw;
+    padding: 20px 0px;
 }
 .container-images-header > img:first-child{
-    width: 95%;
+    width: 96%;
+    background: var(--grey);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .logo_anmistia{
@@ -35,7 +39,6 @@
 nav {
     z-index: 10;
     height: 50px;
-    padding: 5px 0px;
     font-family: Montserrat;
     text-transform: uppercase;
     color: var(--white);
@@ -43,7 +46,9 @@ nav {
 }
 
 nav > ul {
-	list-style:none;
+    list-style:none;
+    background: var(--grey);
+    padding-top: 15px
 }
 
 nav > ul li {
@@ -74,6 +79,7 @@ nav > ul li .children {
 	position: absolute;
     width: 100%;
     z-index: 11;
+    background: var(--grey);
 }
 
 nav > ul li .children li {

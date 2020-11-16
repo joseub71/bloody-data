@@ -78,11 +78,11 @@ class Tissu extends Component {
             <div className="container-blod-landing-page" id="tissu">
                 
                 <div className="container-blod-animation-zone" ref={this.tissuRef}>
-                    <div className="central-blod-landing-page-tissu" style={{ backgroundSize: '54%'}} >
-                        <div className={`${ 'image-tissu-blod'+this.state.tissu } image-tissu-blod`} ></div>
+                    <div className="central-blod-landing-page-tissu" >
+                        <div className={`${ 'image-tissu-blod'+this.state.tissu } image-tissu-blod-tissu`} ></div>
                     </div>
                     
-                    <div className={`${ this.state.tissu >= 1 && 'percentage-progress-animation' } percentage-progress`} >
+                    <div className={`${ 'percentage-progress-animation' } percentage-progress margin-tissu`} >
                     
                     <div className={`${ 'top-div-percentage-progress-tissu'+this.state.tissu } top-div-percentage-progress`} ></div>
                         <div>
@@ -91,6 +91,21 @@ class Tissu extends Component {
                         </div>
                     </div>
                 </div>
+
+                {/* <div className="container-blod-animation-zone" ref={this.toallaRef}>
+                    <div className="central-blod-landing-page-toalla" >
+                        <div className={`${ 'image-toalla-blod'+this.state.toalla } image-toalla-blod-toalla`} ></div>
+                    </div>
+                    
+                    <div className={`${ 'percentage-progress-animation' } percentage-progress`} >
+                    
+                    <div className={`${ 'top-div-percentage-progress-toalla'+this.state.toalla } top-div-percentage-progress`} ></div>
+                        <div>
+                            <div className="text-percentage-land">{this.state.toallaData[this.state.toalla].percentage}</div>
+                            <div className="text-description-land">{this.state.toallaData[this.state.toalla].description} <b> {this.state.toallaData[this.state.toalla].dark} </b> </div>
+                        </div>
+                    </div>
+                </div> */}
 
             </div>
         )
