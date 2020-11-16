@@ -50,14 +50,15 @@
 
 .image-tampon-blod-tampon-relieve{
     position: absolute;
-    background-position: top;
+    background-image: url(../../assets/tampon/1.png);
+    background-position: center -46px;
     background-repeat: no-repeat;
     background-size: 84%;
-    top: 0px;
+    top: 0vh;
     left: 0px;
     width: 100%;
-    transition: height 0.8s;
-    height: 0vh;
+    transition: top 1s;
+    height: 1vh;
 }
 
 .percentage-progress{
@@ -95,41 +96,36 @@
 /* Animations */
 /* Tampon sin relieve */
 .image-tampon-blod0{
-    height: 0vh;
-}
-.image-tampon-blod1{
     height: 5vh;
 }
+.image-tampon-blod1{
+    height: 8vh;
+}
 .image-tampon-blod2{
-    height: 8vh
+    height: 10vh
 }
 .image-tampon-blod3{
-    height: 10vh;
+    height: 14vh;
 }
 .image-tampon-blod4{
-    height: 14vh;
+    height: 19vh;
 }
 
 /* Tampon con relieve */
 .image-tampon-blod-relieve0{
-    height: 6vh;
-    background-image: url(../../assets/tampon/0.png);
+    top: 5vh;
 }
 .image-tampon-blod-relieve1{
-    background-image: url(../../assets/tampon/1.png);
-    height: 8vh;
+    top: 8vh;
 }
 .image-tampon-blod-relieve2{
-    background-image: url(../../assets/tampon/2.png);
-    height: 12vh
+    top: 10vh;
 }
 .image-tampon-blod-relieve3{
-    background-image: url(../../assets/tampon/3.png);
-    height: 13vh;
+    top: 13.5vh;
 }
 .image-tampon-blod-relieve4{
-    background-image: url(../../assets/tampon/4.png);
-    height: 16vh;
+    top: 18.5vh;
 }
 
 /* Linea blanca */
@@ -138,19 +134,19 @@
 }
 
 .top-div-percentage-progress1{
-    height: 3vh;
+    height: 4vh;
 }
 
 .top-div-percentage-progress2{
-    height: 7vh;
+    height: 6vh;
 }
 
 .top-div-percentage-progress3{
-    height: 8vh;
+    height: 9vh;
 }
 
 .top-div-percentage-progress4{
-    height: 10vh;
+    height: 14vh;
 }
 
 /* New form */
