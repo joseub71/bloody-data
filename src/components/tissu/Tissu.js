@@ -58,7 +58,7 @@ class Tissu extends Component {
     }
 
     eventScrollTissu = (e) => {
-
+        e.preventDefault();
         const currenTissu = this.state.tissu;
         if(currenTissu > 0 && currenTissu < 3) e.preventDefault();
         if (e.deltaY.toFixed() >=  16) {

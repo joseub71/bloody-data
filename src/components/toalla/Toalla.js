@@ -58,7 +58,7 @@ class Toalla extends Component {
     }
 
     eventScrollToalla = (e) => {
-
+        e.preventDefault();
         const currenToalla = this.state.toalla;
         if(currenToalla > 0 && currenToalla < 3) e.preventDefault();
         if (e.deltaY.toFixed() >=  16) {

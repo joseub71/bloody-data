@@ -53,7 +53,7 @@ class Copa extends Component {
     }
 
     eventScrollCopa = (e) => {
-
+        e.preventDefault();
         const currenCopa = this.state.copa;
         if(currenCopa > 0 && currenCopa < 2) e.preventDefault();
         if (e.deltaY.toFixed() >=  16) {
