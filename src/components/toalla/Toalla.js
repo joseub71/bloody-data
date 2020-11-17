@@ -10,7 +10,7 @@ class Toalla extends Component {
         this.toallaRef = React.createRef();
 
         this.state = {
-            toalla: 0,
+            toalla: 1,
             toallaData: {
                 0: {
                     percentage: '0',
@@ -39,26 +39,26 @@ class Toalla extends Component {
     componentDidMount(){
         this.toallaRef.current.addEventListener("wheel", (event) => { this.eventScrollToalla(event)})
 
-        const toalla = document.querySelector('#toalla')
-        const options = {
-          // root: document.querySelector('body'),
-          rootMargin: '0px 0px 0px 0px',
-          threshold: .5,
-        }
-        const callback = (entries, observer)  =>{
-          if (entries[0].isIntersecting && this.props.location.hash === '') {
-            toalla.scrollIntoView({block: "start", behavior: "smooth"});
-            this.setState({toalla: 1})
-          }
-        }
+        // const toalla = document.querySelector('#toalla')
+        // const options = {
+        //   // root: document.querySelector('body'),
+        //   rootMargin: '0px 0px 0px 0px',
+        //   threshold: .5,
+        // }
+        // const callback = (entries, observer)  =>{
+        //   if (entries[0].isIntersecting && this.props.location.hash === '') {
+        //     toalla.scrollIntoView({block: "start", behavior: "smooth"});
+        //     this.setState({toalla: 1})
+        //   }
+        // }
         
-        const observer = new IntersectionObserver(callback, options)
-        observer.observe(toalla)
+        // const observer = new IntersectionObserver(callback, options)
+        // observer.observe(toalla)
 
     }
 
     eventScrollToalla = (e) => {
-
+        e.preventDefault();
         const currenToalla = this.state.toalla;
         if(currenToalla > 0 && currenToalla < 3) e.preventDefault();
         if (e.deltaY.toFixed() >=  16) {

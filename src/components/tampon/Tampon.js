@@ -10,7 +10,7 @@ class Tampon extends Component {
         this.tamponRef = React.createRef();
 
         this.state = {
-            tampon: 0,
+            tampon: 1,
             tampData: {
                 0: {
                     percentage: '0',
@@ -44,26 +44,26 @@ class Tampon extends Component {
     componentDidMount(){
         this.tamponRef.current.addEventListener("wheel", (event) => { this.eventScrollTampon(event)})
 
-        const tampon = document.querySelector('#tampon')
-        const options = {
-          rootMargin: '0px 0px 0px 0px',
-          threshold: .5,
-        }
-        const callback = (entries, observer) => {
-          if (entries[0].isIntersecting && this.props.location.hash === '') {
-            tampon.scrollIntoView({block: "start", behavior: "smooth"});
-            this.setState({tampon: 1})
-          }else{
-            this.props.history.push({ pathname: '/'})
-          }
-        }
-        const observer = new IntersectionObserver(callback, options)
-        observer.observe(tampon)
+        // const tampon = document.querySelector('#tampon')
+        // const options = {
+        //   rootMargin: '0px 0px 0px 0px',
+        //   threshold: .5,
+        // }
+        // const callback = (entries, observer) => {
+        //   if (entries[0].isIntersecting && this.props.location.hash === '') {
+        //     tampon.scrollIntoView({block: "start", behavior: "smooth"});
+        //     this.setState({tampon: 1})
+        //   }else{
+        //     this.props.history.push({ pathname: '/'})
+        //   }
+        // }
+        // const observer = new IntersectionObserver(callback, options)
+        // observer.observe(tampon)
 
     }
 
     eventScrollTampon = (e) => {
-
+        e.preventDefault();
         const currenTampon = this.state.tampon;
         if(currenTampon > 0 && currenTampon < 4) e.preventDefault();
         if (e.deltaY.toFixed() >=  16) {

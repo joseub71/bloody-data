@@ -10,7 +10,7 @@ class Tissu extends Component {
         this.tissuRef = React.createRef();
 
         this.state = {
-            tissu: 0,
+            tissu: 1,
             tissuData: {
                 0: {
                     percentage: '0',
@@ -39,26 +39,26 @@ class Tissu extends Component {
     componentDidMount(){
         this.tissuRef.current.addEventListener("wheel", (event) => { this.eventScrollTissu(event)})
 
-        const tissu = document.querySelector('#tissu')
-        const options = {
-          // root: document.querySelector('body'),
-          rootMargin: '0px 0px 0px 0px',
-          threshold: .5,
-        }
-        const callback = (entries, observer)  =>{
-          if (entries[0].isIntersecting && this.props.location.hash === '') {
-            tissu.scrollIntoView({block: "start", behavior: "smooth"});
-            this.setState({tissu: 1})
-          }
-        }
+        // const tissu = document.querySelector('#tissu')
+        // const options = {
+        //   // root: document.querySelector('body'),
+        //   rootMargin: '0px 0px 0px 0px',
+        //   threshold: .5,
+        // }
+        // const callback = (entries, observer)  =>{
+        //   if (entries[0].isIntersecting && this.props.location.hash === '') {
+        //     tissu.scrollIntoView({block: "start", behavior: "smooth"});
+        //     this.setState({tissu: 1})
+        //   }
+        // }
         
-        const observer = new IntersectionObserver(callback, options)
-        observer.observe(tissu)
+        // const observer = new IntersectionObserver(callback, options)
+        // observer.observe(tissu)
 
     }
 
     eventScrollTissu = (e) => {
-
+        e.preventDefault();
         const currenTissu = this.state.tissu;
         if(currenTissu > 0 && currenTissu < 3) e.preventDefault();
         if (e.deltaY.toFixed() >=  16) {
@@ -82,7 +82,7 @@ class Tissu extends Component {
                         <div className={`${ 'image-tissu-blod'+this.state.tissu } image-tissu-blod`} ></div>
                     </div>
                     
-                    <div className={`${ this.state.tissu >= 1 && 'percentage-progress-animation' } percentage-progress`} >
+                    <div className={`${ 'percentage-progress-animation' } percentage-progress`} >
                     
                     <div className={`${ 'top-div-percentage-progress-tissu'+this.state.tissu } top-div-percentage-progress`} ></div>
                         <div>

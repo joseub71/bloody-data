@@ -10,7 +10,7 @@ class Copa extends Component {
         this.copaRef = React.createRef();
 
         this.state = {
-            copa: 0,
+            copa: 1,
             copaData: {
                 0: {
                     percentage: '0',
@@ -34,26 +34,26 @@ class Copa extends Component {
     componentDidMount(){
         this.copaRef.current.addEventListener("wheel", (event) => { this.eventScrollCopa(event)})
 
-        const copa = document.querySelector('#copa')
-        const options = {
-          // root: document.querySelector('body'),
-          rootMargin: '0px 0px 0px 0px',
-          threshold: .5,
-        }
-        const callback = (entries, observer)  =>{
-          if (entries[0].isIntersecting && this.props.location.hash === '') {
-            copa.scrollIntoView({block: "start", behavior: "smooth"});
-            this.setState({copa: 1})
-          }
-        }
+        // const copa = document.querySelector('#copa')
+        // const options = {
+        //   // root: document.querySelector('body'),
+        //   rootMargin: '0px 0px 0px 0px',
+        //   threshold: .5,
+        // }
+        // const callback = (entries, observer)  =>{
+        //   if (entries[0].isIntersecting && this.props.location.hash === '') {
+        //     copa.scrollIntoView({block: "start", behavior: "smooth"});
+        //     this.setState({copa: 1})
+        //   }
+        // }
         
-        const observer = new IntersectionObserver(callback, options)
-        observer.observe(copa)
+        // const observer = new IntersectionObserver(callback, options)
+        // observer.observe(copa)
 
     }
 
     eventScrollCopa = (e) => {
-
+        e.preventDefault();
         const currenCopa = this.state.copa;
         if(currenCopa > 0 && currenCopa < 2) e.preventDefault();
         if (e.deltaY.toFixed() >=  16) {
@@ -73,11 +73,12 @@ class Copa extends Component {
             <div className="container-blod-landing-page" id="copa">
                 
                 <div className="container-blod-animation-zone" ref={this.copaRef}>
-                    <div className="central-blod-landing-page-copa" style={{ backgroundSize: '54%'}} >
-                        <div className={`${ 'image-copa-blod'+this.state.copa } image-copa-blod`} ></div>
+                    <div className="central-blod-landing-page-copa" style={{ backgroundSize: '51.5%'}} >
+                        <div className={`${ 'image-copa-blod'+this.state.copa } image-copa-blod`} >
+                        </div>
                     </div>
                     
-                    <div className={`${ this.state.copa >= 1 && 'percentage-progress-animation' } percentage-progress`} >
+                    <div className={`${ 'percentage-progress-animation' } percentage-progress`} >
                     
                     <div className={`${ 'top-div-percentage-progress-copa'+this.state.copa } top-div-percentage-progress`} ></div>
                         <div>
