@@ -69,7 +69,6 @@
 .text-percentage-land{
     font-size: 8em;
     color: var(--white);
-    font-weight: 900;
     text-align: right;
 }
 .text-description-land{
@@ -83,6 +82,7 @@
     display: flex;
     align-items: baseline;
     width: 20vw;
+    font-style: italic;
 }
 
 .container-arrows-buttoms{
@@ -97,7 +97,10 @@
     cursor: pointer;
 }
 
-.container-btn-descri p, .container-btn-descri span{
+.container-btn-descri p{
+font-size: 0.9rem;
+}
+.container-btn-descri > p, .container-btn-descri > span{
     font-style: italic
 }
 .container-btn-descri{
@@ -106,11 +109,12 @@
     justify-content: space-evenly;
     width: 20vw;
     height: 31vh;
-    margin-right: 20vw;
+    margin-right: 11vw;
     color: white;
 }
 .text-first{
     font-size: 2rem;
+    font-weight: bold
 }
 
 .container-btn-descri > .container-container-button-sign{
@@ -122,16 +126,16 @@
     height: 0vh
 }
 .image-tampon-blod1{
-    height: 6vh
+    height: 8vh
 }
 .image-tampon-blod2{
-    height: 12vh
+    height: 10vh
 }
 .image-tampon-blod3{
-    height: 15vh
+    height: 13vh
 }
 .image-tampon-blod4{
-    height: 17vh
+    height: 15vh
 }
 
 .top-div-percentage-progress0{
@@ -139,17 +143,17 @@
 }
 
 .top-div-percentage-progress1{
-    height: 1vh
+    height: 3vh
 }
 
 .top-div-percentage-progress2{
-    height: 7vh
+    height: 6vh
 }
 
 .top-div-percentage-progress3{
-    height: 10vh
+    height: 8vh
 }
 
 .top-div-percentage-progress4{
-    height: 12vh
+    height: 10vh
 }

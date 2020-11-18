@@ -151,6 +151,7 @@ class SignaturePetition extends Component {
                                        tabIndex="1"
                                        /> 
                                 <span className={`${ this.state.firstNameValid && 'check-input-active' } check-input `} > &#10003; </span>
+                                {  !this.state.firstNameValid && <span className="check-required-input" > * </span>}
                             </div>
                             <div className="container-input-modal"> 
                                 <label htmlFor="secondName"> Apellido </label>
@@ -162,6 +163,7 @@ class SignaturePetition extends Component {
                                        tabIndex="2"
                                        /> 
                                 <span className={`${ this.state.secondNameValid && 'check-input-active' } check-input `} > &#10003; </span>
+                                {  !this.state.secondNameValid && <span className="check-required-input" > * </span>}
                             </div>
                             <div className="container-input-modal"> 
                                 <label htmlFor="email"> Mail </label>

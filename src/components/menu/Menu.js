@@ -5,7 +5,7 @@ import './Menu.css'
 
 // Assets
 import logo_anmistia from "../../assets/logo_anmistia.png"
-import logo_bloody_copy from "../../assets/logo_bloody_copy.png"
+import logo_bloody from "../../assets/logo_bloody.png"
 import arrow_header from "../../assets/arrow_header.png"
 
 class Header extends Component {
@@ -23,7 +23,7 @@ class Header extends Component {
         <div className="container-header-landing-page">
 
             <div className="container-images-header" >
-                <img src={logo_bloody_copy} alt="Logo de boddy" className="logo_bloody"/>
+                <img src={logo_bloody} alt="Logo de boddy" className="logo_bloody"/>
                 <img src={logo_anmistia} alt="Logo Anmistia-internacional" className="logo_anmistia"/>
             </div>
 

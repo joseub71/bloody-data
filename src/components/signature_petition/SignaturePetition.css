@@ -148,6 +148,6 @@
     border-bottom: 1px solid var(--red);
 }
 
-.container-text-required .container-container-button-sign:hover .text-header-button-sign {
+/* .container-text-required .container-container-button-sign:hover .text-header-button-sign {
     color: var(--red);
-}
+} */

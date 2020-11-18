@@ -31,7 +31,7 @@ class Footer extends Component {
                         <div>
                             <span className="title-footer" > INFORMACION </span>
                             <div className="color-text-gray-footer margin-top-text-footer">
-                                <div>La información y material gráfico son propiedad de Amnistía Int</div>
+                                <div>La información y material gráfico son propiedad de Amnistía Internacional</div>
                                 <div> Amnistía internacional seccion de Puerto Rico </div>
                             </div>
                         </div>
