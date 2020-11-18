@@ -5,6 +5,7 @@ import './Tissu.css'
 
 import arrow_left from "../../assets/arrow_left.png"
 import arrow_rigth from "../../assets/arrow_rigth.png"
+import arrow_header from "../../assets/arrow_header.png"
 
 class Tissu extends Component {
 
@@ -94,6 +95,21 @@ class Tissu extends Component {
             <div className="container-blod-landing-page" id="tissu">
                 
                 <div className="container-blod-animation-zone" ref={this.tissuRef}>
+
+                    <div className="container-btn-descri">
+                        
+                        <span className="text-first"> Transfeminicidios </span>
+                        <p> Asesinato de una persona  transgénero <b> por su identidad  o expresion de genero </b> </p>
+                        
+                        <div className="container-container-button-sign" onClick={  this.props.handlerModalEvent }>
+                            <div className="container-button-sign">
+                                <span className="text-header-button-sign"> firmar ahora </span>
+                                <div className="header-button-sign" ></div>
+                                <img className="header-button-arrow" src={arrow_header} alt="Flecha a la derecha"/> 
+                            </div>
+                        </div>
+                    </div>
+
                     <div className="central-blod-landing-page-tissu" style={{ backgroundSize: '54%'}} >
                         <div className={`${ 'image-tissu-blod'+this.state.tissu } image-tissu-blod`} ></div>
                     </div>

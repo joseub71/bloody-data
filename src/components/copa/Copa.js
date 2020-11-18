@@ -5,6 +5,7 @@ import './Copa.css'
 
 import arrow_left from "../../assets/arrow_left.png"
 import arrow_rigth from "../../assets/arrow_rigth.png"
+import arrow_header from "../../assets/arrow_header.png"
 
 class Copa extends Component {
 
@@ -89,6 +90,21 @@ class Copa extends Component {
             <div className="container-blod-landing-page" id="copa">
                 
                 <div className="container-blod-animation-zone" ref={this.copaRef}>
+
+                    <div className="container-btn-descri">
+                        
+                        <span className="text-first"> Violencia de género </span>
+                        <p> Violencia que constituye un atentado  contra la integridad, la la dignidad y la libertad de las mujeres <b> independientemente del ambito en el que se produzca </b> </p>
+                        
+                        <div className="container-container-button-sign" onClick={  this.props.handlerModalEvent }>
+                            <div className="container-button-sign">
+                                <span className="text-header-button-sign"> firmar ahora </span>
+                                <div className="header-button-sign" ></div>
+                                <img className="header-button-arrow" src={arrow_header} alt="Flecha a la derecha"/> 
+                            </div>
+                        </div>
+                    </div>
+
                     <div className="central-blod-landing-page-copa" style={{ backgroundSize: 'cover'}} >
                         <div className={`${ 'image-copa-blod'+this.state.copa } image-copa-blod`} >
                         </div>

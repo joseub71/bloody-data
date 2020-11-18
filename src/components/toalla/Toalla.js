@@ -5,6 +5,7 @@ import './Toalla.css'
 
 import arrow_left from "../../assets/arrow_left.png"
 import arrow_rigth from "../../assets/arrow_rigth.png"
+import arrow_header from "../../assets/arrow_header.png"
 
 class Toalla extends Component {
 
@@ -94,6 +95,21 @@ class Toalla extends Component {
             <div className="container-blod-landing-page" id="toalla">
                 
                 <div className="container-blod-animation-zone" ref={this.toallaRef}>
+
+                    <div className="container-btn-descri">
+                        
+                        <span className="text-first"> Relación con el agresor </span>
+                        <p> Vínculo de la víctima <b> con  el autor del feminicidio </b> </p>
+                        
+                        <div className="container-container-button-sign" onClick={  this.props.handlerModalEvent }>
+                            <div className="container-button-sign">
+                                <span className="text-header-button-sign"> firmar ahora </span>
+                                <div className="header-button-sign" ></div>
+                                <img className="header-button-arrow" src={arrow_header} alt="Flecha a la derecha"/> 
+                            </div>
+                        </div>
+                    </div>
+
                     <div className="central-blod-landing-page-toalla" style={{ backgroundSize: '54%'}} >
                         <div className={`${ 'image-toalla-blod'+this.state.toalla } image-toalla-blod`} ></div>
                     </div>
