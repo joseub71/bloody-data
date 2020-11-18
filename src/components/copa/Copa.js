@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 // .CSS
 import './Copa.css'
 
+import arrow_left from "../../assets/arrow_left.png"
+import arrow_rigth from "../../assets/arrow_rigth.png"
+
 class Copa extends Component {
 
     constructor(props) {
@@ -18,12 +21,12 @@ class Copa extends Component {
                     dark: ''
                 },
                 1: {
-                    percentage: '23%',
+                    percentage: '23',
                     description: 'de las mujeres sangra por',
                     dark: 'intentos de feminicidios en Puerto Rico.'
                 },
                 2: {
-                    percentage: '83%',
+                    percentage: '83',
                     description: 'de las mujeres de Puerto Rico sangra por',
                     dark: 'violencia doméstica dentro del contexto de la cuarentena.'
                 }
@@ -32,7 +35,7 @@ class Copa extends Component {
     }
 
     componentDidMount(){
-        this.copaRef.current.addEventListener("wheel", (event) => { this.eventScrollCopa(event)})
+        // this.copaRef.current.addEventListener("wheel", (event) => { this.eventScrollCopa(event)})
 
         // const copa = document.querySelector('#copa')
         // const options = {
@@ -52,17 +55,30 @@ class Copa extends Component {
 
     }
 
-    eventScrollCopa = (e) => {
-        e.preventDefault();
+    // eventScrollCopa = (e) => {
+    //     e.preventDefault();
+    //     const currenCopa = this.state.copa;
+    //     if(currenCopa > 0 && currenCopa < 2) e.preventDefault();
+    //     if (e.deltaY.toFixed() >=  16) {
+    //         if (currenCopa <= 1) {
+    //             this.setState({copa: currenCopa+1})
+    //         }
+    //     }else if (e.deltaY <= -16) {
+
+    //         if (currenCopa > 0 && currenCopa <= 2) {
+    //             this.setState({copa: currenCopa-1})
+    //         }
+    //     }
+    // }
+
+    eventTampon = (rigth) => {
         const currenCopa = this.state.copa;
-        if(currenCopa > 0 && currenCopa < 2) e.preventDefault();
-        if (e.deltaY.toFixed() >=  16) {
+        if (rigth) {
             if (currenCopa <= 1) {
                 this.setState({copa: currenCopa+1})
             }
-        }else if (e.deltaY <= -16) {
-
-            if (currenCopa > 0 && currenCopa <= 2) {
+        }else {
+            if (currenCopa > 1 && currenCopa <= 2) {
                 this.setState({copa: currenCopa-1})
             }
         }
@@ -73,17 +89,21 @@ class Copa extends Component {
             <div className="container-blod-landing-page" id="copa">
                 
                 <div className="container-blod-animation-zone" ref={this.copaRef}>
-                    <div className="central-blod-landing-page-copa" style={{ backgroundSize: '51.5%'}} >
+                    <div className="central-blod-landing-page-copa" style={{ backgroundSize: 'cover'}} >
                         <div className={`${ 'image-copa-blod'+this.state.copa } image-copa-blod`} >
                         </div>
                     </div>
                     
-                    <div className={`${ 'percentage-progress-animation' } percentage-progress`} >
+                    <div className={`${ 'percentage-progress-animation' } percentage-progress padding-top-progress`} >
                     
                     <div className={`${ 'top-div-percentage-progress-copa'+this.state.copa } top-div-percentage-progress`} ></div>
                         <div>
-                            <div className="text-percentage-land">{this.state.copaData[this.state.copa].percentage}</div>
+                            <div className="cont-per-text"> <span className="text-percentage-land"> {this.state.copaData[this.state.copa].percentage} </span> <span className="text-percentage"> % </span> </div>
                             <div className="text-description-land">{this.state.copaData[this.state.copa].description} <b> {this.state.copaData[this.state.copa].dark} </b> </div>
+                            <div className="container-arrows-buttoms">
+                                <img src={arrow_left} alt="Flecha izquierda" onClick={ ()=> this.eventTampon() } />
+                                <img src={arrow_rigth} alt="Flecha flecha derecha" onClick={ ()=> this.eventTampon(true) } />
+                            </div>
                         </div>
                     </div>
                 </div>

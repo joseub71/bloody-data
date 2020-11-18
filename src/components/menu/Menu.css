@@ -39,7 +39,6 @@
 nav {
     z-index: 10;
     height: 50px;
-    font-family: Montserrat;
     text-transform: uppercase;
     color: var(--white);
     font-size: 13px;

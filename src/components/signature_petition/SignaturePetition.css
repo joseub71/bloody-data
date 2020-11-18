@@ -1,0 +1,153 @@
+.container-modal-signature{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: #434448bf;
+    top: -100vh;
+    left: 0px;
+    z-index: 33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+}
+
+.active-modal{
+    top: 0vh
+}
+
+.container-body-modal-signature{
+    width: 75vw;
+    height: 65vh;
+    background: var(--white);
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-yellow-modal-form{
+    font-weight: 900;
+    font-size: 4em;
+    text-transform: uppercase;
+    padding-left: 5px;
+}
+
+.text-yellow-modal-form{
+    background-color: #ede823;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container-text-bottom-left{
+    color: #c3c3c3;
+    text-transform: uppercase;
+    line-height: 30px;
+    padding-left: 8px;
+    padding-top: 10px;
+}
+
+.container-group-forma{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+}
+
+.container-group-forma > p {
+    color: #c3c3c3;
+    font-size: 0.9em;
+}
+
+.container-inputs-modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 145px;
+}
+
+.container-text-required{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.asterisk-required-form{
+    vertical-align: -4px;
+    color: red;
+    font-size: 1em;
+}
+
+.text-bottom-required-field{
+
+}
+
+.container-input-modal{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.container-input-modal > input{
+    width: 26vw;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--light-grey );
+}
+
+.container-input-modal > input:active, .container-input-modal > input:focus{
+    border-bottom: 1px solid #aba9a9;
+}
+
+.container-input-modal > label{
+    text-transform: uppercase;
+    color: var(--light-grey );
+    font-weight: bold;
+}
+
+.check-input{
+    position: absolute;
+    right: 0px;
+    bottom: 5px;
+    color: #99ba00;
+    font-size: 1.2em;
+    opacity: 0;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+}
+
+.check-required-input{
+    position: absolute;
+    right: 0px;
+    bottom: 5px;
+    color: var(--red);
+    font-size: 1.2em;
+    opacity: 1;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+}
+
+.check-input-active{
+    opacity: 1;
+}
+
+.required-input-border{
+    border-bottom: 1px solid var(--red);
+}
+
+.container-text-required .container-container-button-sign:hover .text-header-button-sign {
+    color: var(--red);
+}

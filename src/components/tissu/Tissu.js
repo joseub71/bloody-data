@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 // .CSS
 import './Tissu.css'
 
+import arrow_left from "../../assets/arrow_left.png"
+import arrow_rigth from "../../assets/arrow_rigth.png"
+
 class Tissu extends Component {
 
     constructor(props) {
@@ -18,17 +21,17 @@ class Tissu extends Component {
                     dark: ''
                 },
                 1: {
-                    percentage: '50%',
+                    percentage: '50',
                     description: 'de las mujeres trans que sangraron por transfeminicidios en Puerto Rico',
                     dark: 'conocían a su agresor.'
                 },
                 2: {
-                    percentage: '83%',
+                    percentage: '83',
                     description: 'las mujeres trans que sangraron por transfeminicidios en Puerto Rico fueron',
                     dark: 'asesinadas con un arma de fuego.'
                 },
                 3: {
-                    percentage: '100%',
+                    percentage: '100',
                     description: 'de las mujeres trans que sangraron por transfeminicidios en Puerto Rico fueron',
                     dark: 'asesinadas en la vía pública.'
                 }
@@ -37,7 +40,7 @@ class Tissu extends Component {
     }
 
     componentDidMount(){
-        this.tissuRef.current.addEventListener("wheel", (event) => { this.eventScrollTissu(event)})
+        // this.tissuRef.current.addEventListener("wheel", (event) => { this.eventScrollTissu(event)})
 
         // const tissu = document.querySelector('#tissu')
         // const options = {
@@ -57,17 +60,30 @@ class Tissu extends Component {
 
     }
 
-    eventScrollTissu = (e) => {
-        e.preventDefault();
+    // eventScrollTissu = (e) => {
+    //     e.preventDefault();
+    //     const currenTissu = this.state.tissu;
+    //     if(currenTissu > 0 && currenTissu < 3) e.preventDefault();
+    //     if (e.deltaY.toFixed() >=  16) {
+    //         if (currenTissu <= 2) {
+    //             this.setState({tissu: currenTissu+1})
+    //         }
+    //     }else if (e.deltaY <= -16) {
+
+    //         if (currenTissu > 0 && currenTissu <= 3) {
+    //             this.setState({tissu: currenTissu-1})
+    //         }
+    //     }
+    // }
+
+    eventTampon = (rigth) => {
         const currenTissu = this.state.tissu;
-        if(currenTissu > 0 && currenTissu < 3) e.preventDefault();
-        if (e.deltaY.toFixed() >=  16) {
+        if (rigth) {
             if (currenTissu <= 2) {
                 this.setState({tissu: currenTissu+1})
             }
-        }else if (e.deltaY <= -16) {
-
-            if (currenTissu > 0 && currenTissu <= 3) {
+        }else {
+            if (currenTissu > 1 && currenTissu <= 3) {
                 this.setState({tissu: currenTissu-1})
             }
         }
@@ -86,8 +102,12 @@ class Tissu extends Component {
                     
                     <div className={`${ 'top-div-percentage-progress-tissu'+this.state.tissu } top-div-percentage-progress`} ></div>
                         <div>
-                            <div className="text-percentage-land">{this.state.tissuData[this.state.tissu].percentage}</div>
+                            <div className="cont-per-text"> <span className="text-percentage-land"> {this.state.tissuData[this.state.tissu].percentage} </span> <span className="text-percentage"> % </span> </div>
                             <div className="text-description-land">{this.state.tissuData[this.state.tissu].description} <b> {this.state.tissuData[this.state.tissu].dark} </b> </div>
+                            <div className="container-arrows-buttoms">
+                                <img src={arrow_left} alt="Flecha izquierda" onClick={ ()=> this.eventTampon() } />
+                                <img src={arrow_rigth} alt="Flecha flecha derecha" onClick={ ()=> this.eventTampon(true) } />
+                            </div>
                         </div>
                     </div>
                 </div>

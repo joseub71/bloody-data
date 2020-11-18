@@ -10,14 +10,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    margin-left: 22vw;
-    margin-top: 18vh;
 }
 
 .empty-space-blood-p{
     width: 18vw;
     height: 1vh
+}
+
+.text-percentage{
+    font-size: 6em;
+    color: white;
+    text-align: left;
 }
 
 .central-blod-landing-page-tampon{
@@ -65,16 +68,54 @@
 
 .text-percentage-land{
     font-size: 8em;
-    font-family: Montserrat;
     color: var(--white);
-    font-weight: 900
+    font-weight: 900;
+    text-align: right;
 }
 .text-description-land{
     width: 76%;
+    height: 80px;
     color: var(--white);
-    font-family: Montserrat;
+    font-size: 0.9rem
 }
 
+.cont-per-text{
+    display: flex;
+    align-items: baseline;
+    width: 20vw;
+}
+
+.container-arrows-buttoms{
+    display: flex;
+    align-items: center;
+}
+
+.container-arrows-buttoms > img{
+    width: 3rem;
+    margin-top: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.container-btn-descri p, .container-btn-descri span{
+    font-style: italic
+}
+.container-btn-descri{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 20vw;
+    height: 31vh;
+    margin-right: 20vw;
+    color: white;
+}
+.text-first{
+    font-size: 2rem;
+}
+
+.container-btn-descri > .container-container-button-sign{
+    width: 160px;
+}
 /* Animations */
 
 .image-tampon-blod0{

@@ -7,6 +7,7 @@ import Toalla from '../../components/toalla/Toalla';
 import Copa from '../../components/copa/Copa';
 import Tissu from '../../components/tissu/Tissu';
 import Footer from '../../components/footer/Footer';
+import SignaturePetition from '../../components/signature_petition/SignaturePetition';
 
 // Assets
 import logo_bloody_copy from "../../assets/logo_bloody_copy.png"
@@ -19,40 +20,40 @@ class Landing extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = {
+      modal: false
+    };
   }
   
   componentDidMount(){
-    const home = document.querySelector('#home')
-    const options = {
-      rootMargin: '0px 0px 0px 0px',
-      threshold: .5,
-    }
-    const callback = (entries, observer) => {
-      if (entries[0].isIntersecting && this.props.location.hash === '') {
-        home.scrollIntoView({block: "start", behavior: "smooth"});
-      }
-    }
-    const observer = new IntersectionObserver(callback, options)
-    observer.observe(home)
+    // const home = document.querySelector('#home')
+    // const options = {
+    //   rootMargin: '0px 0px 0px 0px',
+    //   threshold: .5,
+    // }
+    // const callback = (entries, observer) => {
+    //   if (entries[0].isIntersecting && this.props.location.hash === '') {
+    //     home.scrollIntoView({block: "start", behavior: "smooth"});
+    //   }
+    // }
+    // const observer = new IntersectionObserver(callback, options)
+    // observer.observe(home)
   }
+
+  handlerModal = (e) => {
+    if (e.target.id === "containerModal" && e.currentTarget.id === "containerModal") {
+      this.setState({ modal: !this.state.modal })
+    }
+  }
+  
+
 
   render() {
     
     return (
-      // element.scrollIntoView({block: "end", behavior: "smooth"});
-      // behavior Optional
-      // Establece la transición de la animación.
-      // Puede ser auto o smooth. Por defecto es auto.
-      // block Optional
-      // Establece el alineamiento vertical.
-      // Puede ser start, center, end, o nearest. Por defecto es start.
-      // inline Optional
-      // Establece el alineamiento horizontal
-      // Puede ser start, center, end, o nearest. Por defecto es nearest.
 
         <div className="container-landing-page" >
-            <Menu {...this.props} />
+            <Menu {...this.props} handlerModalEvent={(e)=>{ this.setState({ modal: !this.state.modal }) }}/>
             
             <div className="container-circle-header">
                     <div className="circle-header first-circle"></div>
@@ -66,15 +67,17 @@ class Landing extends Component {
               <span> Que las mujeres sangren es asqueroso </span>
             </div>
 
-            <Tampon  {...this.props} />
+            <SignaturePetition {...this.props} modal={this.state.modal} handlerModalEvent={(e)=>{ this.handlerModal(e) }}/>
+
+            <Tampon  {...this.props} handlerModalEvent={(e)=>{ this.setState({ modal: !this.state.modal }) }} />
             
-            <Toalla  {...this.props} />
+            <Toalla  {...this.props} handlerModalEvent={(e)=>{ this.setState({ modal: !this.state.modal }) }} />
 
-            <Copa  {...this.props} />
+            <Copa  {...this.props} handlerModalEvent={(e)=>{ this.setState({ modal: !this.state.modal }) }} />
 
-            <Tissu  {...this.props} />
+            <Tissu  {...this.props} handlerModalEvent={(e)=>{ this.setState({ modal: !this.state.modal }) }} />
 
-            <Footer  {...this.props} />
+            <Footer  {...this.props} handlerModalEvent={(e)=>{ this.setState({ modal: !this.state.modal }) }} />
             
         </div>
     )

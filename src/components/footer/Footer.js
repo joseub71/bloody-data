@@ -45,12 +45,12 @@ class Footer extends Component {
                         </div>
                     </div>
                     <div className="social-media-btn-footer" >
-                        <div className="container-btn-footer" >
+                        <div className="container-btn-footer" onClick={  this.props.handlerModalEvent } >
                             <span> Firma la peticion </span>
                         </div>
                         <div className="footer-social-media">
-                            <a href="https://www.instagram.com/amnistiapr/" target="_blank">  <img src={instagram} alt="instagram" /> </a>
-                            <a href="https://www.facebook.com/amnistiapr" target="_blank">  <img src={facebook} alt="facebook" /> </a>
+                            <a href="https://www.instagram.com/amnistiapr/" target="_blank" rel="noreferrer" >  <img src={instagram} alt="instagram" /> </a>
+                            <a href="https://www.facebook.com/amnistiapr" target="_blank" rel="noreferrer" >  <img src={facebook} alt="facebook" /> </a>
                         </div>
                     </div>
                 </div>

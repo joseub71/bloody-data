@@ -75,7 +75,7 @@ class Header extends Component {
                     <li><span> firma la peticion </span></li>
 
                     <li className="container-container-button-sign">
-                        <div className="container-container-button-sign">
+                        <div className="container-container-button-sign" onClick={  this.props.handlerModalEvent }>
                             <div className="container-button-sign">
                                 <span className="text-header-button-sign"> firmar ahora </span>
                                 <div className="header-button-sign" ></div>
