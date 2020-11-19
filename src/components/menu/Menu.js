@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { NavLink } from "react-router-dom";
 // .CSS
 import './Menu.css'
 
@@ -17,7 +17,7 @@ class Header extends Component {
     };
   }
 
-  render() {
+   render() {
     
     return (
         <div className="container-header-landing-page">
@@ -59,20 +59,43 @@ class Header extends Component {
  
             <nav>
                 <ul>
-                    <li><a href="#home"> home </a></li>
+                    <li> 
+                        <NavLink
+                            exact
+                            to='/#home'
+                        >
+                            <span > Home </span>
+                        </NavLink></li>
                     <li 
                     className="submenu">
-                        <span> bloody data </span>
+                        <NavLink
+                            exact
+                            to='/#home'
+                        >
+                            <span > bloody data </span>
+                        </NavLink>
                         <ul 
                         className="children">
-                            <li><a href="#tampon"> femicidios </a></li>
-                            <li><a href="#toalla"> Relacion con agresor </a></li>
-                            <li><a href="#copa"> Violencia de genero </a></li>
-                            <li><a href="#tissu"> Transfemicidios </a></li>
+                            <li> 
+                                    <a href="/#tampon"> femicidios </a>
+                            </li>
+                            <li> 
+                                    <a href="/#toalla"> Relacion con agresor </a>
+                            </li>
+                            <li> 
+                                    <a href="/#copa"> Violencia de genero </a>
+                            </li>
+                            <li> 
+                                    <a href="/#tissu"> Transfemicidios </a>
+                            </li>
                         </ul>
                     </li>
-                    <li><span> testimonios </span></li>
-                    <li><span> firma la peticion </span></li>
+                    <li>
+                        <NavLink exact to='testimonios'>
+                        <span> testimonios </span>
+                        </NavLink>
+                    </li>
+                    <li><span onClick={  this.props.handlerModalEvent } > firma la peticion </span></li>
 
                     <li className="container-container-button-sign">
                         <div className="container-container-button-sign" onClick={  this.props.handlerModalEvent }>

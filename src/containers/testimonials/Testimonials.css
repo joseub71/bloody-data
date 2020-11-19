@@ -1,0 +1,73 @@
+.container-testimonials{
+    width: auto;
+    background: var(--grey)
+}
+
+.container-title-testimonial{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 2em;
+    height: 24vh;
+    color: var(--white);
+    font-weight: bold;
+    margin-bottom: 3vh;
+}
+
+.cont-history-block{
+    display: flex;
+    justify-content: space-between;
+    padding: 7vh 7vw;
+}
+
+.cont-text-box{
+    width: 50vw;
+    padding: 1vh 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cont-text-box span{
+    text-align: center
+}
+
+.box-image img{
+    width: 32vw;
+    height: 45vh;
+    filter: grayscale(1);
+}
+.box-image{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.box-image > span:first-child {
+    color: #ede823;
+    font-weight: bold;
+    font-size: 1.5em;
+    position: absolute;
+    left: 8vw;
+    bottom: 8vh;
+    z-index: 8;
+}
+
+.box-image > span:nth-child(2) {
+    position: absolute;
+    left: 8vw;
+    z-index: 8;
+    color: white;
+    font-size: 0.9em;
+    bottom: 4vh;
+}
+
+.container-block-historys-testimonials > div:nth-child(even){
+    background-color: #d1d5da;
+}
+
+.cont-text-box p{
+    font-size: 0.9em;
+    line-height: 1.5;
+}

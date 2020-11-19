@@ -17,17 +17,25 @@ html {
 :root {
   --white             : #ffffff;
   --black             : #000000;
-  --grey              : #adb2bb;
+  --grey              : #c1c4cd;
   --light-grey        : #e0e0e0;
   --red               : #ff0000;
 }
 
-/* @media only screen and (min-width: 1100px) and (max-width: 1400px) { */
-  @media only screen and (max-width: 1400px) {
-    .container-yellow-modal-form{
-        font-size: 3em !important;
-    }
+/* Ancho */
+@media only screen and (min-width: 1925px) { 
+  .central-blod-landing-page-toalla, .image-toalla-blod{
+    background-size: 42% !important;
   }
+  .image-tissu-blod3{
+    height: 38vh;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .container-yellow-modal-form{
+      font-size: 3em !important;
+  }
+}
 @media only screen and (max-width: 1230px) {
     .container-text-bottom-left{
         font-size: 0.8em
@@ -64,5 +72,19 @@ html {
     }
     .container-button-sign{
         padding: 4px 10px
+    }
+  }
+  /* Ancho */
+
+  @media only screen and (max-height: 925px) {
+
+      .central-blod-landing-page-copa{
+        min-width: 162px;
+        min-height: 363px;
+    }
+    .image-copa-blod{
+        background-size: 85px;
+        left: 33px;
+        top: 19vh;
     }
   }
