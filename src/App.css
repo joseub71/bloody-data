@@ -74,17 +74,25 @@ html {
         padding: 4px 10px
     }
   }
+
   /* Ancho */
+  /* alto */
 
   @media only screen and (max-height: 925px) {
 
       .central-blod-landing-page-copa{
-        min-width: 162px;
-        min-height: 363px;
+        min-width: 162px !important;
+        min-height: 363px !important;
     }
     .image-copa-blod{
-        background-size: 85px;
-        left: 33px;
-        top: 19vh;
+        background-size: 85px !important;
+        left: 33px !important;
+        top: 18vh !important;
     }
   }
+  
+  /* @media only screen and (max-height: 925px) {
+    .image-copa-blod{}
+    background-size: 83px;
+    width: 15vw;
+  } */
