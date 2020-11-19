@@ -35,7 +35,9 @@ class SelectCountry extends Component {
   sendForm = () => {
     if (this.state.country) {
         this.props.changeCountry(this.state.country)
-    }    
+    }else{
+        alert('Por favor selecciona un pais')
+    }  
   }
 
   render() {

@@ -57,9 +57,14 @@ class SignaturePetition extends Component {
         firstName: '',
         secondName: '',
         email: '',
+        buttomSelected: false,
         firstNameValid: false,
         secondNameValid: false,
         emailValid: false,
+        disabledButtom: false,
+        firstNameValidShowVal: true,
+        secondNameShowVal: true,
+        emailShowVal: true
     };
   }
   
@@ -97,24 +102,51 @@ class SignaturePetition extends Component {
   }
   
   sendForm = () => {
-    if (this.state.emailValid) {
-        SignaturePetitionServices({
-            country: this.props.country,
-            firstName: this.state.firstName,
-            secondName: this.state.secondName,
-            email: this.state.email
-        }).then( response => {
-            // debugger
-            if (response && response.status === 200 || response && response.status === 201) {
-                // succes
-                alert('Se guardo tu peticion')
-            }else{
-                alert('Algo salio mal por favor intentalo de nuevo o contacta al equipo')
-            }
-
-            this.props.handlerModalSign()
+      this.setState({ 
+          buttomSelected: true, 
+          firstNameValidShowVal: true,
+          secondNameShowVal: true,
+          emailShowVal: true
         })
-    }    
+      
+    if (!this.state.disabledButtom) {     
+        const emailValid = this.state.emailValid
+        const firstNameValid = this.state.firstNameValid
+        const secondNameValid = this.state.secondNameValid
+        let error = false
+    
+        if (!emailValid) {
+            error = true
+        }
+        if (!firstNameValid) {
+            error = true
+        }
+        if (!secondNameValid) {
+            error = true
+        }
+    
+        if (!error) {
+            this.setState({disabledButtom: true})
+            SignaturePetitionServices({
+                country: this.props.country,
+                firstName: this.state.firstName,
+                secondName: this.state.secondName,
+                email: this.state.email
+            }).then( response => {
+                // debugger
+                this.setState({disabledButtom: false})
+                if (response && response.status === 200 || response && response.status === 201) {
+                    // succes
+                    alert('Se guardo tu peticion')
+                }else{
+                    alert('Algo salio mal por favor intentalo de nuevo o contacta al equipo')
+                }
+                this.props.handlerModalSign()
+            })
+        }else{
+            // buttomSelected
+        }
+    }
   }
 
   render() {
@@ -146,11 +178,13 @@ class SignaturePetition extends Component {
                             <div className="container-input-modal"> 
                                 <label htmlFor="firstName"> Nombre </label>
                                 <input type="text"
+                                       style={{ background: !this.state.firstNameValid && this.state.buttomSelected && this.state.firstNameValidShowVal ? 'yellow' : 'transparent' }}
                                        id="firstName"
                                        name="firstName"
-                                       value={ this.state.firstName }
+                                       value={ !this.state.firstNameValid && this.state.buttomSelected && this.state.firstNameValidShowVal ? 'Por favor completa este campo' : this.state.firstName }
                                        onChange={ e => this.change(e) }
                                        tabIndex="1"
+                                       onClick={ () => { this.setState({ firstNameValidShowVal: false})}}
                                        /> 
                                 <span className={`${ this.state.firstNameValid && 'check-input-active' } check-input `} > &#10003; </span>
                                 {  !this.state.firstNameValid && <span className="check-required-input" > * </span>}
@@ -158,11 +192,13 @@ class SignaturePetition extends Component {
                             <div className="container-input-modal"> 
                                 <label htmlFor="secondName"> Apellido </label>
                                 <input type="text"
+                                       style={{ background: !this.state.secondNameValid && this.state.buttomSelected && this.state.secondNameShowVal ? 'yellow' : 'transparent' }}
                                        id="secondName"
                                        name="secondName"
-                                       value={ this.state.secondName }
+                                       value={ !this.state.secondNameValid && this.state.buttomSelected && this.state.secondNameShowVal ? 'Por favor completa este campo' : this.state.secondName }
                                        onChange={ e => this.change(e) } 
                                        tabIndex="2"
+                                       onClick={ () => { this.setState({ secondNameShowVal: false})}}
                                        /> 
                                 <span className={`${ this.state.secondNameValid && 'check-input-active' } check-input `} > &#10003; </span>
                                 {  !this.state.secondNameValid && <span className="check-required-input" > * </span>}
@@ -170,11 +206,13 @@ class SignaturePetition extends Component {
                             <div className="container-input-modal"> 
                                 <label htmlFor="email"> Mail </label>
                                 <input type="email"
+                                       style={{ background: !this.state.emailValid && this.state.buttomSelected && this.state.emailShowVal ? 'yellow' : 'transparent' }}
                                        id="email"
                                        name="email"
-                                       value={ this.state.email }
+                                       value={ !this.state.emailValid && this.state.buttomSelected && this.state.emailShowVal ? 'Por favor escribe un email valido' : this.state.email }
                                        onChange={ e => this.change(e) }
                                        tabIndex="3"
+                                       onClick={ () => { this.setState({ emailShowVal: false})}}
                                        className="required-input-border"
                                        /> 
                                 <span className={`${ this.state.emailValid && 'check-input-active' } check-input `} > &#10003; </span>

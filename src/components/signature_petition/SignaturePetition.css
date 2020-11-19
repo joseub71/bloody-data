@@ -99,6 +99,7 @@
     width: 26vw;
     border: none;
     outline: none;
+    padding: 5px 10px;
     border-bottom: 1px solid var(--light-grey );
 }
 
@@ -128,8 +129,8 @@
 
 .check-required-input{
     position: absolute;
-    right: 0px;
-    bottom: 5px;
+    right: -12px;
+    bottom: -5px;
     color: var(--red);
     font-size: 1.2em;
     opacity: 1;

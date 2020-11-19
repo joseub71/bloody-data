@@ -67,6 +67,9 @@ nav > ul li:not(.container-container-button-sign):hover > span{
     filter: brightness(0) invert(1);    
     cursor: pointer
 }
+.container-container-button-sign{
+    outline: none;
+}
 .container-container-button-sign:hover > .container-button-sign{
     background: red;
 }
@@ -159,6 +162,7 @@ nav > ul li .children li a {
 }
 
 .container-button-sign{
+    outline: none;
     display: flex;
     border: 2px solid var(--red);
     padding: 8px 15px;

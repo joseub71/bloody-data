@@ -25,7 +25,7 @@ html {
 /* @media only screen and (min-width: 1100px) and (max-width: 1400px) { */
   @media only screen and (max-width: 1400px) {
     .container-yellow-modal-form{
-        font-size: 3em
+        font-size: 3em !important;
     }
   }
 @media only screen and (max-width: 1230px) {
@@ -33,7 +33,7 @@ html {
         font-size: 0.8em
     }
     .container-body-modal-signature{
-        width: 90vw
+        width: 90vw!important;
     }
     .container-group-forma{
         width: 48%;
