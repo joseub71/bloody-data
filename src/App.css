@@ -92,12 +92,12 @@ html {
     }
   }
   
-  @media only screen and (max-height: 910px) and (max-width: 1450) {
+  /* @media only screen and (max-height: 910px) and (max-width: 1450) {
     .image-copa-blod{
       background-size: 90px;
       left: 19px;
     }
-  }
+  } */
   
   /* @media only screen and (max-height: 925px) {
     .image-copa-blod{}
