@@ -16,20 +16,39 @@ class Copa extends Component {
         this.state = {
             copa: 1,
             copaData: {
-                0: {
-                    percentage: '0',
-                    description: '',
-                    dark: ''
+                PR:{
+                    0: {
+                        percentage: '0',
+                        description: '',
+                        dark: ''
+                    },
+                    1: {
+                        percentage: '23',
+                        description: 'de las mujeres sangra por',
+                        dark: 'intentos de feminicidios en Puerto Rico.'
+                    },
+                    2: {
+                        percentage: '83',
+                        description: 'de las mujeres de Puerto Rico sangra por',
+                        dark: 'violencia doméstica dentro del contexto de la cuarentena.'
+                    }
                 },
-                1: {
-                    percentage: '23',
-                    description: 'de las mujeres sangra por',
-                    dark: 'intentos de feminicidios en Puerto Rico.'
-                },
-                2: {
-                    percentage: '83',
-                    description: 'de las mujeres de Puerto Rico sangra por',
-                    dark: 'violencia doméstica dentro del contexto de la cuarentena.'
+                VE:{
+                    0: {
+                        percentage: '0',
+                        description: '',
+                        dark: ''
+                    },
+                    1: {
+                        percentage: '23',
+                        description: 'de las mujeres sangra por',
+                        dark: 'intentos de feminicidios en Venezuela.'
+                    },
+                    2: {
+                        percentage: '83',
+                        description: 'de las mujeres de Venezuela sangra por',
+                        dark: 'violencia doméstica dentro del contexto de la cuarentena.'
+                    }
                 }
             }
         };
@@ -114,8 +133,8 @@ class Copa extends Component {
                     
                     <div className={`${ 'top-div-percentage-progress-copa'+this.state.copa } top-div-percentage-progress`} ></div>
                         <div>
-                            <div className="cont-per-text"> <span className="text-percentage-land"> {this.state.copaData[this.state.copa].percentage} </span> <span className="text-percentage"> % </span> </div>
-                            <div className="text-description-land">{this.state.copaData[this.state.copa].description} <b> {this.state.copaData[this.state.copa].dark} </b> </div>
+                            <div className="cont-per-text"> <span className="text-percentage-land"> {this.state.copaData[this.props.country][this.state.copa].percentage} </span> <span className="text-percentage"> % </span> </div>
+                            <div className="text-description-land">{this.state.copaData[this.props.country][this.state.copa].description} <b> {this.state.copaData[this.props.country][this.state.copa].dark} </b> </div>
                             <div className="container-arrows-buttoms">
                                 <img src={arrow_left} alt="Flecha izquierda" onClick={ ()=> this.eventTampon() } />
                                 <img src={arrow_rigth} alt="Flecha flecha derecha" onClick={ ()=> this.eventTampon(true) } />

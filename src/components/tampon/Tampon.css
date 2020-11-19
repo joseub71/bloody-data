@@ -70,6 +70,7 @@
     font-size: 8em;
     color: var(--white);
     text-align: right;
+    font-weight: bold;
 }
 .text-description-land{
     width: 76%;

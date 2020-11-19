@@ -24,13 +24,11 @@ import './SignaturePetition.css'
 //         return error.response;
 //       });
 //   }
-function SignaturePetitionServices(required) {
+function SignaturePetitionServices(data) {
     const axios = axios_core.create({
-      baseURL: 'https://swapi.dev/api/'
+      baseURL: 'http://172.105.238.71/psp/'
     });
-    return axios.get('planets/1/', 
-        { headers: { 'Content-Type': 'application/json' }
-      })
+    return axios.post('signature.php', data)
       .then((response) => {
         return response
       })
@@ -93,7 +91,7 @@ class SignaturePetition extends Component {
   }
 
   onEnterButtom = (e) =>{
-    if (e.keyCode == 13){
+    if (e.keyCode === 13){
         this.sendForm()
     }
   }
@@ -101,16 +99,20 @@ class SignaturePetition extends Component {
   sendForm = () => {
     if (this.state.emailValid) {
         SignaturePetitionServices({
+            country: this.props.country,
             firstName: this.state.firstName,
             secondName: this.state.secondName,
             email: this.state.email
         }).then( response => {
-            debugger
-            if (response.status === 200 || response.status === 201) {
+            // debugger
+            if (response && response.status === 200 || response && response.status === 201) {
                 // succes
+                alert('Se guardo tu peticion')
             }else{
-                alert('Algo salio mal por favor intentalo de nuevo')
+                alert('Algo salio mal por favor intentalo de nuevo o contacta al equipo')
             }
+
+            this.props.handlerModalSign()
         })
     }    
   }

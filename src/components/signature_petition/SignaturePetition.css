@@ -95,14 +95,14 @@
     position: relative;
 }
 
-.container-input-modal > input{
+.container-input-modal > input, .container-input-modal > select{
     width: 26vw;
     border: none;
     outline: none;
     border-bottom: 1px solid var(--light-grey );
 }
 
-.container-input-modal > input:active, .container-input-modal > input:focus{
+.container-input-modal > input:active, .container-input-modal > input:focus, .container-input-modal > select:active, .container-input-modal > select:focus{
     border-bottom: 1px solid #aba9a9;
 }
 

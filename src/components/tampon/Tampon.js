@@ -16,30 +16,59 @@ class Tampon extends Component {
         this.state = {
             tampon: 1,
             tampData: {
-                0: {
-                    percentage: '0',
-                    description: '',
-                    dark: ''
+                PR:{
+                    0: {
+                        percentage: '0',
+                        description: '',
+                        dark: ''
+                    },
+                    1: {
+                        percentage: '21',
+                        description: 'de las mujeres que sangraron en Puerto Rico fueron',
+                        dark: 'asesinadas en la vía pública'
+                    },
+                    2: {
+                        percentage: '25',
+                        description: 'de las mujeres que sangraron en Puerto Rico fueron',
+                        dark: 'asesinadas en su hogar'
+                    },
+                    3: {
+                        percentage: '32',
+                        description: 'de las mujeres que sangraron en Puerto Rico fueron',
+                        dark: 'asesinadas con armas de fuego'
+                    },
+                    4: {
+                        percentage: '38',
+                        description: 'de las mujeres que sangraron por feminicidios en Puerto Rico',
+                        dark: 'no han tenido resolución de sus casos'
+                    }
                 },
-                1: {
-                    percentage: '21',
-                    description: 'de las mujeres que sangraron en Puerto Rico fueron',
-                    dark: 'asesinadas en la vía pública'
-                },
-                2: {
-                    percentage: '25',
-                    description: 'de las mujeres que sangraron en Puerto Rico fueron',
-                    dark: 'asesinadas en su hogar'
-                },
-                3: {
-                    percentage: '32',
-                    description: 'de las mujeres que sangraron en Puerto Rico fueron',
-                    dark: 'asesinadas con armas de fuego'
-                },
-                4: {
-                    percentage: '38',
-                    description: 'de las mujeres que sangraron por feminicidios en Puerto Rico',
-                    dark: 'no han tenido resolución de sus casos'
+                VE:{
+                    0: {
+                        percentage: '0',
+                        description: '',
+                        dark: ''
+                    },
+                    1: {
+                        percentage: '21',
+                        description: 'de las mujeres que sangraron en Venezuela fueron',
+                        dark: 'asesinadas en la vía pública'
+                    },
+                    2: {
+                        percentage: '25',
+                        description: 'de las mujeres que sangraron en Venezuela fueron',
+                        dark: 'asesinadas en su hogar'
+                    },
+                    3: {
+                        percentage: '32',
+                        description: 'de las mujeres que sangraron en Venezuela fueron',
+                        dark: 'asesinadas con armas de fuego'
+                    },
+                    4: {
+                        percentage: '38',
+                        description: 'de las mujeres que sangraron por feminicidios en Venezuela',
+                        dark: 'no han tenido resolución de sus casos'
+                    }
                 }
             }
         };
@@ -123,8 +152,8 @@ class Tampon extends Component {
                     
                     <div className={`${ 'top-div-percentage-progress'+this.state.tampon } top-div-percentage-progress`} ></div>
                         <div>
-                            <div className="cont-per-text"> <span className="text-percentage-land"> {this.state.tampData[this.state.tampon].percentage} </span> <span className="text-percentage"> % </span> </div>
-                            <div className="text-description-land">{this.state.tampData[this.state.tampon].description} <b> {this.state.tampData[this.state.tampon].dark} </b> </div>
+                            <div className="cont-per-text"> <span className="text-percentage-land"> {this.state.tampData[this.props.country][this.state.tampon].percentage} </span> <span className="text-percentage"> % </span> </div>
+                            <div className="text-description-land">{this.state.tampData[this.props.country][this.state.tampon].description} <b> {this.state.tampData[this.props.country][this.state.tampon].dark} </b> </div>
                             <div className="container-arrows-buttoms">
                                 <img src={arrow_left} alt="Flecha izquierda" onClick={ ()=> this.eventTampon() } />
                                 <img src={arrow_rigth} alt="Flecha flecha derecha" onClick={ ()=> this.eventTampon(true) } />

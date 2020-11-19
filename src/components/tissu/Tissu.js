@@ -16,25 +16,49 @@ class Tissu extends Component {
         this.state = {
             tissu: 1,
             tissuData: {
-                0: {
-                    percentage: '0',
-                    description: '',
-                    dark: ''
+                PR:{
+                    0: {
+                        percentage: '0',
+                        description: '',
+                        dark: ''
+                    },
+                    1: {
+                        percentage: '50',
+                        description: 'de las mujeres trans que sangraron por transfeminicidios en Puerto Rico',
+                        dark: 'conocían a su agresor.'
+                    },
+                    2: {
+                        percentage: '83',
+                        description: 'las mujeres trans que sangraron por transfeminicidios en Puerto Rico fueron',
+                        dark: 'asesinadas con un arma de fuego.'
+                    },
+                    3: {
+                        percentage: '100',
+                        description: 'de las mujeres trans que sangraron por transfeminicidios en Puerto Rico fueron',
+                        dark: 'asesinadas en la vía pública.'
+                    }
                 },
-                1: {
-                    percentage: '50',
-                    description: 'de las mujeres trans que sangraron por transfeminicidios en Puerto Rico',
-                    dark: 'conocían a su agresor.'
-                },
-                2: {
-                    percentage: '83',
-                    description: 'las mujeres trans que sangraron por transfeminicidios en Puerto Rico fueron',
-                    dark: 'asesinadas con un arma de fuego.'
-                },
-                3: {
-                    percentage: '100',
-                    description: 'de las mujeres trans que sangraron por transfeminicidios en Puerto Rico fueron',
-                    dark: 'asesinadas en la vía pública.'
+                VE:{
+                    0: {
+                        percentage: '0',
+                        description: '',
+                        dark: ''
+                    },
+                    1: {
+                        percentage: '50',
+                        description: 'de las mujeres trans que sangraron por transfeminicidios en Venezuela',
+                        dark: 'conocían a su agresor.'
+                    },
+                    2: {
+                        percentage: '83',
+                        description: 'las mujeres trans que sangraron por transfeminicidios en Venezuela fueron',
+                        dark: 'asesinadas con un arma de fuego.'
+                    },
+                    3: {
+                        percentage: '100',
+                        description: 'de las mujeres trans que sangraron por transfeminicidios en Venezuela fueron',
+                        dark: 'asesinadas en la vía pública.'
+                    }
                 }
             }
         };
@@ -118,8 +142,8 @@ class Tissu extends Component {
                     
                     <div className={`${ 'top-div-percentage-progress-tissu'+this.state.tissu } top-div-percentage-progress`} ></div>
                         <div>
-                            <div className="cont-per-text"> <span className="text-percentage-land"> {this.state.tissuData[this.state.tissu].percentage} </span> <span className="text-percentage"> % </span> </div>
-                            <div className="text-description-land">{this.state.tissuData[this.state.tissu].description} <b> {this.state.tissuData[this.state.tissu].dark} </b> </div>
+                            <div className="cont-per-text"> <span className="text-percentage-land"> {this.state.tissuData[this.props.country][this.state.tissu].percentage} </span> <span className="text-percentage"> % </span> </div>
+                            <div className="text-description-land">{this.state.tissuData[this.props.country][this.state.tissu].description} <b> {this.state.tissuData[this.props.country][this.state.tissu].dark} </b> </div>
                             <div className="container-arrows-buttoms">
                                 <img src={arrow_left} alt="Flecha izquierda" onClick={ ()=> this.eventTampon() } />
                                 <img src={arrow_rigth} alt="Flecha flecha derecha" onClick={ ()=> this.eventTampon(true) } />
