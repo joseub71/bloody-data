@@ -78,7 +78,7 @@ html {
   /* Ancho */
   /* alto */
 
-  @media only screen and (max-height: 925px) {
+  @media only screen and (min-height: 925px) {
 
       .central-blod-landing-page-copa{
         min-width: 162px !important;
