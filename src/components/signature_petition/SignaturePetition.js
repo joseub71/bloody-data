@@ -139,7 +139,7 @@ class SignaturePetition extends Component {
                     // succes
                     alert('Se guardo tu peticion')
                 }else{
-                    alert('Algo salio mal por favor intentalo de nuevo o contacta al equipo')
+                    alert('DEBUG01: BloodyData - Conexion a la db pendiente')
                 }
                 this.props.handlerModalSign()
             })
