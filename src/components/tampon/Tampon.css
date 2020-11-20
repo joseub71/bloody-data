@@ -21,6 +21,7 @@
     font-size: 6em;
     color: white;
     text-align: left;
+    font-family: montserratextrabold;
 }
 
 .central-blod-landing-page-tampon{
@@ -35,11 +36,11 @@
 
 .image-tampon-blod-tampon{
     position: absolute;
-    background-position: 80px 31px;
+    background-position: 79px 31px;
     background-image: url(../../assets/tampon_completed.png);
     background-repeat: no-repeat;
     width: 100%;
-    background-size: 47px 145px;
+    background-size: 48px 145px;
     top: 0px;
     left: 0px;
     clip-path: polygon(0% 0%, 100% 1%, 100% 100%, 96% 100%, 91% 99%, 86% 100%, 80% 99%, 74% 100%, 68% 99%, 63% 100%, 56% 99%, 49% 100%, 43% 99%, 36% 100%, 30% 99%, 23% 100%, 18% 99%, 13% 100%, 6% 99%, 0 100%);
@@ -70,7 +71,7 @@
     font-size: 8em;
     color: var(--white);
     text-align: right;
-    font-weight: bold;
+    font-family: montserratextrabold;
 }
 .text-description-land{
     width: 76%;

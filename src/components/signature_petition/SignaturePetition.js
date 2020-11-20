@@ -157,11 +157,11 @@ class SignaturePetition extends Component {
                 
                 <div>
                     <div className="container-yellow-modal-form">
-                         <div className="text-yellow-modal-form" > <i> Firma </i> </div>
+                         <div className="text-yellow-modal-form" > <i className="font-strong"> Firma </i> </div>
                          <br/>
-                         <div className="text-yellow-modal-form" > <i> ahora </i> </div>
+                         <div className="text-yellow-modal-form" > <i className="font-strong"> ahora </i> </div>
                          <br/>
-                         <div className="text-yellow-modal-form" > <i> la peticion </i> </div>
+                         <div className="text-yellow-modal-form" > <i className="font-strong"> la peticion </i> </div>
                     </div>
                     <div className="container-text-bottom-left" > para la Declaración Latinoamericana de <br/> Emergencia por violencia de género. </div>
                 </div>

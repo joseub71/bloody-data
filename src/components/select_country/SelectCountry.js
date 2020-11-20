@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 // Assets
 import arrow_header from "../../assets/arrow_header.png"
-import arrow_select from "../../assets/arrow_select.jpeg"
+// import arrow_select from "../../assets/arrow_select.jpeg"
 
 // .CSS
 import '../signature_petition/SignaturePetition.css'
@@ -48,7 +48,7 @@ class SelectCountry extends Component {
             <div className="container-body-modal-signature" >
                 
                 <div>
-                    <div className="container-yellow-modal-form">
+                    <div className="container-yellow-modal-form font-strong">
                          <div className="text-yellow-modal-form" >  Selecciona  </div>
                          <br/>
                          <div className="text-yellow-modal-form" >  tu país y  </div>
@@ -70,15 +70,15 @@ class SelectCountry extends Component {
                         <div className="container-inputs-modal">
                             <div className="container-input-modal"> 
                                 <label htmlFor="country"> país: </label>
-                                <select id="country" name="country" onChange={this.change} ref={(inputFocus) => this.isearchdriver = inputFocus}>
+                                <select id="country" name="country" className="select-country" onChange={this.change} ref={(inputFocus) => this.isearchdriver = inputFocus}>
                                     <option value="" ></option>
                                     <option value="PR" > Puerto Rico </option>
                                     <option value="VE" > Venezuela </option>
                                 </select>
                                 
-                                <span className="check-required-input" > 
+                                {/* <span className="check-required-input" > 
                                     <img style={{filter: 'brightness(2)'}} src={arrow_select} alt="arrow down select" onClick={() => {this.isearchdriver.focus()}} /> 
-                                </span>
+                                </span> */}
                             </div>
                         </div>
 
