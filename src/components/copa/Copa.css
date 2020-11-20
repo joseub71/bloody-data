@@ -1,8 +1,9 @@
 .central-blod-landing-page-copa{
     background-image: url(../../assets/copa_completed.png);
-    
-    min-width: 140px;
-    height: 50vh;
+    min-width: 130px;
+    min-height: 159px;
+    background-size: 8em 10em;
+    height: 18vh;
     background-repeat: no-repeat;
     background-position: bottom;
     position: relative;
@@ -11,13 +12,13 @@
 .image-copa-blod{
     background-image: url(../../assets/copa.png);
     
-    background-size: 95px;
+    background-size: 6em 8.1em;
     position: absolute;
     background-repeat: no-repeat;
-    width: 15vw;
-    top: 18vh;
-    left: 16px;
-    min-width: 180px;
+    width: 8vw;
+    top: 0vh;
+    left: 22px;
+    min-width: 109px;
     clip-path: polygon(100% 100%, 100% 0%, 0% 0%, 0% 98%, 8% 100%, 15% 98%, 24% 99%, 33% 99%, 40% 98%, 50% 99%, 60% 100%, 68% 98%, 80% 100%, 89% 98%);
     transition: 1s;
 }
@@ -45,11 +46,11 @@
 }
 
 .top-div-percentage-progress-copa1{
-    height: 15vh
+    height: 12vh
 }
 
 .top-div-percentage-progress-copa2{
-    height: 9vh
+    height: 7vh
 }
 
 .top-div-percentage-progress-copa3{

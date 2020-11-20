@@ -78,7 +78,7 @@ html {
   /* Ancho */
   /* alto */
 
-  @media only screen and (max-height: 910px) and (max-width: 1450) {
+  /* @media only screen and (max-height: 910px) and (max-width: 1450) {
 
       .central-blod-landing-page-copa{
         min-width: 162px !important;
@@ -96,7 +96,7 @@ html {
       background-size: 90px;
       left: 19px;
     }
-  }
+  } */
   
   /* @media only screen and (max-height: 925px) {
     .image-copa-blod{}

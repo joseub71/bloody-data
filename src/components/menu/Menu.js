@@ -90,11 +90,11 @@ class Header extends Component {
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    {/* <li>
                         <NavLink exact to='testimonios'>
                         <span> testimonios </span>
                         </NavLink>
-                    </li>
+                    </li> */}
                     <li><span onClick={  this.props.handlerModalEvent } > firma la peticion </span></li>
 
                     <li className="container-container-button-sign">

@@ -14,7 +14,7 @@ import SelectCountry from './components/select_country/SelectCountry';
 
 // Pages
 import Landing from './containers/landing/Landing.js';
-import Testimonials from './containers/testimonials/Testimonials.js';
+// import Testimonials from './containers/testimonials/Testimonials.js';
 
 
 function callCurrentCountry() {
@@ -127,13 +127,13 @@ class App extends Component {
                     />}
                   />
                   
-                  <Route
+                  {/* <Route
                     exact
                     path='/testimonios'
                     render={(props) => <Testimonials {...props} 
                     country={this.state.country} 
                     />}
-                  />
+                  /> */}
 
                   <Route
                     path='*'
