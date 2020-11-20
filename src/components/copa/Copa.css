@@ -1,9 +1,8 @@
 .central-blod-landing-page-copa{
     background-image: url(../../assets/copa_completed.png);
-    min-width: 130px;
-    min-height: 159px;
+    width: 130px;
+    height: 159px;
     background-size: 8em 10em;
-    height: 18vh;
     background-repeat: no-repeat;
     background-position: bottom;
     position: relative;
@@ -32,10 +31,10 @@
     height: 12vh
 }
 .image-copa-blod1{
-    height: 9vh
+    height: 73px
 }
 .image-copa-blod2{
-    height: 4vh
+    height: 30px
 }
 .image-copa-blod3{
     height: 2vh

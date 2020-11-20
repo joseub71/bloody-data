@@ -46,8 +46,14 @@ html {
 
 /* Ancho */
 @media only screen and (min-width: 1925px) { 
-  .central-blod-landing-page-toalla, .image-toalla-blod{
+  .central-blod-landing-page-toalla{
     background-size: 42% !important;
+  }
+  .image-toalla-blod{
+    background-size: 40% !important;
+  }
+  .image-toalla-blod{
+    left: 2px !important;
   }
   .image-tissu-blod3{
     height: 38vh;
@@ -96,32 +102,3 @@ html {
         padding: 4px 10px
     }
   }
-
-  /* Ancho */
-  /* alto */
-
-  /* @media only screen and (max-height: 910px) and (max-width: 1450) {
-
-      .central-blod-landing-page-copa{
-        min-width: 162px !important;
-        min-height: 363px !important;
-    }
-    .image-copa-blod{
-      background-size: 11.5vh !important;
-      left: 35px !important;
-      top: 18vh !important;
-    }
-  }
-  
-  @media only screen and (max-height: 910px) and (max-width: 1450) {
-    .image-copa-blod{
-      background-size: 90px;
-      left: 19px;
-    }
-  } */
-  
-  /* @media only screen and (max-height: 925px) {
-    .image-copa-blod{}
-    background-size: 83px;
-    width: 15vw;
-  } */
