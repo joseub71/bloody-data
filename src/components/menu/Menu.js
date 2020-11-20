@@ -60,20 +60,21 @@ class Header extends Component {
             <nav>
                 <ul>
                     <li> 
-                        <NavLink
+                        {/* <NavLink
                             exact
                             to='/#home'
-                        >
-                            <span > Home </span>
-                        </NavLink></li>
+                        > */}
+                        <a href="#home"> Home </a>
+                        {/* </NavLink> */}
+                        </li>
                     <li 
                     className="submenu">
-                        <NavLink
+                        {/* <NavLink
                             exact
                             to='/#home'
-                        >
-                            <span > bloody data </span>
-                        </NavLink>
+                        > */}
+                            <a href="#home"> bloody data </a>
+                        {/* </NavLink> */}
                         <ul 
                         className="children">
                             <li> 

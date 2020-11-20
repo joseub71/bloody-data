@@ -122,7 +122,8 @@ class App extends Component {
                   <Route
                     exact
                     path='/'
-                    render={(props) => <Landing {...props} 
+                    render={(props) => <Landing {...props}
+                    handlerModalEvent={this.handlerModalEvent}
                     country={this.state.country} 
                     />}
                   />
@@ -137,7 +138,8 @@ class App extends Component {
 
                   <Route
                     path='*'
-                    render={(props) => <Landing {...props} 
+                    render={(props) => <Landing {...props}
+                    handlerModalEvent={this.handlerModalEvent}
                     country={this.state.country} 
                     />}
                   />
