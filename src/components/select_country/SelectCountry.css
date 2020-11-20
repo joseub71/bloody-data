@@ -21,6 +21,7 @@
 .select-country{
     background: url("../../assets/arrow_select.jpeg") no-repeat right #fff;
     -webkit-appearance: none;
+    -moz-appearance: none;
     filter: brightness(2);
     -webkit-filter: brightness(2);
 }
