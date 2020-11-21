@@ -31,10 +31,10 @@ class Landing extends Component {
     const callback = (entries, observer) => {
       
       if (entries[0].isIntersecting && this.props.location.hash === '') {
-        
-        if (!window.ismobile()) {
-          home.scrollIntoView({block: "start", behavior: "smooth"}); 
-        }
+        // debugger
+        // if (!window.ismobile()) {
+        //   home.scrollIntoView({block: "start", behavior: "smooth"}); 
+        // }
 
         document.getElementById("firstCircle").style.width = "10px"
         document.getElementById("firstCircle").style.height = "10px"
@@ -55,9 +55,10 @@ class Landing extends Component {
         document.getElementById("fifthCircle").style.width = "4px"
         document.getElementById("fifthCircle").style.height = "4px"
         document.getElementById("fifthCircle").style.opacity = "0.6"
-      }else if(window.location.hash === "#home"){
-        window.location.hash = ''
       }
+      // else if(window.location.hash === "#home"){
+      //   window.location.hash = ''
+      // }
     }
 
     const observer = new IntersectionObserver(callback, options)
@@ -115,7 +116,7 @@ class Landing extends Component {
             
             <div id="home" className="container-home-landing-page">
               <img src={logo_bloody_copy} alt="logo bloody data"/>
-              <span> Que <span className="hi"> </span> sangren es asqueroso </span>
+              <span className="hi"> </span>
             </div>
 
             <Tampon  {...this.props} handlerModalEvent={(e)=>{ this.props.handlerModalEvent(e) }}  country={this.props.country} />

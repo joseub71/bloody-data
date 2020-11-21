@@ -77,12 +77,14 @@
 }
 .hi:after{
 	content: "";
-	animation: spin 8s linear;
-    -webkit-animation: spin 8s linear;
+	animation: spin 15s linear;
+    -webkit-animation: spin 15s linear;
     animation-iteration-count: infinite;
 }
 
 @keyframes spin {
-    0% { content:"las mujeres"; }
-    100% { content:"lxs trans" }
+    0% { content:"Que las mujeres sangren es asqueroso"; opacity: 0.3;}
+    35% { content:"Que lxs trans sangren es asqueroso"; opacity: 1;}
+    70% { content:"Que las mujeres sangren es asqueroso"; opacity: 0.3;}
+    100% { content:"Que lxs trans sangren es asqueroso"; opacity: 1;}
 }

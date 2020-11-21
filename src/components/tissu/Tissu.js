@@ -75,9 +75,9 @@ class Tissu extends Component {
         }
         const callback = (entries, observer)  =>{
           if (entries[0].isIntersecting && this.props.location.hash === '') {
-            if (!window.ismobile()) {
-                tissu.scrollIntoView({block: "start", behavior: "smooth"});
-            }  
+            // if (!window.ismobile()) {
+            //     tissu.scrollIntoView({block: "start", behavior: "smooth"});
+            // }  
             
             document.getElementById("firstCircle").style.width = "4px"
             document.getElementById("firstCircle").style.height = "4px"
@@ -99,9 +99,10 @@ class Tissu extends Component {
             document.getElementById("fifthCircle").style.height = "10px"
             document.getElementById("fifthCircle").style.opacity = "1"
 
-          }else if(window.location.hash === "#tissu"){
-            window.location.hash = ''
           }
+        //   else if(window.location.hash === "#tissu"){
+        //     window.location.hash = ''
+        //   }
         }
         
         const observer = new IntersectionObserver(callback, options)

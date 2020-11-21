@@ -84,9 +84,9 @@ class Tampon extends Component {
         }
         const callback = (entries, observer) => {
           if (entries[0].isIntersecting && this.props.location.hash === '') {
-            if (!window.ismobile()) {
-                tampon.scrollIntoView({block: "start", behavior: "smooth"});
-            }            
+            // if (!window.ismobile()) {
+            //     tampon.scrollIntoView({block: "start", behavior: "smooth"});
+            // }            
             
             document.getElementById("firstCircle").style.width = "8px"
             document.getElementById("firstCircle").style.height = "8px"
@@ -108,9 +108,10 @@ class Tampon extends Component {
             document.getElementById("fifthCircle").style.height = "5px"
             document.getElementById("fifthCircle").style.opacity = "0.7"
 
-          }else if(window.location.hash === "#tampon"){
-            window.location.hash = ''
           }
+        //   else if(window.location.hash === "#tampon"){
+        //     window.location.hash = ''
+        //   }
         }
         const observer = new IntersectionObserver(callback, options)
         observer.observe(tampon)

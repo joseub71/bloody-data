@@ -75,9 +75,9 @@ class Toalla extends Component {
         }
         const callback = (entries, observer)  =>{
           if (entries[0].isIntersecting && this.props.location.hash === '') {
-            if (!window.ismobile()) {
-                toalla.scrollIntoView({block: "start", behavior: "smooth"});
-            }               
+            // if (!window.ismobile()) {
+            //     toalla.scrollIntoView({block: "start", behavior: "smooth"});
+            // }               
             
             document.getElementById("firstCircle").style.width = "6px"
             document.getElementById("firstCircle").style.height = "6px"
@@ -99,9 +99,10 @@ class Toalla extends Component {
             document.getElementById("fifthCircle").style.height = "6px"
             document.getElementById("fifthCircle").style.opacity = "0.8"
 
-          }else if(window.location.hash === "#toalla"){
-            window.location.hash = ''
           }
+        //   else if(window.location.hash === "#toalla"){
+        //     window.location.hash = ''
+        //   }
         }
         
         const observer = new IntersectionObserver(callback, options)
