@@ -57,21 +57,41 @@ class Copa extends Component {
     componentDidMount(){
         // this.copaRef.current.addEventListener("wheel", (event) => { this.eventScrollCopa(event)})
 
-        // const copa = document.querySelector('#copa')
-        // const options = {
-        //   // root: document.querySelector('body'),
-        //   rootMargin: '0px 0px 0px 0px',
-        //   threshold: .5,
-        // }
-        // const callback = (entries, observer)  =>{
-        //   if (entries[0].isIntersecting && this.props.location.hash === '') {
-        //     copa.scrollIntoView({block: "start", behavior: "smooth"});
-        //     this.setState({copa: 1})
-        //   }
-        // }
+        const copa = document.querySelector('#copa')
+        const options = {
+          // root: document.querySelector('body'),
+          rootMargin: '0px 0px 0px 0px',
+          threshold: .2,
+        }
+        const callback = (entries, observer)  =>{
+          if (entries[0].isIntersecting && this.props.location.hash === '') {
+            copa.scrollIntoView({block: "start", behavior: "smooth"});
+            
+            document.getElementById("firstCircle").style.width = "5px"
+            document.getElementById("firstCircle").style.height = "5px"
+            document.getElementById("firstCircle").style.opacity = "0.7"
+    
+            document.getElementById("secondCircle").style.width = "8px"
+            document.getElementById("secondCircle").style.height = "8px"
+            document.getElementById("secondCircle").style.opacity = "0.9"
+    
+            document.getElementById("thirdCircle").style.width = "8px"
+            document.getElementById("thirdCircle").style.height = "8px"
+            document.getElementById("thirdCircle").style.opacity = "0.9"
+    
+            document.getElementById("fourCircle").style.width = "10px"
+            document.getElementById("fourCircle").style.height = "10px"
+            document.getElementById("fourCircle").style.opacity = "1"
+    
+            document.getElementById("fifthCircle").style.width = "6px"
+            document.getElementById("fifthCircle").style.height = "6px"
+            document.getElementById("fifthCircle").style.opacity = "0.8"
+            
+          }
+        }
         
-        // const observer = new IntersectionObserver(callback, options)
-        // observer.observe(copa)
+        const observer = new IntersectionObserver(callback, options)
+        observer.observe(copa)
 
     }
 

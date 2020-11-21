@@ -77,21 +77,43 @@ class Tampon extends Component {
     componentDidMount(){
         // this.tamponRef.current.addEventListener("wheel", (event) => { this.eventScrollTampon(event)})
 
-        // const tampon = document.querySelector('#tampon')
-        // const options = {
-        //   rootMargin: '0px 0px 0px 0px',
-        //   threshold: .5,
-        // }
-        // const callback = (entries, observer) => {
-        //   if (entries[0].isIntersecting && this.props.location.hash === '') {
-        //     tampon.scrollIntoView({block: "start", behavior: "smooth"});
-        //     this.setState({tampon: 1})
-        //   }else{
+        const tampon = document.querySelector('#tampon')
+        const options = {
+          rootMargin: '0px 0px 0px 0px',
+          threshold: .2,
+        }
+        const callback = (entries, observer) => {
+          if (entries[0].isIntersecting && this.props.location.hash === '') {
+              
+            tampon.scrollIntoView({block: "start", behavior: "smooth"});
+            
+            document.getElementById("firstCircle").style.width = "8px"
+            document.getElementById("firstCircle").style.height = "8px"
+            document.getElementById("firstCircle").style.opacity = "0.9"
+    
+            document.getElementById("secondCircle").style.width = "10px"
+            document.getElementById("secondCircle").style.height = "10px"
+            document.getElementById("secondCircle").style.opacity = "1"
+    
+            document.getElementById("thirdCircle").style.width = "8px"
+            document.getElementById("thirdCircle").style.height = "8px"
+            document.getElementById("thirdCircle").style.opacity = "0.9"
+    
+            document.getElementById("fourCircle").style.width = "6px" 
+            document.getElementById("fourCircle").style.height = "6px" 
+            document.getElementById("fourCircle").style.opacity = "0.8"
+    
+            document.getElementById("fifthCircle").style.width = "5px"
+            document.getElementById("fifthCircle").style.height = "5px"
+            document.getElementById("fifthCircle").style.opacity = "0.7"
+
+          }
+        //   else{
         //     this.props.history.push({ pathname: '/'})
         //   }
-        // }
-        // const observer = new IntersectionObserver(callback, options)
-        // observer.observe(tampon)
+        }
+        const observer = new IntersectionObserver(callback, options)
+        observer.observe(tampon)
 
     }
 

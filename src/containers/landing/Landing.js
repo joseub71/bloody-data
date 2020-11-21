@@ -18,23 +18,80 @@ class Landing extends Component {
     super(props);
 
     this.state = {
+      currentPostion: 1
     };
   }
   
   componentDidMount(){
-    // const home = document.querySelector('#home')
-    // const options = {
-    //   rootMargin: '0px 0px 0px 0px',
-    //   threshold: .5,
-    // }
-    // const callback = (entries, observer) => {
-    //   if (entries[0].isIntersecting && this.props.location.hash === '') {
-    //     home.scrollIntoView({block: "start", behavior: "smooth"});
-    //   }
-    // }
-    // const observer = new IntersectionObserver(callback, options)
-    // observer.observe(home)
+    const home = document.querySelector('#home')
+    const options = {
+      rootMargin: '0px 0px 0px 0px',
+      threshold: .5,
+    }
+    const callback = (entries, observer) => {
+      if (entries[0].isIntersecting && this.props.location.hash === '') {
+        home.scrollIntoView({block: "start", behavior: "smooth"});
+
+        document.getElementById("firstCircle").style.width = "10px"
+        document.getElementById("firstCircle").style.height = "10px"
+        document.getElementById("firstCircle").style.opacity = "1"
+
+        document.getElementById("secondCircle").style.width = "8px"
+        document.getElementById("secondCircle").style.height = "8px"
+        document.getElementById("secondCircle").style.opacity = "0.9"
+
+        document.getElementById("thirdCircle").style.width = "6px"
+        document.getElementById("thirdCircle").style.height = "6px"
+        document.getElementById("thirdCircle").style.opacity = "0.8"
+
+        document.getElementById("fourCircle").style.width = "5px"
+        document.getElementById("fourCircle").style.height = "5px"
+        document.getElementById("fourCircle").style.opacity = "0.7"
+
+        document.getElementById("fifthCircle").style.width = "4px"
+        document.getElementById("fifthCircle").style.height = "4px"
+        document.getElementById("fifthCircle").style.opacity = "0.6"
+      }
+    }
+
+    const observer = new IntersectionObserver(callback, options)
+    observer.observe(home)
+
+    // window.addEventListener("wheel", (event) => { this.eventScrollNav(event)}, { passive: false} )
+
   }
+
+//   eventScrollNav = (e) => {
+//     e.preventDefault()
+//     // const order = ['#home', '#tampon', '#toalla', '#copa', '#tissu']
+//     const order = ['home', 'tampon', 'toalla', 'copa', 'tissu']
+    
+//     console.log(e.deltaY);
+//     console.log(e.deltaY <= -16);
+//     console.log(this.state.currentPostion);
+    
+//     // if () {
+//     // }
+      
+//       if (e.deltaY.toFixed() >= 16 && this.state.currentPostion !== 4) {
+//         // window.location.hash = "#tissu"
+//         // window.location.hash = order[this.state.currentPostion]
+//         document.getElementById(order[this.state.currentPostion+1]).scrollIntoView({behavior: "smooth"});
+//         this.setState({currentPostion: this.state.currentPostion +1})
+//         // window.location.hash = "#tissu"
+//       }else if (e.deltaY <= -16 && this.state.currentPostion !== 0) {
+//           // window.location.hash = "#home"
+//           // window.location.hash = order[this.state.currentPostion]
+//           document.getElementById(order[this.state.currentPostion -1]).scrollIntoView({behavior: "smooth"});
+//           this.setState({currentPostion: this.state.currentPostion -1})
+//           // window.location.hash = "#home"
+//       }
+//       else if(e.deltaY >= -16 ){
+//         // this.setState({currentPostion: this.state.currentPostion -1})
+//         document.getElementById("footer").scrollIntoView({behavior: "smooth"});
+//       }
+    
+// }
 
   render() {
     
@@ -43,10 +100,11 @@ class Landing extends Component {
         <div className="container-landing-page" >
             
             <div className="container-circle-header">
-                    <div className="circle-header first-circle"></div>
-                    <div className="circle-header second-circle"></div>
-                    <div className="circle-header third-circle"></div>
-                    <div className="circle-header four-circle"></div>
+                    <div className="circle-header first-circle" id="firstCircle" ></div>
+                    <div className="circle-header second-circle" id="secondCircle" ></div>
+                    <div className="circle-header third-circle" id="thirdCircle" ></div>
+                    <div className="circle-header four-circle" id="fourCircle" ></div>
+                    <div className="circle-header fifthCircle-circle" id="fifthCircle" ></div>
             </div>
             
             <div id="home" className="container-home-landing-page">

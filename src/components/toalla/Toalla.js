@@ -67,21 +67,41 @@ class Toalla extends Component {
     componentDidMount(){
         // this.toallaRef.current.addEventListener("wheel", (event) => { this.eventScrollToalla(event)})
 
-        // const toalla = document.querySelector('#toalla')
-        // const options = {
-        //   // root: document.querySelector('body'),
-        //   rootMargin: '0px 0px 0px 0px',
-        //   threshold: .5,
-        // }
-        // const callback = (entries, observer)  =>{
-        //   if (entries[0].isIntersecting && this.props.location.hash === '') {
-        //     toalla.scrollIntoView({block: "start", behavior: "smooth"});
-        //     this.setState({toalla: 1})
-        //   }
-        // }
+        const toalla = document.querySelector('#toalla')
+        const options = {
+          // root: document.querySelector('body'),
+          rootMargin: '0px 0px 0px 0px',
+          threshold: .5,
+        }
+        const callback = (entries, observer)  =>{
+          if (entries[0].isIntersecting && this.props.location.hash === '') {
+            toalla.scrollIntoView({block: "start", behavior: "smooth"});
+            
+            document.getElementById("firstCircle").style.width = "6px"
+            document.getElementById("firstCircle").style.height = "6px"
+            document.getElementById("firstCircle").style.opacity = "0.8"
+    
+            document.getElementById("secondCircle").style.width = "8px"
+            document.getElementById("secondCircle").style.height = "8px"
+            document.getElementById("secondCircle").style.opacity = "0.9"
+    
+            document.getElementById("thirdCircle").style.width = "10px"
+            document.getElementById("thirdCircle").style.height = "10px"
+            document.getElementById("thirdCircle").style.opacity = "1"
+    
+            document.getElementById("fourCircle").style.width = "8px"
+            document.getElementById("fourCircle").style.height = "8px"
+            document.getElementById("fourCircle").style.opacity = "0.9"
+    
+            document.getElementById("fifthCircle").style.width = "6px"
+            document.getElementById("fifthCircle").style.height = "6px"
+            document.getElementById("fifthCircle").style.opacity = "0.8"
+
+          }
+        }
         
-        // const observer = new IntersectionObserver(callback, options)
-        // observer.observe(toalla)
+        const observer = new IntersectionObserver(callback, options)
+        observer.observe(toalla)
 
     }
 

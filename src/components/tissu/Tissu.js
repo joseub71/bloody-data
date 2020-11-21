@@ -67,21 +67,41 @@ class Tissu extends Component {
     componentDidMount(){
         // this.tissuRef.current.addEventListener("wheel", (event) => { this.eventScrollTissu(event)})
 
-        // const tissu = document.querySelector('#tissu')
-        // const options = {
-        //   // root: document.querySelector('body'),
-        //   rootMargin: '0px 0px 0px 0px',
-        //   threshold: .5,
-        // }
-        // const callback = (entries, observer)  =>{
-        //   if (entries[0].isIntersecting && this.props.location.hash === '') {
-        //     tissu.scrollIntoView({block: "start", behavior: "smooth"});
-        //     this.setState({tissu: 1})
-        //   }
-        // }
+        const tissu = document.querySelector('#tissu')
+        const options = {
+          // root: document.querySelector('body'),
+          rootMargin: '0px 0px 0px 0px',
+          threshold: .5,
+        }
+        const callback = (entries, observer)  =>{
+          if (entries[0].isIntersecting && this.props.location.hash === '') {
+            tissu.scrollIntoView({block: "start", behavior: "smooth"});
+            
+            document.getElementById("firstCircle").style.width = "4px"
+            document.getElementById("firstCircle").style.height = "4px"
+            document.getElementById("firstCircle").style.opacity = "0.888"
+    
+            document.getElementById("secondCircle").style.width = "5px"
+            document.getElementById("secondCircle").style.height = "5px"
+            document.getElementById("secondCircle").style.opacity = "0.7"
+    
+            document.getElementById("thirdCircle").style.width = "6px"
+            document.getElementById("thirdCircle").style.height = "6px"
+            document.getElementById("thirdCircle").style.opacity = "0.8"
+    
+            document.getElementById("fourCircle").style.width = "8px"
+            document.getElementById("fourCircle").style.height = "8px"
+            document.getElementById("fourCircle").style.opacity = "0.9"
+    
+            document.getElementById("fifthCircle").style.width = "10px"
+            document.getElementById("fifthCircle").style.height = "10px"
+            document.getElementById("fifthCircle").style.opacity = "1"
+
+          }
+        }
         
-        // const observer = new IntersectionObserver(callback, options)
-        // observer.observe(tissu)
+        const observer = new IntersectionObserver(callback, options)
+        observer.observe(tissu)
 
     }
 
