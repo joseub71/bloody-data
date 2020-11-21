@@ -23,6 +23,7 @@
     font-weight: 900;
     width: 70vw;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .container-circle-header{
@@ -73,4 +74,15 @@
     width: 4px;
     height: 4px;
     opacity: 0.8;
+}
+.hi:after{
+	content: "";
+	animation: spin 8s linear;
+    -webkit-animation: spin 8s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    0% { content:"las mujeres"; }
+    100% { content:"lxs trans" }
 }

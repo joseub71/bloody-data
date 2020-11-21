@@ -109,7 +109,7 @@ class Landing extends Component {
             
             <div id="home" className="container-home-landing-page">
               <img src={logo_bloody_copy} alt="logo bloody data"/>
-              <span> Que las mujeres sangren es asqueroso </span>
+              <span> Que <span className="hi"> </span> sangren es asqueroso </span>
             </div>
 
             <Tampon  {...this.props} handlerModalEvent={(e)=>{ this.props.handlerModalEvent(e) }}  country={this.props.country} />
