@@ -83,8 +83,7 @@
 }
 
 @keyframes spin {
-    0% { content:"Que las mujeres sangren es asqueroso"; opacity: 0.3;}
-    35% { content:"Que lxs trans sangren es asqueroso"; opacity: 1;}
-    70% { content:"Que las mujeres sangren es asqueroso"; opacity: 0.3;}
-    100% { content:"Que lxs trans sangren es asqueroso"; opacity: 1;}
+    0% { content:"Que las mujeres sangren es asqueroso"; opacity: 1;}
+    50% { content:"Que lxs trans sangren es asqueroso"; opacity: 0;}
+    100% { content:"Que las mujeres  sangren es asqueroso"; opacity: 1;}
 }
