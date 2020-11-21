@@ -46,7 +46,7 @@ class SelectCountry extends Component {
     return (
         <div className={`${ this.props.modal && 'active-modal' } container-modal-signature modal-select-country`} onClick={ (e) => this.props.handlerModalEvent(e) } id="containerModal" >
             <div className="container-body-modal-signature" >
-                
+            <span className="close-modal-general" onClick={ () => this.props.changeCountry(this.state.country ? this.state.country : 'PR') } > X </span>
                 <div>
                     <div className="container-yellow-modal-form font-strong">
                          <div className="text-yellow-modal-form" >  Selecciona  </div>

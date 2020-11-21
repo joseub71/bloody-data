@@ -140,7 +140,8 @@ class SignaturePetition extends Component {
     
     return (
         <div className={`${ this.props.modal && 'active-modal' } container-modal-signature `} onClick={ (e) => this.props.handlerModalEvent(e) } id="containerModal" >
-            <div className="container-body-modal-signature" >
+            <div className="container-body-modal-signature">
+                <span className="close-modal-general" onClick={ this.props.handlerModalSign } > X </span>
                 
                 <div>
                     <div className="container-yellow-modal-form">

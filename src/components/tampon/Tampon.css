@@ -99,6 +99,13 @@
     cursor: pointer;
 }
 
+.container-arrows-buttoms > img:active, .container-arrows-buttoms > img:focus{
+    background:none;
+    border: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
 .container-btn-descri p{
 font-size: 0.9rem;
 }

@@ -120,6 +120,7 @@ html {
     }
     .text-header-button-sign {
       font-size: 0.6em !important;
+      padding-top: 2px;
     }
     .header-button-sign {
       margin: 0px 5px !important;
@@ -226,6 +227,7 @@ html {
       align-items: center !important;
       padding: 0px 6vw;
       text-align: center;
+      margin-top: 46px;
     }
     .image-copa-blod{
       left: 14px !important
@@ -260,12 +262,17 @@ html {
     }
   }
   
-  @media only screen and (min-width: 968px) and (min-height: 850px){
+  @media only screen and (min-width: 968px){
     .show-desktop{
       display: flex !important;
     }
     .show-desktop-mobile{
       display: none !important;
+    }
+  }
+  @media only screen and (max-width: 386px) and (max-height: 850px){
+    .image-copa-blod{
+      left: 8px !important;
     }
   }
   @media only screen and (max-width: 968px) {

@@ -150,6 +150,17 @@
     border-bottom: 1px solid var(--red);
 }
 
+.container-body-modal-signature{
+    position: relative;
+}
+.close-modal-general{
+    position: absolute;
+    right: 7px;
+    top: 8px;
+    padding: 7px 13px;
+    border-radius: 1000%;
+}
+
 /* .container-text-required .container-container-button-sign:hover .text-header-button-sign {
     color: var(--red);
 } */
