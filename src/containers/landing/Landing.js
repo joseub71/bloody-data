@@ -100,11 +100,11 @@ class Landing extends Component {
         <div className="container-landing-page" >
             
             <div className="container-circle-header">
-                    <div className="circle-header first-circle" id="firstCircle" ></div>
-                    <div className="circle-header second-circle" id="secondCircle" ></div>
-                    <div className="circle-header third-circle" id="thirdCircle" ></div>
-                    <div className="circle-header four-circle" id="fourCircle" ></div>
-                    <div className="circle-header fifthCircle-circle" id="fifthCircle" ></div>
+                    <a href="#home">  <div className="circle-header first-circle" id="firstCircle" ></div> </a> 
+                    <a href="/#tampon">  <div className="circle-header second-circle" id="secondCircle" ></div> </a> 
+                    <a href="/#toalla">  <div className="circle-header third-circle" id="thirdCircle" ></div> </a> 
+                    <a href="/#copa">  <div className="circle-header four-circle" id="fourCircle" ></div> </a> 
+                    <a href="/#tissu">  <div className="circle-header fifthCircle-circle" id="fifthCircle" ></div> </a> 
             </div>
             
             <div id="home" className="container-home-landing-page">
