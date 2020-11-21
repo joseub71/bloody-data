@@ -71,11 +71,13 @@ class Toalla extends Component {
         const options = {
           // root: document.querySelector('body'),
           rootMargin: '0px 0px 0px 0px',
-          threshold: .5,
+          threshold: .4,
         }
         const callback = (entries, observer)  =>{
           if (entries[0].isIntersecting && this.props.location.hash === '') {
-            toalla.scrollIntoView({block: "start", behavior: "smooth"});
+            if (!window.ismobile()) {
+                toalla.scrollIntoView({block: "start", behavior: "smooth"});
+            }               
             
             document.getElementById("firstCircle").style.width = "6px"
             document.getElementById("firstCircle").style.height = "6px"
@@ -97,6 +99,8 @@ class Toalla extends Component {
             document.getElementById("fifthCircle").style.height = "6px"
             document.getElementById("fifthCircle").style.opacity = "0.8"
 
+          }else if(window.location.hash === "#toalla"){
+            window.location.hash = ''
           }
         }
         
@@ -140,7 +144,7 @@ class Toalla extends Component {
                 
                 <div className="container-blod-animation-zone" ref={this.toallaRef}>
 
-                    <div className="container-btn-descri">
+                    <div className="container-btn-descri show-desktop show-element-style">
                         
                         <span className="text-first"> Relación con el agresor </span>
                         <p> Vínculo de la víctima <b> con  el autor del feminicidio </b> </p>
@@ -171,7 +175,21 @@ class Toalla extends Component {
                         </div>
                     </div>
                 </div>
-
+                {/* Movile */}
+                <div className="container-btn-descri show-desktop-mobile hide-element-style">
+                        
+                        <span className="text-first"> Relación con el agresor </span>
+                        <p> Vínculo de la víctima <b> con  el autor del feminicidio </b> </p>
+                        
+                        <div className="container-container-button-sign" onClick={  this.props.handlerModalEvent }>
+                            <div className="container-button-sign">
+                                <span className="text-header-button-sign"> firmar ahora </span>
+                                <div className="header-button-sign" ></div>
+                                <img className="header-button-arrow" src={arrow_header} alt="Flecha a la derecha"/> 
+                            </div>
+                        </div>
+                </div>
+                {/* Movile */}
             </div>
         )
     }

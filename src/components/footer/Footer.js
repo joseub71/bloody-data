@@ -40,8 +40,8 @@ class Footer extends Component {
                             <span> 1A Rio Piedras, PR 00925 </span>
                         </div>
                         <div className="color-text-gray-footer">
-                            <div> 787-763-8318 </div>
-                            <div> info@amnsitiapr.org </div>
+                            <div> <a href="tel:787-763-8318">787-763-8318</a> </div>
+                            <div> <a href="mailto:info@amnsitiapr.org">info@amnsitiapr.org</a> </div>
                         </div>
                     </div>
                     <div className="social-media-btn-footer" >
@@ -54,7 +54,7 @@ class Footer extends Component {
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className="containerlow-text-footer">
                     <span className="low-text-footer"> © 2020 Amnistía Internacional Puerto Rico </span>
                 </div>
             </div>

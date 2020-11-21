@@ -71,11 +71,13 @@ class Tissu extends Component {
         const options = {
           // root: document.querySelector('body'),
           rootMargin: '0px 0px 0px 0px',
-          threshold: .5,
+          threshold: .4,
         }
         const callback = (entries, observer)  =>{
           if (entries[0].isIntersecting && this.props.location.hash === '') {
-            tissu.scrollIntoView({block: "start", behavior: "smooth"});
+            if (!window.ismobile()) {
+                tissu.scrollIntoView({block: "start", behavior: "smooth"});
+            }  
             
             document.getElementById("firstCircle").style.width = "4px"
             document.getElementById("firstCircle").style.height = "4px"
@@ -97,6 +99,8 @@ class Tissu extends Component {
             document.getElementById("fifthCircle").style.height = "10px"
             document.getElementById("fifthCircle").style.opacity = "1"
 
+          }else if(window.location.hash === "#tissu"){
+            window.location.hash = ''
           }
         }
         
@@ -140,7 +144,7 @@ class Tissu extends Component {
                 
                 <div className="container-blod-animation-zone" ref={this.tissuRef}>
 
-                    <div className="container-btn-descri">
+                    <div className="container-btn-descri show-desktop show-element-style">
                         
                         <span className="text-first"> Transfeminicidios </span>
                         <p> Asesinato de una persona  transgénero <b> por su identidad  o expresion de genero </b> </p>
@@ -154,7 +158,7 @@ class Tissu extends Component {
                         </div>
                     </div>
 
-                    <div className="central-blod-landing-page-tissu" style={{ backgroundSize: '54%'}} >
+                    <div className="central-blod-landing-page-tissu" >
                         <div className={`${ 'image-tissu-blod'+this.state.tissu } image-tissu-blod`} ></div>
                     </div>
                     
@@ -171,7 +175,21 @@ class Tissu extends Component {
                         </div>
                     </div>
                 </div>
-
+{/*  */}
+                    <div className="container-btn-descri show-desktop-mobile hide-element-style">
+                        
+                        <span className="text-first"> Transfeminicidios </span>
+                        <p> Asesinato de una persona  transgénero <b> por su identidad  o expresion de genero </b> </p>
+                        
+                        <div className="container-container-button-sign" onClick={  this.props.handlerModalEvent }>
+                            <div className="container-button-sign">
+                                <span className="text-header-button-sign"> firmar ahora </span>
+                                <div className="header-button-sign" ></div>
+                                <img className="header-button-arrow" src={arrow_header} alt="Flecha a la derecha"/> 
+                            </div>
+                        </div>
+                    </div>
+{/*  */}
             </div>
         )
     }

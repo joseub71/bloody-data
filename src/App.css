@@ -44,6 +44,7 @@ html {
   --red               : #ff0000;
 }
 
+
 /* Ancho */
 @media only screen and (min-width: 1925px) { 
   .central-blod-landing-page-toalla{
@@ -75,15 +76,12 @@ html {
         width: 48%;
     }
     .container-home-landing-page > span{
-        font-size: 0.8em;
-        letter-spacing: 13px;
+        font-size: 0.8em !important;
+        letter-spacing: 8px !important;
+        width: 80vw !important;
     }
     .text-description-land{
-        width: auto;
-    }
-    .container-btn-descri{
-        width: 30vw;
-        margin-right: 8vw;
+        width: auto !important;
     }
     
   }
@@ -92,13 +90,203 @@ html {
         padding: 0px 6px;
     }
     nav > ul{
-        padding-top: 8px;
+      padding-top: 21px!important;
     }
     nav > ul li a, nav > ul li span{
-        padding: 7px 6px;
-        font-size: 0.9em;
+        padding: 4px 1px !important;
+        font-size: 0.9em !important;
     }
     .container-button-sign{
-        padding: 4px 10px
+        padding: 2px 8px!important
+    }
+  }
+
+  @media only screen and (max-width: 968px) and (max-height: 850px){
+    .container-images-header{
+      flex-direction: row !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      width: 20vw !important;
+    }
+    .logo_anmistia{
+      margin-top: 0 !important;
+      margin-left: 26px !important;
+    }
+    .container-header-landing-page{
+      justify-content: space-evenly !important;
+    }
+    nav > ul li:not(.container-container-button-sign){
+      display: none;
+    }
+    .text-header-button-sign {
+      font-size: 0.6em !important;
+    }
+    .header-button-sign {
+      margin: 0px 5px !important;
+    }
+    .footer{
+      /* position: fixed; */
+      /* bottom: 0px; */
+      height: auto !important;
+    }
+    .up-container-footer{
+      display: block!important;
+      padding-bottom: 12px !important;
+    }
+    .container-bloody-log-footer{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 0px;
+    }
+    .container-general-text-footer, .social-media-btn-footer{
+      display: inline-block !important;
+      width: 50% !important;
+      height: auto !important;
+      padding-left: 3.2vw !important;
+    }
+    .containerlow-text-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .color-text-gray-footer, .low-text-footer{
+      font-size: 0.8em !important;
+    }
+    .container-general-text-footer > .color-text-gray-footer:nth-child(2){
+      margin-top: 10px !important;
+    }
+    .low-text-footer{
+      padding: 10px !important;
+      border-top: solid 1px #c5c5c5;
+      width: 90%;
+      text-align: center;
+    }
+    .social-media-btn-footer{
+      transform: translate(4px, -50px);
+      padding-right: 20px;
+    }
+    .container-btn-footer{
+      text-align: center;
+      padding: 6px 7px!important;
+      margin-bottom: 8px
+    }
+    .margin-top-text-footer{
+        margin-top: 18px;
+    }
+    .container-btn-descri{
+      display: none !important;
+    }
+
+    .percentage-progress{
+      width: 60vw !important;
+    }
+    .top-div-percentage-progress{
+      margin-right: 10px !important;
+      min-width: 28px !important;
+    }
+    .text-percentage-land{
+      font-size: 4em !important;
+    }
+    .text-percentage{
+      font-size: 2em !important;
+    }
+    .text-description-land{
+      width: 44vw !important;
+      font-size: 0.7rem !important;
+    }
+    
+    .central-blod-landing-page-tissu{
+      background-size: 64% !important;
+      background-position: 52px 0px !important;
+    }
+    .image-tissu-blod{
+      background-position: 46px -4px !important;
+      background-size: 70% !important;
+    }
+    .top-div-percentage-progress-tissu3{
+      height: 26vh !important;
+    }
+    .central-blod-landing-page-copa{
+      margin-left: 60px;
+    }
+    .show-desktop{
+      display: none !important;
+    }
+    .show-desktop-mobile{
+      display: flex !important;
+    }
+    .container-blod-landing-page{
+      display: block !important;
+    }
+    .container-btn-descri{
+      height: 24vh !important;
+      width: 100vw !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      padding: 0px 6vw;
+      text-align: center;
+    }
+    .image-copa-blod{
+      left: 14px !important
+    }
+    .container-btn-descri > .container-container-button-sign{
+      width: auto !important
+    }
+    .container-body-modal-signature{
+      height: 90vh!important;
+      flex-direction: column;
+      overflow: auto;
+      padding: 20px 9px !important;
+      justify-content: start !important;
+    }
+    .container-yellow-modal-form{
+      font-size: 2em !important;
+    }
+    .container-text-bottom-left{
+      font-weight: bold;
+      line-height: 21px;
+    }
+    .container-group-forma {
+      width: 78vw!important;
+      height: auto !important;
+      margin: 13px 0px;
+    }
+    .container-input-modal > input, .container-input-modal > select{
+      width: 53vw !important;
+    }
+    .container-inputs-modal{
+      margin-top: 10vh;
+    }
+  }
+  
+  @media only screen and (min-width: 968px) and (min-height: 850px){
+    .show-desktop{
+      display: flex !important;
+    }
+    .show-desktop-mobile{
+      display: none !important;
+    }
+  }
+  @media only screen and (max-width: 968px) {
+    .container-header-landing-page{
+      justify-content: space-between !important;
+    }
+  }
+
+  @media only screen and (max-width: 510px) {
+    .container-images-header > img:first-child{
+      min-width: 100px !important;
+    }
+    .logo_anmistia{
+      min-width: 88px !important;
+    }
+  }
+
+  @media only screen and (max-width: 510px) {
+    .container-header-landing-page{
+      padding: 0px 0px !important;
+      padding-left: 12px !important;
+      padding-right: 12px !important;
     }
   }

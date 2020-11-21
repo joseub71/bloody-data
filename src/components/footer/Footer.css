@@ -34,6 +34,11 @@
     color: #c5c5c5;
 }
 
+.color-text-gray-footer a{
+    text-decoration: none;
+    color: #c5c5c5;
+}
+
 .low-text-footer{
     font-size: 13px;
     padding: 20px;
@@ -65,5 +70,6 @@
 }
 
 .footer-social-media a:nth-child(1) img{
-    width: 2vw
+    width: 2vw;
+    min-width: 26px;
 }

@@ -43,34 +43,34 @@
 .circle-header{
     border-radius: 100%;
     background: var(--white);
+    transition: all 1s;
+}
+
+.circle-header:hover{
+    transform: scale(2)
 }
 
 .first-circle{
-    transition: all 1s;
     width: 10px;
     height: 10px;
 }
 .second-circle{
-    transition: all 1s;
     width: 8px;
     height: 8px;
     opacity: 0.9;
 }
 .third-circle{
-    transition: all 1s;
     width: 6px;
     height: 6px;
     opacity: 0.8;
 }
 .four-circle{
-    transition: 1s all;
     width: 5px;
     height: 5px;
     opacity: 0.7;
 }
 
 .fifthCircle-circle{
-    transition: 1s all;
     width: 4px;
     height: 4px;
     opacity: 0.8;

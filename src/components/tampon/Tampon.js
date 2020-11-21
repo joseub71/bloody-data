@@ -80,12 +80,13 @@ class Tampon extends Component {
         const tampon = document.querySelector('#tampon')
         const options = {
           rootMargin: '0px 0px 0px 0px',
-          threshold: .2,
+          threshold: .4,
         }
         const callback = (entries, observer) => {
           if (entries[0].isIntersecting && this.props.location.hash === '') {
-              
-            tampon.scrollIntoView({block: "start", behavior: "smooth"});
+            if (!window.ismobile()) {
+                tampon.scrollIntoView({block: "start", behavior: "smooth"});
+            }            
             
             document.getElementById("firstCircle").style.width = "8px"
             document.getElementById("firstCircle").style.height = "8px"
@@ -107,10 +108,9 @@ class Tampon extends Component {
             document.getElementById("fifthCircle").style.height = "5px"
             document.getElementById("fifthCircle").style.opacity = "0.7"
 
+          }else if(window.location.hash === "#tampon"){
+            window.location.hash = ''
           }
-        //   else{
-        //     this.props.history.push({ pathname: '/'})
-        //   }
         }
         const observer = new IntersectionObserver(callback, options)
         observer.observe(tampon)
@@ -152,7 +152,7 @@ class Tampon extends Component {
                 
                 <div className="container-blod-animation-zone" ref={this.tamponRef}>
 
-                    <div className="container-btn-descri">
+                    <div className="container-btn-descri show-desktop show-element-style">
                         
                         <span className="text-first"> Feminicidios </span>
                         <p> Forma extrema de violencia contra  las mujeres <b> motivadas en el sexismo o la misoginia </b> </p>
@@ -183,7 +183,21 @@ class Tampon extends Component {
                         </div>
                     </div>
                 </div>
-
+                {/*  */}
+                    <div className="container-btn-descri show-desktop-mobile hide-element-style">
+                        
+                        <span className="text-first"> Feminicidios </span>
+                        <p> Forma extrema de violencia contra  las mujeres <b> motivadas en el sexismo o la misoginia </b> </p>
+                        
+                        <div className="container-container-button-sign" onClick={  this.props.handlerModalEvent }>
+                            <div className="container-button-sign">
+                                <span className="text-header-button-sign"> firmar ahora </span>
+                                <div className="header-button-sign" ></div>
+                                <img className="header-button-arrow" src={arrow_header} alt="Flecha a la derecha"/> 
+                            </div>
+                        </div>
+                    </div>
+                {/*  */}
             </div>
         )
     }

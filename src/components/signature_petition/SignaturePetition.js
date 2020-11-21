@@ -9,21 +9,6 @@ import './SignaturePetition.css'
 
 // Services
 
-// function SignaturePetitionServices(required) {
-//     const axios = axios_core.create({
-//       baseURL: global.SERVER_NAME
-//     });
-//     return axios.post(global.API_VALIDATE_EMAIL,required, 
-//         { headers: { 'Content-Type': 'application/json' }
-//       })
-//       .then((response) => {
-//         return response
-//       })
-//       .catch((error) => {
-//         console.log(error)
-//         return error.response;
-//       });
-//   }
 function SignaturePetitionServices(data) {
     const axios = axios_core.create({
       baseURL: 'http://172.105.238.71/psp/'
@@ -135,11 +120,13 @@ class SignaturePetition extends Component {
             }).then( response => {
                 // debugger
                 this.setState({disabledButtom: false})
-                if (response && response.status === 200 || response && response.status === 201) {
-                    // succes
-                    alert('Se guardo tu peticion')
-                }else{
-                    alert('DEBUG01: BloodyData - Conexion a la db pendiente')
+                if (response) {     
+                    if (response.status === 200 || response.status === 201) {
+                        // succes
+                        alert('Se guardo tu peticion')
+                    }else{
+                        alert('DEBUG01: BloodyData - Conexion a la db pendiente')
+                    }
                 }
                 this.props.handlerModalSign()
             })

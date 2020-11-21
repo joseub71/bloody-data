@@ -26,11 +26,15 @@ class Landing extends Component {
     const home = document.querySelector('#home')
     const options = {
       rootMargin: '0px 0px 0px 0px',
-      threshold: .5,
+      threshold: .4,
     }
     const callback = (entries, observer) => {
+      
       if (entries[0].isIntersecting && this.props.location.hash === '') {
-        home.scrollIntoView({block: "start", behavior: "smooth"});
+        
+        if (!window.ismobile()) {
+          home.scrollIntoView({block: "start", behavior: "smooth"}); 
+        }
 
         document.getElementById("firstCircle").style.width = "10px"
         document.getElementById("firstCircle").style.height = "10px"
@@ -51,6 +55,8 @@ class Landing extends Component {
         document.getElementById("fifthCircle").style.width = "4px"
         document.getElementById("fifthCircle").style.height = "4px"
         document.getElementById("fifthCircle").style.opacity = "0.6"
+      }else if(window.location.hash === "#home"){
+        window.location.hash = ''
       }
     }
 

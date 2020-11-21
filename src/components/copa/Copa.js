@@ -61,11 +61,13 @@ class Copa extends Component {
         const options = {
           // root: document.querySelector('body'),
           rootMargin: '0px 0px 0px 0px',
-          threshold: .2,
+          threshold: .4,
         }
         const callback = (entries, observer)  =>{
           if (entries[0].isIntersecting && this.props.location.hash === '') {
-            copa.scrollIntoView({block: "start", behavior: "smooth"});
+            if (!window.ismobile()) {
+                copa.scrollIntoView({block: "start", behavior: "smooth"});
+            }   
             
             document.getElementById("firstCircle").style.width = "5px"
             document.getElementById("firstCircle").style.height = "5px"
@@ -87,6 +89,8 @@ class Copa extends Component {
             document.getElementById("fifthCircle").style.height = "6px"
             document.getElementById("fifthCircle").style.opacity = "0.8"
             
+          }else if(window.location.hash === "#copa"){
+            window.location.hash = ''
           }
         }
         
@@ -130,7 +134,7 @@ class Copa extends Component {
                 
                 <div className="container-blod-animation-zone" ref={this.copaRef}>
 
-                    <div className="container-btn-descri">
+                    <div className="container-btn-descri show-desktop show-element-style">
                         
                         <span className="text-first"> Violencia de género </span>
                         <p> Violencia que constituye un atentado  contra la integridad, la la dignidad y la libertad de las mujeres <b> independientemente del ambito en el que se produzca </b> </p>
@@ -163,6 +167,21 @@ class Copa extends Component {
                     </div>
                 </div>
 
+                {/*  */}
+                    <div className="container-btn-descri show-desktop-mobile hide-element-style">
+                        
+                        <span className="text-first"> Violencia de género </span>
+                        <p> Violencia que constituye un atentado  contra la integridad, la la dignidad y la libertad de las mujeres <b> independientemente del ambito en el que se produzca </b> </p>
+                        
+                        <div className="container-container-button-sign" onClick={  this.props.handlerModalEvent }>
+                            <div className="container-button-sign">
+                                <span className="text-header-button-sign"> firmar ahora </span>
+                                <div className="header-button-sign" ></div>
+                                <img className="header-button-arrow" src={arrow_header} alt="Flecha a la derecha"/> 
+                            </div>
+                        </div>
+                    </div>
+                {/*  */}
             </div>
         )
     }

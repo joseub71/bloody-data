@@ -1,5 +1,6 @@
 .central-blod-landing-page-tissu{
     background-image: url(../../assets/tissu.png);
+    background-size: 54%;
     width: 20vw;
     min-width: 180px;
     height: 38vh;
@@ -10,7 +11,7 @@
 
 .image-tissu-blod{
     background-image: url(../../assets/tissu_completed.png);
-    background-position: 64px -4px;
+    background-position: 94px -4px;
     background-size: 57%;
     position: absolute;
     background-repeat: no-repeat;
