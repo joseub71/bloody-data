@@ -104,6 +104,11 @@ class App extends Component {
     this.setState({ modal: !this.state.modal })
   }
 
+  openInNewTab = () => {
+    var win = window.open('https://forms.gle/JDuFjfSnb7LpmYCZ8', '_blank');
+    win.focus();
+  }
+
   render() {
     return (
       <div className="container-web-app">
@@ -116,14 +121,14 @@ class App extends Component {
           handlerModal = {(e)=> this.handlerModal(e)}
           handlerModalCountry = {(e)=> this.handlerModalCountry(e)}
           changeCountry={this.changeCountry}
-          handlerModalEvent={this.handlerModalEvent}
+          handlerModalEvent={this.openInNewTab}
           >
                 <Switch>
                   <Route
                     exact
                     path='/'
                     render={(props) => <Landing {...props}
-                    handlerModalEvent={this.handlerModalEvent}
+                    handlerModalEvent={this.openInNewTab}
                     country={this.state.country} 
                     />}
                   />

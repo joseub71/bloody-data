@@ -1,5 +1,5 @@
 .footer{
-    height: 30vh;
+    height: auto;
     background: black;
     display: flex;
     flex-direction: column;
