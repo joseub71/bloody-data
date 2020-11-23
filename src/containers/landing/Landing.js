@@ -106,27 +106,32 @@ class Landing extends Component {
 
         <div className="container-landing-page" >
             
-            <div className="container-circle-header">
+            <div className="container-circle-header" style={{ display: this.props.country === 'PR' ? 'flex' : 'none' }}>
                     <a href="#home">  <div className="circle-header first-circle" id="firstCircle" ></div> </a> 
                     <a href="/#tampon">  <div className="circle-header second-circle" id="secondCircle" ></div> </a> 
                     <a href="/#toalla">  <div className="circle-header third-circle" id="thirdCircle" ></div> </a> 
                     <a href="/#copa">  <div className="circle-header four-circle" id="fourCircle" ></div> </a> 
                     <a href="/#tissu">  <div className="circle-header fifthCircle-circle" id="fifthCircle" ></div> </a> 
             </div>
-            
+
             <div id="home" className="container-home-landing-page">
               <img src={logo_bloody_copy} alt="logo bloody data"/>
-              <span> Que las <span className="hi"> </span>  es asqueroso </span>
+              <span> Que las {this.props.country === 'PR' ? <span className="hi"> </span> : <span> mujeres sangren </span>} es asqueroso </span>
             </div>
-
-            <Tampon  {...this.props} handlerModalEvent={(e)=>{ this.props.handlerModalEvent(e) }}  country={this.props.country} />
+            
+            {this.props.country === 'PR' &&
+              <Tampon  {...this.props} handlerModalEvent={(e)=>{ this.props.handlerModalEvent(e) }}  country={this.props.country} />
+            }
             
             <Toalla  {...this.props} handlerModalEvent={(e)=>{ this.props.handlerModalEvent(e) }}  country={this.props.country} />
 
-            <Copa  {...this.props} handlerModalEvent={(e)=>{ this.props.handlerModalEvent(e) }}  country={this.props.country} />
+            {this.props.country === 'PR' &&
+              <Copa  {...this.props} handlerModalEvent={(e)=>{ this.props.handlerModalEvent(e) }}  country={this.props.country} />
+            }
 
-            <Tissu  {...this.props} handlerModalEvent={(e)=>{ this.props.handlerModalEvent(e) }}  country={this.props.country} />
-            
+            {this.props.country === 'PR' &&
+              <Tissu  {...this.props} handlerModalEvent={(e)=>{ this.props.handlerModalEvent(e) }}  country={this.props.country} />
+            }
         </div>
     )
   }

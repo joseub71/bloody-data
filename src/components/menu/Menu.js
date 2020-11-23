@@ -67,6 +67,7 @@ class Header extends Component {
                         <a href="#home"> Home </a>
                         {/* </NavLink> */}
                         </li>
+                    {this.props.country === 'PR' &&
                     <li 
                     className="submenu">
                         {/* <NavLink
@@ -91,11 +92,7 @@ class Header extends Component {
                             </li>
                         </ul>
                     </li>
-                    {/* <li>
-                        <NavLink exact to='testimonios'>
-                        <span> testimonios </span>
-                        </NavLink>
-                    </li> */}
+                    }
                     <li><span onClick={  this.props.handlerModalEvent } > firma la peticion </span></li>
 
                     <li className="container-container-button-sign">

@@ -23,31 +23,60 @@
 
 /* Animaciones */
 
-.image-toalla-blod0{
+.image-toalla-blod-PR-0{
     height: 0vh
 }
-.image-toalla-blod1{
+.image-toalla-blod-PR-1{
     height: 5vh
 }
-.image-toalla-blod2{
+.image-toalla-blod-PR-2{
     height: 11vh
 }
-.image-toalla-blod3{
+.image-toalla-blod-PR-3{
     height: 17vh
 }
 
-.top-div-percentage-progress-toalla0{
+.top-div-percentage-progress-toalla-PR-0{
     height: 0vh
 }
 
-.top-div-percentage-progress-toalla1{
+.top-div-percentage-progress-toalla-PR-1{
     height: 2vh
 }
 
-.top-div-percentage-progress-toalla2{
+.top-div-percentage-progress-toalla-PR-2{
     height: 7vh
 }
 
-.top-div-percentage-progress-toalla3{
+.top-div-percentage-progress-toalla-PR-3{
+    height: 14vh
+}
+
+.image-toalla-blod-VE-0{
+    height: 0vh
+}
+.image-toalla-blod-VE-1{
+    height: 5vh
+}
+.image-toalla-blod-VE-2{
+    height: 11vh
+}
+.image-toalla-blod-VE-3{
+    height: 17vh
+}
+
+.top-div-percentage-progress-toalla-VE-0{
+    height: 0vh
+}
+
+.top-div-percentage-progress-toalla-VE-1{
+    height: 2vh
+}
+
+.top-div-percentage-progress-toalla-VE-2{
+    height: 7vh
+}
+
+.top-div-percentage-progress-toalla-VE-3{
     height: 14vh
 }

@@ -45,20 +45,21 @@ class Toalla extends Component {
                         dark: ''
                     },
                     1: {
-                        percentage: '4',
-                        description: 'de las mujeres que sangraron por feminicidios en Venezuela mantenían una',
-                        dark: 'relación familiar con el agresor.'
+                        percentage: '33',
+                        description: 'de las mujeres que sangró por femicidios en Venezuela',
+                        dark: 'tenía entre 19 y 31 años.'
                     },
                     2: {
-                        percentage: '13',
-                        description: 'de las mujeres que sangraron por feminicidios en Venezuela fueron',
-                        dark: 'asesinadas por venganza o por sicarios.'
+                        percentage: '42',
+                        description: 'de las mujeres que sangró por femicidios en Venezuela fue',
+                        dark: 'asesinada con armas de fuego.'
                     },
                     3: {
-                        percentage: '28',
-                        description: 'de las mujeres que sangraron por feminicidios en Venezuela mantenían una',
-                        dark: 'relación íntima con el agresor.'
+                        percentage: '75',
+                        description: 'de las mujeres víctimas de femicidios en Venezuela',
+                        dark: 'fue asesinada en su casa o en la de su compañero.'
                     }
+                    
                 }
             }
         };
@@ -160,12 +161,12 @@ class Toalla extends Component {
                     </div>
 
                     <div className="central-blod-landing-page-toalla" style={{ backgroundSize: '54%'}} >
-                        <div className={`${ 'image-toalla-blod'+this.state.toalla } image-toalla-blod`} ></div>
+                        <div className={`${ 'image-toalla-blod'+ '-' + this.props.country + '-' + this.state.toalla } image-toalla-blod`} ></div>
                     </div>
                     
                     <div className={`${ this.state.toalla >= 1 && 'percentage-progress-animation' } percentage-progress`} >
                     
-                    <div className={`${ 'top-div-percentage-progress-toalla'+this.state.toalla } top-div-percentage-progress`} ></div>
+                    <div className={`${ 'top-div-percentage-progress-toalla'+ '-' + this.props.country + '-' + this.state.toalla } top-div-percentage-progress`} ></div>
                         <div>
                             <div className="cont-per-text"> <span className="text-percentage-land"> {this.state.toallaData[this.props.country][this.state.toalla].percentage} </span> <span className="text-percentage"> % </span> </div>
                             <div className="text-description-land">{this.state.toallaData[this.props.country][this.state.toalla].description} <b> {this.state.toallaData[this.props.country][this.state.toalla].dark} </b> </div>
