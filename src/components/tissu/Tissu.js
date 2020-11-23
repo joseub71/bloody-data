@@ -23,19 +23,24 @@ class Tissu extends Component {
                         dark: ''
                     },
                     1: {
-                        percentage: '50',
-                        description: 'de las mujeres trans que sangraron por transfeminicidios en Puerto Rico',
-                        dark: 'conocían a su agresor.'
+                        percentage: '17',
+                        description: 'de las personas menstruantes es asesinada en Puerto Rico',
+                        dark: 'por crímenes de odio'
                     },
                     2: {
-                        percentage: '83',
-                        description: 'las mujeres trans que sangraron por transfeminicidios en Puerto Rico fueron',
-                        dark: 'asesinadas con un arma de fuego.'
+                        percentage: '50',
+                        description: 'de las mujeres trans que sangró por transfeminicidios en Puerto Rico',
+                        dark: 'conocía a su agresor.'
                     },
                     3: {
+                        percentage: '83',
+                        description: 'de las mujeres trans que sangró por transfeminicidios en Puerto Rico fue',
+                        dark: 'asesinada con un arma de fuego.'
+                    },
+                    4: {
                         percentage: '100',
-                        description: 'de las mujeres trans que sangraron por transfeminicidios en Puerto Rico fueron',
-                        dark: 'asesinadas en la vía pública.'
+                        description: 'de las mujeres trans que sangró por transfeminicidios en Puerto Rico fue',
+                        dark: 'asesinada en la vía pública.'
                     }
                 },
                 VE:{
@@ -129,11 +134,11 @@ class Tissu extends Component {
     eventTampon = (rigth) => {
         const currenTissu = this.state.tissu;
         if (rigth) {
-            if (currenTissu <= 2) {
+            if (currenTissu <= 3) {
                 this.setState({tissu: currenTissu+1})
             }
         }else {
-            if (currenTissu > 1 && currenTissu <= 3) {
+            if (currenTissu > 1 && currenTissu <= 4) {
                 this.setState({tissu: currenTissu-1})
             }
         }
@@ -147,7 +152,7 @@ class Tissu extends Component {
 
                     <div className="container-btn-descri show-desktop show-element-style">
                         
-                        <span className="text-first"> Transfeminicidios </span>
+                        <span className="text-first"> Asesinatos a personas trans </span>
                         <p> Asesinato de una persona  transgénero <b> por su identidad  o expresion de genero </b> </p>
                         
                         <div className="container-container-button-sign" onClick={  this.props.handlerModalEvent }>
@@ -179,7 +184,7 @@ class Tissu extends Component {
 {/*  */}
                     <div className="container-btn-descri show-desktop-mobile hide-element-style">
                         
-                        <span className="text-first"> Transfeminicidios </span>
+                        <span className="text-first"> Asesinatos a personas trans </span>
                         <p> Asesinato de una persona  transgénero <b> por su identidad  o expresion de genero </b> </p>
                         
                         <div className="container-container-button-sign" onClick={  this.props.handlerModalEvent }>

@@ -24,23 +24,23 @@ class Tampon extends Component {
                     },
                     1: {
                         percentage: '21',
-                        description: 'de las mujeres que sangraron en Puerto Rico fueron',
-                        dark: 'asesinadas en la vía pública'
+                        description: 'de las mujeres que sangró por feminicidios en Puerto Rico fue',
+                        dark: 'asesinada en la vía pública'
                     },
                     2: {
                         percentage: '25',
-                        description: 'de las mujeres que sangraron en Puerto Rico fueron',
-                        dark: 'asesinadas en su hogar'
+                        description: 'de las mujeres que sangró por feminicidios en Puerto Rico fue',
+                        dark: 'asesinada en su hogar'
                     },
                     3: {
                         percentage: '32',
-                        description: 'de las mujeres que sangraron en Puerto Rico fueron',
-                        dark: 'asesinadas con armas de fuego'
+                        description: 'de las mujeres que sangró por feminicidios en Puerto Rico fue',
+                        dark: 'asesinada con armas de fuego'
                     },
                     4: {
                         percentage: '38',
-                        description: 'de las mujeres que sangraron por feminicidios en Puerto Rico',
-                        dark: 'no han tenido resolución de sus casos'
+                        description: 'de los casos de mujeres que sangraron a raíz de un feminicidio',
+                        dark: 'aún no se ha esclarecido'
                     }
                 },
                 VE:{

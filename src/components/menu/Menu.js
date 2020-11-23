@@ -87,7 +87,7 @@ class Header extends Component {
                                     <a href="/#copa"> Violencia de genero </a>
                             </li>
                             <li> 
-                                    <a href="/#tissu"> Transfemicidios </a>
+                                    <a href="/#tissu"> Asesinatos a personas trans </a>
                             </li>
                         </ul>
                     </li>

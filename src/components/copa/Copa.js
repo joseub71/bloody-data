@@ -23,9 +23,9 @@ class Copa extends Component {
                         dark: ''
                     },
                     1: {
-                        percentage: '23',
+                        percentage: '30',
                         description: 'de las mujeres sangra por',
-                        dark: 'intentos de feminicidios en Puerto Rico.'
+                        dark: 'intentos de feminicidios en Puerto Rico'
                     },
                     2: {
                         percentage: '83',

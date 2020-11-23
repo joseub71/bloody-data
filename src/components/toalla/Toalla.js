@@ -24,17 +24,17 @@ class Toalla extends Component {
                     },
                     1: {
                         percentage: '4',
-                        description: 'de las mujeres que sangraron por feminicidios en Puerto Rico mantenían una',
+                        description: 'de las mujeres que sangró por feminicidios en Puerto Rico mantenía una',
                         dark: 'relación familiar con el agresor.'
                     },
                     2: {
                         percentage: '13',
-                        description: 'de las mujeres que sangraron por feminicidios en Puerto Rico fueron',
-                        dark: 'asesinadas por venganza o por sicarios.'
+                        description: 'de las mujeres que sangró por feminicidios en Puerto Rico fue',
+                        dark: 'asesinada por venganza o por sicarios.'
                     },
                     3: {
-                        percentage: '28',
-                        description: 'de las mujeres que sangraron por feminicidios en Puerto Rico mantenían una',
+                        percentage: '37',
+                        description: 'de las mujeres que sangró por feminicidios en Puerto Rico mantenía una',
                         dark: 'relación íntima con el agresor.'
                     }
                 },
