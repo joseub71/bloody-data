@@ -62,7 +62,7 @@ class SelectCountry extends Component {
                         <p>
                             En todo el mundo la menstruación sigue siendo un tabú. Y, para muchas personas, hablar de la sangre del período es un tema repulsivo.
                             Sin embargo, hay mucha más sangre de la que no estamos hablando: la de las muertes por feminicidio; la de las mujeres caídas en luchas;
-                            de las torturadas, violadas y lastimadas domésticamente. Y toda esa sangre sí da asco.
+                            de las torturadas, violadas y lastimadas domésticamente. <b><i> Y toda esa sangre sí da asco. </i></b>
                         </p>
                         <div>
 
