@@ -1,4 +1,5 @@
 .central-blod-landing-page-toalla{
+    background-size: 54%;
     background-image: url(../../assets/toalla.png);
     width: 15vw;
     min-width: 180px;
@@ -56,13 +57,13 @@
     height: 0vh
 }
 .image-toalla-blod-VE-1{
-    height: 5vh
-}
-.image-toalla-blod-VE-2{
     height: 11vh
 }
+.image-toalla-blod-VE-2{
+    height: 15vh
+}
 .image-toalla-blod-VE-3{
-    height: 17vh
+    height: 27vh
 }
 
 .top-div-percentage-progress-toalla-VE-0{
@@ -70,13 +71,13 @@
 }
 
 .top-div-percentage-progress-toalla-VE-1{
-    height: 2vh
-}
-
-.top-div-percentage-progress-toalla-VE-2{
     height: 7vh
 }
 
+.top-div-percentage-progress-toalla-VE-2{
+    height: 11vh
+}
+
 .top-div-percentage-progress-toalla-VE-3{
-    height: 14vh
+    height: 23vh
 }

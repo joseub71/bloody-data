@@ -160,7 +160,7 @@ class Toalla extends Component {
                         </div>
                     </div>
 
-                    <div className="central-blod-landing-page-toalla" style={{ backgroundSize: '54%'}} >
+                    <div className="central-blod-landing-page-toalla" >
                         <div className={`${ 'image-toalla-blod'+ '-' + this.props.country + '-' + this.state.toalla } image-toalla-blod`} ></div>
                     </div>
                     

@@ -167,7 +167,7 @@ class Tampon extends Component {
                         </div>
                     </div>
 
-                    <div className="central-blod-landing-page-tampon" style={{ backgroundSize: '67px 350px'}} >
+                    <div className="central-blod-landing-page-tampon" >
                         <div className={`${ 'image-tampon-blod'+this.state.tampon } image-tampon-blod-tampon `} ></div>
                     </div>
                     

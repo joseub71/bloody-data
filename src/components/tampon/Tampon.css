@@ -25,6 +25,7 @@
 }
 
 .central-blod-landing-page-tampon{
+    background-size: 67px 350px;
     width: 9vw;
     min-width: 140px;
     height: 52vh;
@@ -68,7 +69,8 @@
 }
 
 .text-percentage-land{
-    font-size: 8em;
+    font-size: 9em;
+    margin-top: -25px;
     color: var(--white);
     text-align: right;
     font-family: montserratextrabold;
@@ -78,6 +80,9 @@
     height: 80px;
     color: var(--white);
     font-size: 0.9rem
+}
+.text-description-land b{
+    font-style: italic;
 }
 
 .cont-per-text{
@@ -123,7 +128,7 @@ font-size: 0.9rem;
 }
 .text-first{
     font-size: 2rem;
-    font-weight: bold
+    font-family: 'montserratextrabold';
 }
 
 .container-btn-descri > .container-container-button-sign{

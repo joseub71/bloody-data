@@ -49,6 +49,11 @@ html {
 }
 
 /* Ancho */
+@media only screen and (min-width: 2559px) { 
+  .image-tissu-blod{
+    background-position: 62px -4px !important;
+  }
+}
 @media only screen and (min-width: 1925px) { 
   .central-blod-landing-page-toalla{
     background-size: 42% !important;
@@ -68,6 +73,14 @@ html {
       font-size: 3em !important;
   }
 }
+
+@media only screen and (max-width: 1250px) {
+  .text-percentage-land{
+    font-size: 7em !important;
+    margin-top: 0px !important;
+  }
+}
+
 @media only screen and (max-width: 1230px) {
     .container-text-bottom-left{
         font-size: 0.8em
@@ -123,7 +136,7 @@ html {
     }
     .text-header-button-sign {
       font-size: 0.7em !important;
-      padding-top: 1px;
+      padding: 5px 4px !important;
     }
     .header-button-sign {
       margin: 0px 5px !important;
@@ -150,7 +163,7 @@ html {
         justify-content: center;
     }
     .color-text-gray-footer, .low-text-footer{
-      font-size: 0.8em !important;
+      font-size: 0.6em !important;
     }
     .container-general-text-footer > .color-text-gray-footer:nth-child(2){
       margin-top: 10px !important;
@@ -162,7 +175,7 @@ html {
       text-align: center;
     }
     .social-media-btn-footer{
-      transform: translate(4px, -50px);
+      transform: translate(4px, -3px);
       padding-right: 20px;
     }
     .container-btn-footer{
@@ -185,10 +198,11 @@ html {
       min-width: 28px !important;
     }
     .text-percentage-land{
-      font-size: 4em !important;
+      font-size: 6em !important;
+      margin-top: -21px !important;
     }
     .text-percentage{
-      font-size: 2em !important;
+      font-size: 4em !important;
     }
     .text-description-land{
       width: 44vw !important;
@@ -203,11 +217,8 @@ html {
       background-position: 46px -4px !important;
       background-size: 70% !important;
     }
-    .top-div-percentage-progress-tissu3{
-      height: 26vh !important;
-    }
     .central-blod-landing-page-copa{
-      margin-left: 60px;
+      margin-left: 17px;
     }
     .show-desktop{
       display: none !important;
@@ -225,10 +236,10 @@ html {
       align-items: center !important;
       padding: 0px 6vw;
       text-align: center;
-      margin-top: 46px;
+      margin-top: 36px;
     }
     .image-copa-blod{
-      left: 14px !important
+      left: 14px !important;
     }
     .container-btn-descri > .container-container-button-sign{
       width: auto !important
@@ -258,6 +269,109 @@ html {
     .container-inputs-modal{
       margin-top: 10vh;
     }
+    .footer{
+      position: fixed !important;
+      bottom: 0px !important;
+    }
+    .container-blod-landing-page{
+      height: 63vh;
+      padding-top: 60px;
+    }
+    .percentage-progress{
+      height: 27vh !important;
+    }
+    .central-blod-landing-page-tampon{
+      width: 4vw !important;
+      min-width: 83px !important;
+      height: 27vh !important;
+      background-position: 33px 3px !important;
+      background-size: 44px 217px !important;
+    }
+    .image-tampon-blod-tampon{
+      background-size: 31px 90px !important;
+      background-position: 44px 1px !important;
+    }
+    .container-arrows-buttoms > img{
+      margin-top: 0px !important;
+    }
+    .image-tampon-blod1{
+      height: 3vh !important;
+    }
+    .image-tampon-blod2{
+      height: 5vh !important;
+    }
+    .top-div-percentage-progress2{
+      height: 5vh !important;
+    }
+    .image-tampon-blod3{
+      height: 7vh !important;
+    }
+    .top-div-percentage-progress3{
+      height: 7vh !important;
+    }
+    .image-tampon-blod4{
+      height: 8vh !important;
+    }
+    .top-div-percentage-progress4{
+      height: 8vh !important;
+    }
+    .container-arrows-buttoms > img{
+      width: 2.5rem !important;
+    }
+    .central-blod-landing-page-toalla{
+      height: 30vh !important;
+      min-width: 162px !important;
+    }
+    .image-toalla-blod{
+      background-position: 74px 0px !important;
+      background-size: 50.4% !important;
+    }
+    .top-div-percentage-progress-toalla-PR-1 {
+      height: 3.5vh !important;
+    }
+    .top-div-percentage-progress-toalla-PR-2 {
+      height: 9vh !important;
+    }
+    .top-div-percentage-progress-toalla-PR-3 {
+      height: 15vh !important;
+    }
+    .top-div-percentage-progress-toalla-VE-1 {
+      height: 9vh !important;
+    }
+    .top-div-percentage-progress-toalla-VE-2 {
+      height: 13vh !important;
+    }
+    .image-toalla-blod-VE-3 {
+      height: 25vh !important;
+    }
+    .padding-top-progress{
+      padding-top: 0px !important;
+    }
+    .central-blod-landing-page-tissu{
+      height: 21vh !important;
+    }
+    #tissu .text-percentage-land {
+      font-size: 4em !important;
+      margin-top: 0px !important;
+    }
+    #tissu .text-percentage {
+      font-size: 2.5em !important;
+    }
+    .image-tissu-blod1 {
+      height: 4vh !important;
+    }
+    .image-tissu-blod2 {
+        height: 9vh;
+    }
+    .top-div-percentage-progress-tissu2 {
+      height: 12vh;
+    }
+    .image-tissu-blod3 {
+      height: 13vh;
+    }
+    .top-div-percentage-progress-tissu3{
+      height: 16vh !important;
+    }
   }
   
   @media only screen and (min-width: 968px){
@@ -271,13 +385,15 @@ html {
 
   @media only screen and (max-width: 928px) and (min-width: 500px){
     .image-copa-blod{
-      left: 22px !important
+      left: 22px !important;
+      
     }
   }
 
   @media only screen and (max-width: 386px) and (max-height: 850px){
     .image-copa-blod{
-      left: 8px !important;
+      left: 22px !important;
+      top: 0.5vh !important;
     }
   }
   @media only screen and (max-width: 968px) {

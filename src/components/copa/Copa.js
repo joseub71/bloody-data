@@ -149,7 +149,7 @@ class Copa extends Component {
                         </div>
                     </div>
 
-                    <div className="central-blod-landing-page-copa" style={{ backgroundSize: 'cover'}} >
+                    <div className="central-blod-landing-page-copa" >
                         <div className={`${ 'image-copa-blod'+this.state.copa } image-copa-blod`} >
                         </div>
                     </div>
