@@ -25,19 +25,19 @@ class Footer extends Component {
             <div className="footer" id="footer">
                 <div className="up-container-footer">
                     <div className="container-bloody-log-footer">
-                        <img src={logo_bloody_copy} alt="logo bloody data"/>
+                        <img src={logo_bloody_copy} alt="logo bloody data" onClick={()=> window.location.hash = "home" } />
                     </div>
                     <div className="container-general-text-footer">
                         <div>
-                            <span className="title-footer" > INFORMACION </span>
+                            <span className="title-footer" > INFORMACIÓN </span>
                             <div className="color-text-gray-footer margin-top-text-footer">
                                 <div>La información y material gráfico son propiedad de Amnistía Internacional</div>
-                                <div> Amnistía internacional seccion de Puerto Rico </div>
                             </div>
                         </div>
                         <div className="color-text-gray-footer">
-                            <span> Calle Humacao #994 </span>
-                            <span> 1A Rio Piedras, PR 00925 </span>
+                            <div> Amnistía internacional seccion de Puerto Rico </div>
+                            <div> Calle Humacao #994 </div>
+                            <div> 1A Rio Piedras, PR 00925 </div>
                         </div>
                         <div className="color-text-gray-footer">
                             <div> <a href="tel:787-763-8318">787-763-8318</a> </div>
@@ -46,7 +46,7 @@ class Footer extends Component {
                     </div>
                     <div className="social-media-btn-footer" >
                         <div className="container-btn-footer" onClick={  this.props.handlerModalEvent } >
-                            <span> Firma la peticion </span>
+                            <span> Firma la petici&oacute;n </span>
                         </div>
                         <div className="footer-social-media">
                             <a href="https://www.instagram.com/amnistiapr/" target="_blank" rel="noreferrer" >  <img src={instagram} alt="instagram" /> </a>

@@ -98,10 +98,10 @@
 
 .container-input-modal > input, .container-input-modal > select{
     width: 26vw;
-    border: none;
+    border: 1.5px solid #66666c;
+    border-radius: 9px;
     outline: none;
     padding: 5px 10px;
-    border-bottom: 1px solid var(--light-grey );
 }
 
 .container-input-modal > input:active, .container-input-modal > input:focus, .container-input-modal > select:active, .container-input-modal > select:focus{

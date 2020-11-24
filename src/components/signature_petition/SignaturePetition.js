@@ -149,7 +149,7 @@ class SignaturePetition extends Component {
                          <br/>
                          <div className="text-yellow-modal-form" > <i className="font-strong"> ahora </i> </div>
                          <br/>
-                         <div className="text-yellow-modal-form" > <i className="font-strong"> la peticion </i> </div>
+                         <div className="text-yellow-modal-form" > <i className="font-strong"> la petici&oacute;n </i> </div>
                     </div>
                     <div className="container-text-bottom-left" > para la Declaración Latinoamericana de <br/> Emergencia por violencia de género. </div>
                 </div>
@@ -215,7 +215,7 @@ class SignaturePetition extends Component {
                             <div>
                                 <div className="container-container-button-sign" tabIndex="4" onClick={this.sendForm} onKeyDown={this.onEnterButtom}>
                                     <div className="container-button-sign">
-                                        <span className="text-header-button-sign"> firmar ahora </span>
+                                        <span className="text-header-button-sign"> firma ahora </span>
                                         <div className="header-button-sign" ></div>
                                         <img className="header-button-arrow" src={arrow_header} alt="Flecha a la derecha"/> 
                                     </div>

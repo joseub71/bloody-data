@@ -25,3 +25,11 @@
     filter: brightness(2);
     -webkit-filter: brightness(2);
 }
+
+#selectCountryModal .container-group-forma > p, #selectCountryModal .container-text-bottom-left{
+    color: white
+}
+
+#selectCountryModal .container-body-modal-signature{
+    background: black;
+}

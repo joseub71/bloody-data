@@ -106,7 +106,7 @@ class Landing extends Component {
 
         <div className="container-landing-page" >
             
-            <div className="container-circle-header" style={{ display: this.props.country === 'PR' ? 'flex' : 'none' }}>
+            <div className="container-circle-header" style={{ display: this.props.country === 'PR' && !window.ismobile()? 'flex' : 'none' }}>
                     <a href="#home">  <div className="circle-header first-circle" id="firstCircle" ></div> </a> 
                     <a href="/#tampon">  <div className="circle-header second-circle" id="secondCircle" ></div> </a> 
                     <a href="/#toalla">  <div className="circle-header third-circle" id="thirdCircle" ></div> </a> 
@@ -116,7 +116,7 @@ class Landing extends Component {
 
             <div id="home" className="container-home-landing-page">
               <img src={logo_bloody_copy} alt="logo bloody data"/>
-              <span> {this.props.country === 'PR' ? <span className="hi"> </span> : <span> mujeres sangren es asqueroso </span>} </span>
+              <span> {this.props.country === 'PR' ? <span className="hi"> </span> : <span> que las mujeres sangren es asqueroso </span>} </span>
             </div>
             
             {this.props.country === 'PR' &&

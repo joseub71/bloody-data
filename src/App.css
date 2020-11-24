@@ -216,7 +216,7 @@ html {
       font-size: 4em !important;
     }
     .text-description-land{
-      width: 44vw !important;
+      width: 39vw !important;
       font-size: 0.7rem !important;
     }
     
@@ -227,9 +227,6 @@ html {
     .image-tissu-blod{
       background-position: 46px -4px !important;
       background-size: 70% !important;
-    }
-    .central-blod-landing-page-copa{
-      margin-left: 17px;
     }
     .show-desktop{
       display: none !important;
@@ -250,7 +247,7 @@ html {
       margin-top: 36px;
     }
     .image-copa-blod{
-      left: 14px !important;
+      left: 22px !important;
     }
     .container-btn-descri > .container-container-button-sign{
       width: auto !important
@@ -384,6 +381,9 @@ html {
     .top-div-percentage-progress-tissu3{
       height: 16vh !important;
     }
+    #home{
+      height: 75vh !important;
+    }
   }
   
   @media only screen and (min-width: 968px){
@@ -428,5 +428,11 @@ html {
       padding: 0px 0px !important;
       padding-left: 12px !important;
       padding-right: 12px !important;
+    }
+  }
+
+  @media only screen and (max-width: 360px) {
+    .logo_anmistia{
+      margin-left: 10px !important;
     }
   }

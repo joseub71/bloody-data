@@ -149,11 +149,11 @@ class Toalla extends Component {
                     <div className="container-btn-descri show-desktop show-element-style">
                         
                         <span className="text-first"> Relación con el agresor </span>
-                        <p> Vínculo de la víctima <b> con  el autor del feminicidio </b> </p>
+                        <p> Vínculo de la víctima <b> con  el autor del femicidio </b> </p>
                         
                         <div className="container-container-button-sign" onClick={  this.props.handlerModalEvent }>
                             <div className="container-button-sign">
-                                <span className="text-header-button-sign"> firmar ahora </span>
+                                <span className="text-header-button-sign"> firma ahora </span>
                                 <div className="header-button-sign" ></div>
                                 <img className="header-button-arrow" src={arrow_header} alt="Flecha a la derecha"/> 
                             </div>
@@ -181,11 +181,11 @@ class Toalla extends Component {
                 <div className="container-btn-descri show-desktop-mobile hide-element-style">
                         
                         <span className="text-first"> Relación con el agresor </span>
-                        <p> Vínculo de la víctima <b> con  el autor del feminicidio </b> </p>
+                        <p> Vínculo de la víctima <b> con  el autor del femicidio </b> </p>
                         
                         <div className="container-container-button-sign" onClick={  this.props.handlerModalEvent }>
                             <div className="container-button-sign">
-                                <span className="text-header-button-sign"> firmar ahora </span>
+                                <span className="text-header-button-sign"> firma ahora </span>
                                 <div className="header-button-sign" ></div>
                                 <img className="header-button-arrow" src={arrow_header} alt="Flecha a la derecha"/> 
                             </div>

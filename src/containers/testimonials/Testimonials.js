@@ -35,7 +35,7 @@ class Testimonials extends Component {
                 <div className="cont-history-block">
                     <div className="box-image">
                         <span> Nombre y Apellido </span>
-                        <span> Amiga de victima de violencia de genero </span>
+                        <span> Amiga de victima de violencia de g&eacute;nero </span>
                         <img src={temporal_testimosio_1} alt="imagen de testing"/>
                     </div>
                     <div className="cont-text-box">
@@ -55,7 +55,7 @@ class Testimonials extends Component {
                 
                 <div className="cont-history-block">
                     <div className="cont-text-box">
-                        <span> by <b> Violencia de Genero </b> </span>
+                        <span> by <b> Violencia de G&eacute;nero </b> </span>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque hic eos eaque voluptatum reprehenderit quae,
                             nobis dolorum, fuga a eius magni atque doloremque aliquam fugiat ducimus ipsam. Numquam, dolor deleniti? 
@@ -77,7 +77,7 @@ class Testimonials extends Component {
                 <div className="cont-history-block">
                     <div className="box-image">
                         <span> Nombre y Apellido </span>
-                        <span> Amiga de victima de violencia de genero </span>
+                        <span> Amiga de victima de violencia de g&eacute;nero </span>
                         <img src="https://neu-cdn-amnesty-org-prd.azureedge.net/cache/7/c/2/8/e/d/7c28ed7cbf460ae24b84aa379ce0c20981c9ec6d.jpg" alt="imagen de testing"/>
                     </div>
                     <div className="cont-text-box">
@@ -97,7 +97,7 @@ class Testimonials extends Component {
                 
                 <div className="cont-history-block">
                     <div className="cont-text-box">
-                        <span> by <b> Violencia de Genero </b> </span>
+                        <span> by <b> Violencia de G&eacute;nero </b> </span>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque hic eos eaque voluptatum reprehenderit quae,
                             nobis dolorum, fuga a eius magni atque doloremque aliquam fugiat ducimus ipsam. Numquam, dolor deleniti? 

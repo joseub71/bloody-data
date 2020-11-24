@@ -23,7 +23,7 @@ class Header extends Component {
         <div className="container-header-landing-page">
 
             <div className="container-images-header" >
-                <img src={logo_bloody} alt="Logo de boddy" className="logo_bloody"/>
+                <img src={logo_bloody} alt="Logo de boddy" className="logo_bloody" onClick={()=> window.location.hash = "home" } />
                 <img src={logo_anmistia} alt="Logo Anmistia-internacional" className="logo_anmistia"/>
             </div>
 
@@ -79,13 +79,13 @@ class Header extends Component {
                         <ul 
                         className="children">
                             <li> 
-                                    <a href="/#tampon"> femicidios </a>
+                                    <a href="/#tampon"> FEMINICIDIOS </a>
                             </li>
                             <li> 
-                                    <a href="/#toalla"> Relacion con agresor </a>
+                                    <a href="/#toalla"> RELACIÓN con agresor </a>
                             </li>
                             <li> 
-                                    <a href="/#copa"> Violencia de genero </a>
+                                    <a href="/#copa"> Violencia de GÉNERO  </a>
                             </li>
                             <li> 
                                     <a href="/#tissu"> Asesinatos a personas trans </a>
@@ -93,12 +93,12 @@ class Header extends Component {
                         </ul>
                     </li>
                     }
-                    <li><span onClick={  this.props.handlerModalEvent } > firma la peticion </span></li>
+                    <li><span onClick={  this.props.handlerModalEvent } > firma la petici&oacute;n </span></li>
 
                     <li className="container-container-button-sign">
                         <div className="container-container-button-sign" onClick={  this.props.handlerModalEvent }>
                             <div className="container-button-sign">
-                                <span className="text-header-button-sign"> firmar ahora </span>
+                                <span className="text-header-button-sign"> firma ahora </span>
                                 <div className="header-button-sign" ></div>
                                 <img className="header-button-arrow" src={arrow_header} alt="Flecha a la derecha"/> 
                             </div>
