@@ -330,6 +330,7 @@ html {
       height: 30vh !important;
       min-width: 162px !important;
       background-size: 45% !important;
+      min-height: 200px;
     }
     .image-toalla-blod{
       background-position: 74px 0px !important;
@@ -419,7 +420,7 @@ html {
       min-width: 100px !important;
     }
     .logo_anmistia{
-      min-width: 88px !important;
+      min-width: 78px !important;
     }
   }
 

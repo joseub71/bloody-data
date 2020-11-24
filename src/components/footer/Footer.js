@@ -19,13 +19,16 @@ class Footer extends Component {
     componentDidMount(){
 
     }
-
+    scrollToView = (view) => {
+        var elmnt = document.getElementById(view);
+        elmnt.scrollIntoView();
+      }
     render() {
         return (
             <div className="footer" id="footer">
                 <div className="up-container-footer">
                     <div className="container-bloody-log-footer">
-                        <img src={logo_bloody_copy} alt="logo bloody data" onClick={()=> window.location.hash = "home" } />
+                        <img src={logo_bloody_copy} alt="logo bloody data" onClick={  ()=> this.scrollToView("home") } />
                     </div>
                     <div className="container-general-text-footer">
                         <div>

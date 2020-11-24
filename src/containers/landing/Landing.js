@@ -100,6 +100,10 @@ class Landing extends Component {
     
 // }
 
+  scrollToView = (view) => {
+    var elmnt = document.getElementById(view);
+    elmnt.scrollIntoView();
+  }
   render() {
     
     return (
@@ -107,11 +111,11 @@ class Landing extends Component {
         <div className="container-landing-page" >
             
             <div className="container-circle-header" style={{ display: this.props.country === 'PR' && !window.ismobile()? 'flex' : 'none' }}>
-                    <a href="#home">  <div className="circle-header first-circle" id="firstCircle" ></div> </a> 
-                    <a href="/#tampon">  <div className="circle-header second-circle" id="secondCircle" ></div> </a> 
-                    <a href="/#toalla">  <div className="circle-header third-circle" id="thirdCircle" ></div> </a> 
-                    <a href="/#copa">  <div className="circle-header four-circle" id="fourCircle" ></div> </a> 
-                    <a href="/#tissu">  <div className="circle-header fifthCircle-circle" id="fifthCircle" ></div> </a> 
+                    <div onClick={  ()=> this.scrollToView("home") } className="circle-header first-circle" id="firstCircle" ></div>
+                    <div onClick={  ()=> this.scrollToView("tampon") } className="circle-header second-circle" id="secondCircle" ></div>
+                    <div onClick={  ()=> this.scrollToView("toalla") } className="circle-header third-circle" id="thirdCircle" ></div>
+                    <div onClick={  ()=> this.scrollToView("copa") } className="circle-header four-circle" id="fourCircle" ></div>
+                    <div onClick={  ()=> this.scrollToView("tissu") } className="circle-header fifthCircle-circle" id="fifthCircle" ></div>
             </div>
 
             <div id="home" className="container-home-landing-page">

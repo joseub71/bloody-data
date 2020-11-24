@@ -17,13 +17,18 @@ class Header extends Component {
     };
   }
 
+  scrollToView = (view) => {
+    var elmnt = document.getElementById(view);
+    elmnt.scrollIntoView();
+  }
+  
    render() {
     
     return (
         <div className="container-header-landing-page">
 
             <div className="container-images-header" >
-                <img src={logo_bloody} alt="Logo de boddy" className="logo_bloody" onClick={()=> window.location.hash = "home" } />
+                <img src={logo_bloody} alt="Logo de boddy" className="logo_bloody" onClick={  ()=> this.scrollToView("home") } />
                 <img src={logo_anmistia} alt="Logo Anmistia-internacional" className="logo_anmistia"/>
             </div>
 
@@ -64,7 +69,7 @@ class Header extends Component {
                             exact
                             to='/#home'
                         > */}
-                        <a href="#home"> Home </a>
+                        <span onClick={  ()=> this.scrollToView("home") }> Home </span>
                         {/* </NavLink> */}
                         </li>
                     {this.props.country === 'PR' &&
@@ -74,21 +79,21 @@ class Header extends Component {
                             exact
                             to='/#home'
                         > */}
-                            <a href="#home"> bloody data </a>
+                            <span onClick={  ()=> this.scrollToView("home") } > bloody data </span>
                         {/* </NavLink> */}
                         <ul 
                         className="children">
                             <li> 
-                                    <a href="/#tampon"> FEMINICIDIOS </a>
+                                    <span onClick={  ()=> this.scrollToView("tampon") }> FEMINICIDIOS </span>
                             </li>
                             <li> 
-                                    <a href="/#toalla"> RELACIÓN con agresor </a>
+                                    <span onClick={  ()=> this.scrollToView("toalla") }> RELACIÓN con agresor </span>
                             </li>
                             <li> 
-                                    <a href="/#copa"> Violencia de GÉNERO  </a>
+                                    <span onClick={  ()=> this.scrollToView("copa") }> Violencia de GÉNERO  </span>
                             </li>
                             <li> 
-                                    <a href="/#tissu"> Asesinatos a personas trans </a>
+                                    <span onClick={  ()=> this.scrollToView("tissu") }> Asesinatos a personas trans </span>
                             </li>
                         </ul>
                     </li>
