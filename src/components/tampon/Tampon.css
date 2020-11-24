@@ -112,7 +112,8 @@
 }
 
 .container-btn-descri p{
-font-size: 0.9rem;
+    font-size: 0.9rem;
+    margin: 14px 0px;
 }
 .container-btn-descri > p, .container-btn-descri > span{
     font-style: italic

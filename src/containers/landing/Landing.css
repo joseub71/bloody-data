@@ -18,7 +18,8 @@
 
 .container-home-landing-page > span{
     color: var(--white);
-    letter-spacing: 15px;
+    letter-spacing: 8px;
+    font-size: 0.9em;
     margin-top: 30px;
     font-weight: 900;
     width: 70vw;
@@ -77,8 +78,8 @@
 }
 .hi:after{
 	content: "";
-	animation: spin 10s linear;
-    -webkit-animation: spin 10s linear;
+	animation: spin 7s linear;
+    -webkit-animation: spin 7s linear;
     animation-iteration-count: infinite;
 }
 
