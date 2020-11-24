@@ -150,6 +150,7 @@ html {
       align-items: center;
       justify-content: center;
       padding: 15px 0px;
+      padding-bottom: 5px;
     }
     .container-general-text-footer, .social-media-btn-footer{
       display: inline-block !important;
@@ -184,7 +185,7 @@ html {
       margin-bottom: 8px
     }
     .margin-top-text-footer{
-        margin-top: 18px;
+        margin-top: 12px !important;
     }
     .container-btn-descri{
       display: none !important;
@@ -198,7 +199,7 @@ html {
       min-width: 28px !important;
     }
     .text-percentage-land{
-      font-size: 6em !important;
+      font-size: 5em !important;
       margin-top: -21px !important;
     }
     .text-percentage{
@@ -321,10 +322,11 @@ html {
     .central-blod-landing-page-toalla{
       height: 30vh !important;
       min-width: 162px !important;
+      background-size: 45% !important;
     }
     .image-toalla-blod{
       background-position: 74px 0px !important;
-      background-size: 50.4% !important;
+      background-size: 41.6% !important;
     }
     .top-div-percentage-progress-toalla-PR-1 {
       height: 3.5vh !important;
@@ -348,7 +350,7 @@ html {
       padding-top: 0px !important;
     }
     .central-blod-landing-page-tissu{
-      height: 21vh !important;
+      height: 24vh !important;
     }
     #tissu .text-percentage-land {
       font-size: 4em !important;
