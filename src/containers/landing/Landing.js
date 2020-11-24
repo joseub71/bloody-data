@@ -116,7 +116,7 @@ class Landing extends Component {
 
             <div id="home" className="container-home-landing-page">
               <img src={logo_bloody_copy} alt="logo bloody data"/>
-              <span> Que las {this.props.country === 'PR' ? <span className="hi"> </span> : <span> mujeres sangren </span>} es asqueroso </span>
+              <span> {this.props.country === 'PR' ? <span className="hi"> </span> : <span> mujeres sangren es asqueroso </span>} </span>
             </div>
             
             {this.props.country === 'PR' &&

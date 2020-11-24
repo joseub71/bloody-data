@@ -16,8 +16,8 @@
     position: absolute;
     background-repeat: no-repeat;
     width: 8vw;
-    top: 0vh;
-    left: 22px;
+    top: 0.8vh;
+    left: 22.2px;
     min-width: 109px;
     clip-path: polygon(100% 100%, 100% 0%, 0% 0%, 0% 98%, 8% 100%, 15% 98%, 24% 99%, 33% 99%, 40% 98%, 50% 99%, 60% 100%, 68% 98%, 80% 100%, 89% 98%);
     transition: 1s;

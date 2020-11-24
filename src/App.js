@@ -68,13 +68,17 @@ class App extends Component {
   componentDidMount(){
     callCurrentCountry().then( response => {
       if (response && response.data.country) {
-        response.data.country = 'other'
+        // response.data.country = 'other'
         if (response.data.country !== 'VE' && response.data.country !== 'PR') {
           this.setState({modalCountry: true })
         }else{
           this.setState({country: response.data.country })
         }
+      }else{
+        this.setState({modalCountry: true })
       }
+    }).catch( err => {
+      this.setState({modalCountry: true })
     })
   }
 

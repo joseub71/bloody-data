@@ -68,10 +68,19 @@ html {
     height: 38vh;
   }
 }
+
+@media only screen and (max-width: 1500px) {
+  .image-tissu-blod{
+    left: -1px !important;
+  }
+
+}
+
 @media only screen and (max-width: 1400px) {
   .container-yellow-modal-form{
       font-size: 3em !important;
   }
+  
 }
 
 @media only screen and (max-width: 1250px) {
@@ -182,7 +191,8 @@ html {
     .container-btn-footer{
       text-align: center;
       padding: 6px 7px!important;
-      margin-bottom: 8px
+      margin-bottom: 8px;
+      font-size: 0.8em !important;
     }
     .margin-top-text-footer{
         margin-top: 12px !important;
