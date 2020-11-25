@@ -76,11 +76,29 @@
     height: 4px;
     opacity: 0.8;
 }
-.hi:after{
+
+.fist-text{
+    animation: spin 4s linear infinite;
+    /* transition: all 1s; */
+    /* content:"Que las mujeres sangren es asqueroso"; */
+}
+
+.second-text{
+    animation: spin 4s linear infinite;
+    /* transition: all 1s; */
+    /* content:"Que las las personas trans sangren es asqueroso"; */
+}
+
+@keyframes spin {
+    0% { opacity: 0;}
+    50% { opacity: 1;}
+    100% { opacity: 0;}
+}
+
+/* .hi:after{
 	content: "";
-	animation: spin 7s linear;
-    -webkit-animation: spin 7s linear;
-    animation-iteration-count: infinite;
+	animation: spin 7s linear infinite;
+    -webkit-animation: spin 7s linear infinite;
 }
 
 @keyframes spin {
@@ -90,4 +108,4 @@
     50% { content:"Que las las personas trans sangren es asqueroso"; opacity: 0;}
     90% { content:"Que las las personas trans sangren es asqueroso"; opacity: 1;}
     100% { content:"Que las las personas trans sangren es asqueroso"; opacity: 0;}
-}
+} */

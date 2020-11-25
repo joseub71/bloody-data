@@ -19,7 +19,7 @@ class Landing extends Component {
 
     this.state = {
       currentPostion: 1,
-      fist-text
+      animatedText: 'fist-text'
     };
   }
   
