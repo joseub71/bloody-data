@@ -18,7 +18,8 @@ class Landing extends Component {
     super(props);
 
     this.state = {
-      currentPostion: 1
+      currentPostion: 1,
+      fist-text
     };
   }
   
@@ -66,6 +67,12 @@ class Landing extends Component {
 
     // window.addEventListener("wheel", (event) => { this.eventScrollNav(event)}, { passive: false} )
 
+// fist-text
+// second-text
+    setInterval(() => {
+      this.setState({ animatedText: this.state.animatedText === 'fist-text' ? 'second-text' : 'fist-text' })
+    }, 4000);
+        
   }
 
 //   eventScrollNav = (e) => {
@@ -104,6 +111,7 @@ class Landing extends Component {
     var elmnt = document.getElementById(view);
     elmnt.scrollIntoView();
   }
+
   render() {
     
     return (
@@ -120,7 +128,10 @@ class Landing extends Component {
 
             <div id="home" className="container-home-landing-page">
               <img src={logo_bloody_copy} alt="logo bloody data"/>
-              <span> {this.props.country === 'PR' ? <span className="hi"> </span> : <span> que las mujeres sangren es asqueroso </span>} </span>
+              <span> {this.props.country === 'PR' ? <span className={ this.state.animatedText } > 
+                    {this.state.animatedText && this.state.animatedText === "fist-text" ? "Que las mujeres sangren es asqueroso"
+                    : "Que las las personas trans sangren es asqueroso" }</span> : 
+              <span> que las mujeres sangren es asqueroso </span>} </span>
             </div>
             
             {this.props.country === 'PR' &&
