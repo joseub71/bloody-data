@@ -306,22 +306,22 @@ html {
       height: 3vh !important;
     }
     .image-tampon-blod2{
-      height: 5vh !important;
+      height: 4vh !important;
     }
     .top-div-percentage-progress2{
-      height: 5vh !important;
+      height: 4vh !important;
     }
     .image-tampon-blod3{
-      height: 7vh !important;
+      height: 6vh !important;
     }
     .top-div-percentage-progress3{
-      height: 7vh !important;
+      height: 6vh !important;
     }
     .image-tampon-blod4{
-      height: 8vh !important;
+      height: 7vh !important;
     }
     .top-div-percentage-progress4{
-      height: 8vh !important;
+      height: 7vh !important;
     }
     .container-arrows-buttoms > img{
       width: 2.5rem !important;
@@ -336,23 +336,41 @@ html {
       background-position: 74px 0px !important;
       background-size: 41.6% !important;
     }
+    .image-toalla-blod-PR-1{
+      height: 3vh !important;
+    }
     .top-div-percentage-progress-toalla-PR-1 {
-      height: 3.5vh !important;
+      height: 1.5vh !important;
+    }
+    .image-toalla-blod-PR-2 {
+      height: 5vh !important;
     }
     .top-div-percentage-progress-toalla-PR-2 {
-      height: 9vh !important;
+      height: 4vh !important;
+    }
+    .image-toalla-blod-PR-3 {
+      height: 10vh !important;
     }
     .top-div-percentage-progress-toalla-PR-3 {
-      height: 15vh !important;
-    }
-    .top-div-percentage-progress-toalla-VE-1 {
       height: 9vh !important;
     }
+    .image-toalla-blod-VE-1{
+      height: 9vh !important;
+    }
+    .top-div-percentage-progress-toalla-VE-1 {
+      height: 8vh !important;
+    }
+    .image-toalla-blod-VE-2{
+      height: 12vh !important;
+    }
     .top-div-percentage-progress-toalla-VE-2 {
-      height: 13vh !important;
+      height: 10vh !important;
     }
     .image-toalla-blod-VE-3 {
-      height: 25vh !important;
+      height: 22vh !important;
+    }
+    .top-div-percentage-progress-toalla-VE-3{
+      height: 20vh !important;
     }
     .padding-top-progress{
       padding-top: 0px !important;
@@ -384,6 +402,12 @@ html {
     }
     #home{
       height: 75vh !important;
+    }
+    #tissu{
+      height: 121vh!important;
+    }
+    #tissu .container-arrows-buttoms > img{
+      margin-top: 10px !important;
     }
   }
   
@@ -435,5 +459,11 @@ html {
   @media only screen and (max-width: 360px) {
     .logo_anmistia{
       margin-left: 10px !important;
+    }
+    .container-arrows-buttoms > img{
+      margin-top: 15px !important;
+    }
+    .container-btn-descri{
+      margin-top: 77px;
     }
   }

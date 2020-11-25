@@ -102,6 +102,7 @@
     border-radius: 9px;
     outline: none;
     padding: 5px 10px;
+    font-family: 'montserratextrabold';
 }
 
 .container-input-modal > input:active, .container-input-modal > input:focus, .container-input-modal > select:active, .container-input-modal > select:focus{
