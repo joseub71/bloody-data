@@ -90,6 +90,19 @@ html {
   }
 }
 
+
+@media all and (max-width: 1350px) and (min-width: 1024px) {
+  .container-blod-landing-page, body{
+    /* background: red !important; */
+  }
+  .image-tissu-blod3 {
+    height: 14vh !important;
+  }
+  .top-div-percentage-progress-tissu3 {
+    height: 16vh !important;
+  }
+}
+
 @media only screen and (max-width: 1230px) {
     .container-text-bottom-left{
         font-size: 0.8em

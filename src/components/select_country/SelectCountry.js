@@ -52,7 +52,7 @@ class SelectCountry extends Component {
                         <div className="container-yellow-modal-form font-strong">
                             <div className="text-yellow-modal-form" >  Selecciona  </div>
                             <br/>
-                            <div className="text-yellow-modal-form" >  tu país y  </div>
+                            <div className="text-yellow-modal-form" >  un país y  </div>
                             <br/>
                             <div className="text-yellow-modal-form" >  firma ahora </div>
                         </div>
